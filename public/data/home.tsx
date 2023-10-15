@@ -7,13 +7,13 @@ import {
 } from "@/app/interface/home";
 
 // introduction
-export const IntroData: IIntro = {
+export const introData: IIntro = {
   intro: "Hi👋, welcome to my portfolio.",
   title: `Mohammad Esmaeilpour`,
 };
 
 // company data
-export const CompanyData: Array<ICompany> = [
+export const companyData: Array<ICompany> = [
   {
     imgSrc: "/asset/img/project/abtin-azma.jpeg",
     link: "#",

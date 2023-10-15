@@ -1,4 +1,4 @@
-import { INav, INavbarLinks } from "../../src/interface/layout";
+import { INav } from "@/app/interface/layout";
 
 // link data
 export const navData: INav = {

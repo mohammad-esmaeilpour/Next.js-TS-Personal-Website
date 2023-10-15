@@ -8,7 +8,7 @@ export const logoData: ILogo = {
 };
 
 // Bottom Navigation
-export const BottomNavData: IBottomNav[] = [
+export const bottomNavData: IBottomNav[] = [
   {
     title: "Home",
     scrollTo: "",

@@ -12,9 +12,10 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const darkMode = false;
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html className={darkMode ? "dark" : "light"} lang="en">
+      <body className={`${inter.className} bg-gray-100 dark:bg-slate-700`}>
         <Navigation />
         {children}
       </body>
