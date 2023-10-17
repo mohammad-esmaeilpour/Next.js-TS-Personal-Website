@@ -2,7 +2,7 @@ import { IButtonCustome } from "./global";
 
 export interface INav {
   links: INavbarLinks[];
-  btn: IButtonCustome[];
+  gmailBtn: IButtonCustome;
 }
 
 export interface INavbarLinks {

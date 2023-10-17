@@ -9,7 +9,6 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import styles from "./slider.module.css";
 
-
 import Link from "next/link";
 import Image from "next/image";
 import { ISlider } from "../../interface/home";
@@ -21,10 +20,11 @@ interface SliderProps {
 
 const Slider: FC<SliderProps> = ({ data }) => {
   return (
-    <div className="container md:mx-auto mx-2 my-10 py-6">
-      <div>{data.subTitle}</div>
-      <div className="mt-3">{data.title}</div>
+    <div className="container md:mx-auto mx-2 py-10">
+      <h4 className="text-4xl font-semibold">{data.subTitle}</h4>
+      <h2 className="mt-3">{data.title}</h2>
       <Swiper
+        className="my-10"
         breakpoints={{
           0: {
             slidesPerView: 1,
@@ -48,9 +48,14 @@ const Slider: FC<SliderProps> = ({ data }) => {
       >
         {data.items.map((item, index) => (
           <SwiperSlide key={index}>
-            <div className="rounded-md overflow-hidden">
-              <div className="slider-items object-cover">
-                <Image src={item.img} fill alt={item.title} />
+            <div className="rounded-2xl bg-[#f6f5f4] overflow-hidden p-4">
+              <div className="slider-items object-cover h-60 border  relative rounded-md overflow-hidden">
+                <Image
+                  src={item.img}
+                  fill
+                  alt={item.title}
+                  className="object-cover"
+                />
               </div>
               <div className="flex flex-col px-3">
                 <p className="py-3">{item.title}</p>

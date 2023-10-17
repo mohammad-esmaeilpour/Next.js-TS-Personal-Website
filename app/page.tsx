@@ -1,4 +1,10 @@
-import { SliderData, companyData, introData, skillsData, socialData } from "@/public/data/home";
+import {
+  SliderData,
+  companyData,
+  introData,
+  skillsData,
+  socialData,
+} from "@/public/data/home";
 import Intro from "./components/Intro";
 import Skills from "./components/Skills";
 import Slider from "./components/slider/Slider";
@@ -8,7 +14,7 @@ import FloatNav from "./components/FloatNav";
 
 export default function Home() {
   return (
-    <main>
+    <main className="h-[100vh] overflow-x-hidden overflow-y-auto scrollbar-hide px-5 pt-20">
       {/* Intro */}
       <Intro data={introData} />
       {/* Skills */}

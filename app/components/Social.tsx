@@ -8,7 +8,7 @@ interface SocialProps {
 
 const Social: FC<SocialProps> = ({ data }) => {
   return (
-    <div className="text-center pb-20">
+    <div className="conatiner mx-auto text-center py-10 mt-20">
       <p className="pb-10">{data.title}</p>
       <div className="flex justify-center items-center">
         {data.socialMedia.map((item, index) => (

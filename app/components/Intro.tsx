@@ -7,10 +7,10 @@ interface IntroProps {
 
 const Intro: FC<IntroProps> = ({ data }) => {
   return (
-    <>
-      <h4>{data.intro}</h4>
-      <h1>{data.title}</h1>
-    </>
+    <div className="container mx-auto text-center py-10">
+      <h1 className="text-7xl py-4 font-bold">{data.title}</h1>
+      <h4 className="text-xl">{data.intro}</h4>
+    </div>
   );
 };
 
