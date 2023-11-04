@@ -7,7 +7,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import styles from "./slider.module.css";
+import "./Slider.module.css";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -48,8 +48,8 @@ const Slider: FC<SliderProps> = ({ data }) => {
       >
         {data.items.map((item, index) => (
           <SwiperSlide key={index}>
-            <div className="rounded-2xl bg-[#f6f5f4] overflow-hidden p-4">
-              <div className="slider-items object-cover h-60 border  relative rounded-md overflow-hidden">
+            <div className="rounded-xl bg-white border border-[#eaeaea] overflow-hidden p-3">
+              <div className="slider-items object-cover h-60 relative rounded-xl overflow-hidden shadow">
                 <Image
                   src={item.img}
                   fill
@@ -59,21 +59,9 @@ const Slider: FC<SliderProps> = ({ data }) => {
               </div>
               <div className="flex flex-col px-3">
                 <p className="py-3">{item.title}</p>
-                <Link
-                  className="pb-2 border-b-2 border-gray-100 flex justify-between"
-                  href="/"
-                >
+                <Link className="pb-2 flex justify-between" href="/">
                   <p>View Project</p>
                   <div>EAST ICON</div>
-                </Link>
-              </div>
-              <div className="px-3">
-                <Link
-                  className="border-gray-100 text-gray-500 py-3 flex"
-                  href="/"
-                >
-                  <div>GITHUB ICON</div>
-                  <p className="font-thin ml-2 flex items-center">Repository</p>
                 </Link>
               </div>
             </div>

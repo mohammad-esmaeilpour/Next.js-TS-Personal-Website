@@ -1,5 +1,5 @@
 import {
-  SliderData,
+  sliderData,
   companyData,
   introData,
   skillsData,
@@ -20,7 +20,7 @@ export default function Home() {
       {/* Skills */}
       <Skills data={skillsData} />
       {/* Slider */}
-      <Slider data={SliderData} />
+      <Slider data={sliderData} />
       {/* Company */}
       <Company data={companyData} />
       {/* Socail */}
