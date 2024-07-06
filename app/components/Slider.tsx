@@ -7,11 +7,10 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import "./Slider.module.css";
 
 import Link from "next/link";
 import Image from "next/image";
-import { ISlider } from "../../interface/home";
+import { ISlider } from "../interface/home";
 import { Navigation, Pagination } from "swiper/modules";
 
 interface SliderProps {
@@ -20,11 +19,11 @@ interface SliderProps {
 
 const Slider: FC<SliderProps> = ({ data }) => {
   return (
-    <div className="container md:mx-auto mx-2 py-10">
-      <h4 className="text-4xl font-semibold">{data.subTitle}</h4>
-      <h2 className="mt-3">{data.title}</h2>
+    <div className="container text-center md:mx-auto mx-2 py-10">
+      <h2>{data.title}</h2>
+      <h4 className="text-4xl font-semibold mb-5">{data.subTitle}</h4>
       <Swiper
-        className="my-10"
+        className="mb-10"
         breakpoints={{
           0: {
             slidesPerView: 1,

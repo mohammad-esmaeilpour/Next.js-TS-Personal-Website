@@ -1,3 +1,5 @@
+import { JSX } from "react/jsx-runtime";
+
 export interface IIntro {
   intro: string;
   title: string;

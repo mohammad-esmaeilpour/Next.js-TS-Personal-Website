@@ -10,8 +10,6 @@ interface CompanyProps {
 const Company: FC<CompanyProps> = ({ data }) => {
   return (
     <div className="container mx-auto py-10">
-      <h4 className="text-4xl font-semibold">Cooperation with companies</h4>
-      <h2 className="mt-3">Cooperation with companies</h2>
       <div className="flex justify-between my-20">
         {data.map((item) => (
           <div
