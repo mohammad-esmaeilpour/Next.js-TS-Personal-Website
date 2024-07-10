@@ -2,6 +2,8 @@ import Link from "next/link";
 import React, { FC } from "react";
 import { INav } from "../interface/layout";
 import ToggleTheme from "./ToggleTheme";
+import Image from "next/image";
+import Logo from "./Logo";
 
 interface NavigationProps {
   data: INav;
@@ -9,9 +11,11 @@ interface NavigationProps {
 
 const Navigation: FC<NavigationProps> = ({ data }) => {
   return (
-    <div className="w-full flex items-center justify-between container mx-auto sticky top-0 z-50 backdrop-blur-sm py-5 px-10">
+    <div className="container mx-auto w-full flex justify-between px-10">
       {/* Logo */}
-      <Link href={"/"}>logo</Link>
+      <Link href={"/"}>
+        <Logo />
+      </Link>
       <nav className="flex gap-5 items-center">
         {/* Nav */}
         <ul className="flex items-center">

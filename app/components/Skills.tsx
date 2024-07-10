@@ -21,7 +21,7 @@ const Skills = () => {
       autoplay={{ delay: 1000 }}
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log("slide change")}
-      className="max-w-2xl"
+      className="max-w-xl"
     >
       {skillsData.skills.map((item) => (
         <SwiperSlide key={item.title}>{item.icon}</SwiperSlide>

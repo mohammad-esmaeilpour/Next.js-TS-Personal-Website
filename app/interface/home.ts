@@ -1,7 +1,7 @@
 import { JSX } from "react/jsx-runtime";
 
 export interface IIntro {
-  intro: string;
+  subTitle: string;
   title: string;
 }
 

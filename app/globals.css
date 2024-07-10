@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  * {
+    @apply font-customeLight;
+  }
+  h1,
+  h2 {
+    @apply font-customeBold text-[#1b1b1b];
+  }
+  h2 {
+    @apply text-5xl;
+  }
+  h4 {
+    @apply text-[#007fff];
+  }
+  p {
+    @apply text-xl my-6 text-[#1b1b1b] text-justify leading-7;
+  }
+
+  main {
+    background-image: url("../public/img/ui/smooth.png");
+    background-repeat: no-repeat;
+  }
+}

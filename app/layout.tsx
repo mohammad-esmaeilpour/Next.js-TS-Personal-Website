@@ -1,9 +1,17 @@
-import "./globals.css";
-import type { Metadata } from "next";
 import Navigation from "./components/Navigation";
 import { navData } from "@/public/data/layout";
+import localFont from "next/font/local";
+import "./globals.css";
 
-export const metadata: Metadata = {};
+const customeLight = localFont({
+  src: "../public/fonts/light.otf",
+  variable: "--font-customeLight",
+});
+
+const customeBold = localFont({
+  src: "../public/fonts/bold.otf",
+  variable: "--font-customeBold",
+});
 
 export default function RootLayout({
   children,
@@ -12,9 +20,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className={`${customeLight.variable} ${customeBold.variable}`}>
         <Navigation data={navData} />
-        <main className="pt-20">{children}</main>
+        <main className="container mx-auto">{children}</main>
       </body>
     </html>
   );

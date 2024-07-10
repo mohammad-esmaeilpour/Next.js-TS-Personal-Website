@@ -1,15 +1,11 @@
-import React, { FC } from "react";
-import { IIntro } from "../interface/home";
+import { introData } from "@/public/data/home";
+import React from "react";
 
-interface IntroProps {
-  data: IIntro;
-}
-
-const Intro: FC<IntroProps> = ({ data }) => {
+const Intro = () => {
   return (
-    <div className="container mx-auto text-center py-10">
-      <h4>{data.intro}</h4>
-      <h1>{data.title}</h1>
+    <div className="text-center mt-40 mb-32">
+      <h3>{introData.subTitle}</h3>
+      <h1 className="text-8xl max-w-4xl mx-auto">{introData.title}</h1>
     </div>
   );
 };

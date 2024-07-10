@@ -2,14 +2,14 @@ const Contact = () => {
   return (
     <main>
       <section className="container mx-auto mt-5 pt-5">
-        <h1 className="text-center fz-60 font-family-Semicondensed">
-          ABOUT ME
-        </h1>
-        <p className="text-center fz-18 mb-5 pb-5">
-          Here you will find more information about me, what I do, and my
-          current skills mostly in terms of programming and technology
-        </p>
-        <div className="flex gap-10 max-w-7xl">
+        <div>
+          <h1 className="text-center">ABOUT ME</h1>
+          <p className="text-center">
+            Here you will find more information about me, what I do, and my
+            current skills mostly in terms of programming and technology
+          </p>
+        </div>
+        <div className="flex gap-20 max-w-7xl mx-auto mt-20">
           <div className="flex-1">
             <h2 className="font-family-Semicondensed mb-4">Get to know me!</h2>
             <p className="fz-18 text-justify lh-33 text-black">
