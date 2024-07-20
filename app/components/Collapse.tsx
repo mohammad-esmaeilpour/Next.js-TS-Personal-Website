@@ -11,7 +11,9 @@ const Collapse = ({ title, des }: ICollapse) => {
       tabIndex={0}
       className="collapse collapse-arrow border-b rounded-none my-5"
     >
-      <h3 className="collapse-title text-2xl">{title}</h3>
+      <h3 className="collapse-title text-2xl font-bold tracking-wider">
+        {title}
+      </h3>
       <div className="collapse-content">
         <p>{des}</p>
       </div>

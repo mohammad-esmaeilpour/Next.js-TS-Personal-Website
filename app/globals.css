@@ -17,11 +17,14 @@
     @apply text-[#007fff];
   }
   p {
-    @apply text-xl my-6 text-[#1b1b1b] text-justify leading-7;
+    @apply text-xl my-6 text-[#1b1b1bde] text-justify leading-7 tracking-wider;
+  }
+  a {
+    @apply tracking-wider;
   }
 
-  main {
+  /* main {
     background-image: url("../public/img/ui/smooth.png");
     background-repeat: no-repeat;
-  }
+  } */
 }

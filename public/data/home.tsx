@@ -10,7 +10,7 @@ import {
 // introduction
 export const introData: IIntro = {
   subTitle: "I am Mohammad Esmaeilpour My perspective on website development",
-  title: "web Development with Mohammad Esmaeilpour",
+  title: "high quality frontend development with React + typescript",
 };
 
 // company data
@@ -180,7 +180,7 @@ export const skillsData: ISkills = {
           />
         </svg>
       ),
-      title: "Git",
+      title: "CSS",
     },
     {
       icon: (
@@ -199,7 +199,7 @@ export const skillsData: ISkills = {
           />
         </svg>
       ),
-      title: "Git",
+      title: "HTML",
     },
     {
       icon: (

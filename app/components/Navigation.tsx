@@ -4,14 +4,15 @@ import { INav } from "../interface/layout";
 import ToggleTheme from "./ToggleTheme";
 import Image from "next/image";
 import Logo from "./Logo";
+import { TitleDes, TitleDesSubImg } from "../interface/global";
 
-interface NavigationProps {
+type NavigationProps = {
   data: INav;
-}
+};
 
 const Navigation: FC<NavigationProps> = ({ data }) => {
   return (
-    <div className="container mx-auto w-full flex justify-between px-10">
+    <div className="container mx-auto w-full flex justify-between px-10 rounded-2xl max-w-6xl">
       {/* Logo */}
       <Link href={"/"}>
         <Logo />
