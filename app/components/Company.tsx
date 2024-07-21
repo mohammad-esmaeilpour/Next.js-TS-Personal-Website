@@ -17,7 +17,7 @@ const Company = () => {
               <Image
                 className="object-cover object-top"
                 src={item.imgSrc}
-                layout="fill"
+                fill
                 alt={item.imgSrc || "Project Image"}
               />
             </Link>
