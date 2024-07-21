@@ -6,7 +6,7 @@ export interface IIntro {
 }
 
 export type ICompany = {
-  imgSrc: string;
+  imgSrc: any;
   link: string;
   id: number;
 };

@@ -15,7 +15,7 @@ export default function Home() {
       {/* Skills */}
       <Skills />
       {/* Company */}
-      <Company data={companyData} />
+      <Company />
 
       {/* about me */}
       <AboutMe />

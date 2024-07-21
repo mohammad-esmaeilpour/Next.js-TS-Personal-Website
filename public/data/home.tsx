@@ -1,11 +1,6 @@
 import { TitleDes, TitleDesSub } from "@/app/interface/global";
-import {
-  ICompany,
-  IIntro,
-  ISkills,
-  ISlider,
-  ISocial,
-} from "@/app/interface/home";
+import { ICompany, IIntro, ISkills, ISlider } from "@/app/interface/home";
+import Abtinazma from "../img/project/abtin-azma.jpeg";
 
 // introduction
 export const introData: IIntro = {
@@ -16,37 +11,37 @@ export const introData: IIntro = {
 // company data
 export const companyData: Array<ICompany> = [
   {
-    imgSrc: "/asset/img/project/abtin-azma.jpeg",
+    imgSrc: "/img/project/abtin-azma.jpeg",
     link: "#",
     id: 1,
   },
   {
-    imgSrc: "/asset/img/project/v-user.jpeg",
+    imgSrc: "/img/project/v-user.jpeg",
     link: "#",
     id: 2,
   },
   {
-    imgSrc: "/asset/img/project/formulist.jpeg",
+    imgSrc: "/img/project/formulist.jpeg",
     link: "#",
     id: 3,
   },
   {
-    imgSrc: "/asset/img/project/mr-hami.jpeg",
+    imgSrc: "/img/project/mr-hami.jpeg",
     link: "#",
     id: 4,
   },
   {
-    imgSrc: "/asset/img/project/salam-siman.jpeg",
+    imgSrc: "/img/project/salam-siman.jpeg",
     link: "#",
     id: 5,
   },
   {
-    imgSrc: "/asset/img/project/abr-host.jpeg",
+    imgSrc: "/img/project/abr-host.jpeg",
     link: "#",
     id: 6,
   },
   {
-    imgSrc: "/asset/img/project/abtin-chem.jpeg",
+    imgSrc: "/img/project/abtin-chem.jpeg",
     link: "#",
     id: 7,
   },
