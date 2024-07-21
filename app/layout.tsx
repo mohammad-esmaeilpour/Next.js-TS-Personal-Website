@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${customeLight.variable} ${customeBold.variable} overflow-x-hidden bg-gray-400`}
+        className={`${customeLight.variable} ${customeBold.variable} overflow-x-hidden bg-gray-800`}
       >
         <Navigation data={navData} />
         <main className="container mx-auto">{children}</main>
