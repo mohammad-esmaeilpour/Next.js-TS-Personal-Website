@@ -1,5 +1,4 @@
 "use client";
-import { ISkills } from "../interface/home";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import {

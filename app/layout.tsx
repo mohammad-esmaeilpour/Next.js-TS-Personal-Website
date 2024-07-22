@@ -1,8 +1,12 @@
 import Navigation from "./components/Navigation";
 import { navData } from "@/public/data/layout";
 import localFont from "next/font/local";
-import "./globals.css";
 
+// global styles
+import "./globals.css";
+import "aos/dist/aos.css";
+
+// fonts
 const customeLight = localFont({
   src: "../public/fonts/light.otf",
   variable: "--font-customeLight",

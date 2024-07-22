@@ -1,21 +1,25 @@
-import { companyData } from "@/public/data/home";
 import Intro from "./components/Intro";
 import Skills from "./components/Skills";
-import Company from "./components/Company";
 import AboutMe from "./components/AboutMe";
 import Faq from "./components/Faq";
 import TopSkills from "./components/TopSkills";
 import HandShake from "./components/HandShake";
+import Aos from "./components/Aos";
+import TimeLine from "./components/TimeLine";
 
 export default function Home() {
   return (
     <>
+      {/* scroll animation */}
+      <Aos />
+
       {/* Intro */}
       <Intro />
+
       {/* Skills */}
       <Skills />
       {/* Company */}
-      <Company />
+      {/* <Company /> */}
 
       {/* about me */}
       <AboutMe />
@@ -23,6 +27,8 @@ export default function Home() {
       {/* Slider */}
       {/* <Slider data={sliderData} /> */}
       <TopSkills />
+
+      <TimeLine />
 
       {/* faq */}
       <Faq />

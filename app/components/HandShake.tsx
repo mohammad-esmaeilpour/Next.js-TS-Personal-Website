@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const HandShake = () => {
   return (
-    <div className="flex max-w-7xl mt-80 mb-52">
+    <div className="flex max-w-7xl mt-80 mb-52" data-aos="fade-up">
       <div className="flex flex-1 items-center justify-center">
         <Image src={HandImg} alt="handshake" />
       </div>

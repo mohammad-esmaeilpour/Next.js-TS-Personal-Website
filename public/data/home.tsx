@@ -5,7 +5,7 @@ import Abtinazma from "../img/project/abtin-azma.jpeg";
 // introduction
 export const introData: IIntro = {
   subTitle: "I am Mohammad Esmaeilpour My perspective on website development",
-  title: "high quality frontend development with React + typescript",
+  title: "Experienced Frontend Developer",
 };
 
 // company data
