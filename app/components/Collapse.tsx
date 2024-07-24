@@ -9,13 +9,13 @@ const Collapse = ({ title, des }: ICollapse) => {
   return (
     <div
       tabIndex={0}
-      className="collapse collapse-arrow border-b rounded-none my-5"
+      className="collapse collapse-arrow border border-[#eaeaea] m-2"
     >
-      <h3 className="collapse-title text-4xl font-customeBold text-gray-800">
+      <h4 className="collapse-title font-semibold text-xl leading-8 text-[#000] tracking-[-0.04em]">
         {title}
-      </h3>
+      </h4>
       <div className="collapse-content">
-        <p>{des}</p>
+        <p className="text-base">{des}</p>
       </div>
     </div>
   );

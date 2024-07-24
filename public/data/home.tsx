@@ -1,4 +1,4 @@
-import { TitleDes, TitleDesSub } from "@/app/interface/global";
+import { TitleDesSub } from "@/app/interface/global";
 import { ICompany, IIntro, ISkills, ISlider } from "@/app/interface/home";
 import Abtinazma from "../img/project/abtin-azma.jpeg";
 
@@ -7,45 +7,6 @@ export const introData: IIntro = {
   subTitle: "I am Mohammad Esmaeilpour My perspective on website development",
   title: "Experienced Frontend Developer",
 };
-
-// company data
-export const companyData: Array<ICompany> = [
-  {
-    imgSrc: "/img/project/abtin-azma.jpeg",
-    link: "#",
-    id: 1,
-  },
-  {
-    imgSrc: "/img/project/v-user.jpeg",
-    link: "#",
-    id: 2,
-  },
-  {
-    imgSrc: "/img/project/formulist.jpeg",
-    link: "#",
-    id: 3,
-  },
-  {
-    imgSrc: "/img/project/mr-hami.jpeg",
-    link: "#",
-    id: 4,
-  },
-  {
-    imgSrc: "/img/project/salam-siman.jpeg",
-    link: "#",
-    id: 5,
-  },
-  {
-    imgSrc: "/img/project/abr-host.jpeg",
-    link: "#",
-    id: 6,
-  },
-  {
-    imgSrc: "/img/project/abtin-chem.jpeg",
-    link: "#",
-    id: 7,
-  },
-];
 
 // skills
 export const skillsData: ISkills = {
@@ -235,46 +196,46 @@ export const aboutMeData: TitleDesSub = {
   des: "Hi 👋, I am Mohammad Esmaeilpour , 23 years old. I am a website developer who works as a front-end developer (React). I am responsible for the tasks entrusted to me and eager to learn in this field. I have experience working in a programming team where I have had good experiences and I have a spirit for team work and I am interested in group work.",
 };
 
-// slider
-export const sliderData: ISlider = {
-  subTitle: "Featured Projects",
-  title: "A showcase of my latest project",
-  items: [
-    {
-      title: "react 1",
-      des: "react",
-      link: "/",
-      img: "/asset/img/project/3d-room.jpeg",
-    },
-    {
-      title: "react 2",
-      des: "react",
-      link: "/",
-      img: "/asset/img/project/tabs.jpeg",
-    },
-    {
-      title: "react 3",
-      des: "react",
-      link: "/",
-      img: "/asset/img/project/dog-react.jpeg",
-    },
-    {
-      title: "react 4",
-      des: "react",
-      link: "/",
-      img: "/asset/img/project/3d-room.jpeg",
-    },
-    {
-      title: "react 4",
-      des: "react",
-      link: "/",
-      img: "/asset/img/project/3d-room.jpeg",
-    },
-  ],
-};
+// timeline
+export const timelineData = [
+  {
+    dataAos: "fade-up",
+    timelineDir: "start",
+    title: "Type Safety",
+    description: `Utilizing TypeScript to enhance code reliability and maintainability.`,
+  },
+  {
+    dataAos: "fade-left",
+    timelineDir: "end",
+    title: "Performance Optimization",
+    description:
+      "Leveraging Next.js for server-side rendering and static site generation.",
+  },
+  {
+    dataAos: "fade-right",
+    timelineDir: "start",
+    title: "Modern Styling",
+    description:
+      "Applying Tailwind CSS and MUI for consistent and accessible designs.",
+  },
+  {
+    dataAos: "fade-left",
+    timelineDir: "end",
+    title: "Responsive Design",
+    description:
+      "Creating layouts that adapt seamlessly to various screen sizes.",
+  },
+  {
+    dataAos: "fade-down",
+    timelineDir: "start",
+    title: "Best Practices",
+    description:
+      "Adhering to industry standards and continuously learning cutting-edge techniques.",
+  },
+];
 
 // faq
-export const faqData: TitleDes[] = [
+export const faqData = [
   {
     title: "When did my activity in this field start?",
     des: "My activity in the field of frontend development started in September 2020 and I started working as a web developer and I was doing this work as a self-study and after 3 months, I got an internship position at the virtual user company. I worked in this company for 2 years, 4 months as an intern and the rest as a frontend developer.",

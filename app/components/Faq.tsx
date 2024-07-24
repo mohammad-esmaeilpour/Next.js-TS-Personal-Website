@@ -4,7 +4,7 @@ import Collapse from "./Collapse";
 
 const Faq = () => {
   return (
-    <div className="mx-10 my-64">
+    <div className="mx-10 mt-64 mb-20">
       <div>
         {faqData.map((item, index) => (
           <Collapse key={index} title={item.title} des={item.des} />

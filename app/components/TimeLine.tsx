@@ -1,141 +1,63 @@
+import { timelineData } from "@/public/data/home";
+import { aboutMeData } from "@/public/data/home";
+import Image from "next/image";
 import React from "react";
+import mamad from "@/public/img/ui/43698.jpg";
 
 const TimeLine = () => {
   return (
-    <ul className="timeline timeline-vertical px-20 my-32">
-      <li>
-        <div
-          className="timeline-start timeline-box my-10 flex flex-col gap-6 py-5"
-          data-aos="fade-right"
-        >
-          Performance Optimization
-          <div>
-            Leveraging Next.js for server-side rendering and static site
-            generation, ensuring lightning-fast load times and smooth user
-            experiences.
-          </div>
+    <div className="mt-44 bg-gradient-to-b from-transparent via-gray-50/50 to-gray-50">
+      <div className="max-w-7xl mx-auto text-center">
+        <div className="flex-1 flex flex-col">
+          <h4>Specializing in Next.js, React, TypeScript, Tailwind, and MUI</h4>
+          <h2>Crafting Exceptional Frontend Experiences</h2>
         </div>
-        <div className="timeline-middle">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-            className="text-primary h-5 w-5"
-          >
-            <path
-              fillRule="evenodd"
-              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-              clipRule="evenodd"
-            />
-          </svg>
+        <div className="flex justify-center gap-4 mt-10">
+          <span className="inline-flex items-center rounded-md bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">
+            Typescript
+          </span>
+          <span className="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-700 ring-1 ring-inset ring-yellow-600/20">
+            Javascript
+          </span>
+          <span className="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">
+            Next js
+          </span>
+          <span className="inline-flex items-center rounded-md bg-indigo-50 px-2 py-1 text-xs font-medium text-indigo-700 ring-1 ring-inset ring-indigo-700/10">
+            React
+          </span>
+          <span className="inline-flex items-center rounded-md bg-purple-50 px-2 py-1 text-xs font-medium text-purple-700 ring-1 ring-inset ring-purple-700/10">
+            Redux
+          </span>
+          <span className="inline-flex items-center rounded-md bg-indigo-50 px-2 py-1 text-xs font-medium text-indigo-700 ring-1 ring-inset ring-indigo-700/10">
+            Tailwind CSS
+          </span>
+          <span className="inline-flex items-center rounded-md bg-sky-50 px-2 py-1 text-xs font-medium text-sky-700 ring-1 ring-inset ring-indigo-700/10">
+            Material UI
+          </span>
         </div>
-        <hr className="bg-primary" />
-      </li>
-      <li>
-        <hr className="bg-primary" />
-        <div className="timeline-middle">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-            className="text-primary h-5 w-5"
-          >
-            <path
-              fillRule="evenodd"
-              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-              clipRule="evenodd"
-            />
-          </svg>
-        </div>
-        <div
-          className="timeline-end timeline-box my-10 py-10"
-          data-aos="fade-left"
-        >
-          Type Safety
-          <div>
-            Leveraging Next.js for server-side rendering and static site
-            generation, ensuring lightning-fast load times and smooth user
-            experiences.
-          </div>
-        </div>
-        <hr className="bg-primary" />
-      </li>
-      <li>
-        <hr className="bg-primary" />
-        <div className="timeline-start timeline-box" data-aos="fade-right">
-          Modern Styling
-          <div>
-            Applying Tailwind CSS for rapid, consistent styling and MUI for a
-            cohesive, accessible component library, delivering aesthetically
-            pleasing and functional designs.
-          </div>
-        </div>
-        <div className="timeline-middle">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-            className="text-primary h-5 w-5"
-          >
-            <path
-              fillRule="evenodd"
-              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-              clipRule="evenodd"
-            />
-          </svg>
-        </div>
-        <hr />
-      </li>
-      <li>
-        <hr />
-        <div className="timeline-middle">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-            className="h-5 w-5"
-          >
-            <path
-              fillRule="evenodd"
-              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-              clipRule="evenodd"
-            />
-          </svg>
-        </div>
-        <div className="timeline-end timeline-box" data-aos="fade-left">
-          Responsive Design
-          <div>
-            Creating layouts that adapt seamlessly to various screen sizes,
-            ensuring a flawless experience across devices.
-          </div>
-        </div>
-        <hr />
-      </li>
-      <li>
-        <hr />
-        <div className="timeline-start timeline-box" data-aos="fade-right">
-          Best Practices
-          <div>
-            Adhering to industry standards and continuously learning to
-            implement cutting-edge techniques and technologies.
-          </div>
-        </div>
-        <div className="timeline-middle">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-            className="h-5 w-5"
-          >
-            <path
-              fillRule="evenodd"
-              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-              clipRule="evenodd"
-            />
-          </svg>
-        </div>
-      </li>
-    </ul>
+      </div>
+      <ul className="timeline timeline-vertical px-32 mt-20">
+        {timelineData.map((item) => (
+          <li key={item.title} className="my-4">
+            <div
+              className={`timeline-${item.timelineDir} timeline-box flex flex-col gap-5 py-5 text-xl font-semibold leading-8 text-[#000] tracking-[-0.04em] relative`}
+              data-aos={item.dataAos}
+            >
+              {item.timelineDir === "start" && item.dataAos !== "fade-down" && (
+                <div className="absolute left-full top-1/2 bg-transparent border-r border-t rounded-tr-xl w-56 h-full"></div>
+              )}
+              {item.timelineDir === "end" && (
+                <div className="absolute right-full top-1/2 bg-transparent border-l border-t rounded-tl-xl w-56 h-full"></div>
+              )}
+              {item.title}
+              <p className="leading-[1.5] text-base tracking-[-0.01em]">
+                {item.description}
+              </p>
+            </div>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 };
 

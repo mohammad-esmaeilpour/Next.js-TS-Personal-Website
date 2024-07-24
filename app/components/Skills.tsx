@@ -9,7 +9,6 @@ import {
   Autoplay,
 } from "swiper/modules";
 import { skillsData } from "@/public/data/home";
-import { Fragment } from "react";
 
 const Skills = () => {
   return (

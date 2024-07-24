@@ -1,43 +1,31 @@
-import Intro from "./components/Intro";
+import Hero from "./components/Hero";
 import Skills from "./components/Skills";
-import AboutMe from "./components/AboutMe";
 import Faq from "./components/Faq";
-import TopSkills from "./components/TopSkills";
-import HandShake from "./components/HandShake";
 import Aos from "./components/Aos";
 import TimeLine from "./components/TimeLine";
+import { Fragment } from "react";
+import Footer from "./components/Footer";
+import AboutMe from "./components/AboutMe";
+import Portfolio from "./components/Portfolio";
 
 export default function Home() {
   return (
-    <>
-      {/* scroll animation */}
+    <Fragment>
       <Aos />
 
-      {/* Intro */}
-      <Intro />
+      <Hero />
 
-      {/* Skills */}
       <Skills />
-      {/* Company */}
-      {/* <Company /> */}
 
-      {/* about me */}
       <AboutMe />
-
-      {/* Slider */}
-      {/* <Slider data={sliderData} /> */}
-      <TopSkills />
 
       <TimeLine />
 
-      {/* faq */}
+      <Portfolio />
+
       <Faq />
 
-      {/* HandShake */}
-      <HandShake />
-
-      {/* Float nav */}
-      {/* <FloatNav /> */}
-    </>
+      <Footer />
+    </Fragment>
   );
 }

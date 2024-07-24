@@ -4,27 +4,43 @@
 
 @layer base {
   * {
-    @apply font-customeLight;
+    @apply font-sans text-[#666] font-normal;
   }
-  h1,
+  h1 {
+    @apply font-extrabold;
+    background: linear-gradient(180deg, #555, #000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: max(48px, min(5vw, 76px));
+    line-height: 1;
+    letter-spacing: -0.05em;
+  }
   h2 {
-    @apply font-customeBold text-[#1b1b1b];
-  }
-  h2 {
-    @apply text-5xl;
-  }
-  h4 {
-    @apply text-[#007fff];
-  }
-  p {
-    @apply text-xl my-6 text-[#1b1b1bde] text-justify leading-7 tracking-wider;
+    font-size: 32px;
+    line-height: 1.25;
+    letter-spacing: -0.04em;
+    font-weight: 700;
+    color: #111;
+    --text-gradient: linear-gradient(180deg, #555, #000);
+    background: linear-gradient(180deg, #555, #000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   a {
-    @apply tracking-wider;
+    @apply rounded-sm transition-all text-sm;
   }
-
-  /* main {
-    background-image: url("../public/img/ui/smooth.png");
-    background-repeat: no-repeat;
-  } */
+  p {
+    font-size: max(15px, min(2vw, 20px));
+    line-height: 1.8;
+    letter-spacing: -0.01em;
+  }
+  .text-gradient {
+    @apply font-extrabold;
+    background: linear-gradient(180deg, #555, #000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: max(48px, min(5vw, 76px));
+    line-height: 1;
+    letter-spacing: -0.05em;
+  }
 }

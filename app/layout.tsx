@@ -1,21 +1,10 @@
 import Navigation from "./components/Navigation";
-import { navData } from "@/public/data/layout";
-import localFont from "next/font/local";
+import { GeistSans } from "geist/font/sans";
+import { GeistMono } from "geist/font/mono";
 
 // global styles
 import "./globals.css";
 import "aos/dist/aos.css";
-
-// fonts
-const customeLight = localFont({
-  src: "../public/fonts/light.otf",
-  variable: "--font-customeLight",
-});
-
-const customeBold = localFont({
-  src: "../public/fonts/bold.otf",
-  variable: "--font-customeBold",
-});
 
 export default function RootLayout({
   children,
@@ -23,11 +12,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body
-        className={`${customeLight.variable} ${customeBold.variable} overflow-x-hidden`}
-      >
-        <Navigation data={navData} />
+    <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`}>
+      <body className="overflow-x-hidden">
+        <Navigation />
         <main className="container mx-auto">{children}</main>
       </body>
     </html>
