@@ -1,3 +1,5 @@
+import { StaticImageData } from "next/image";
+
 // this is global interface using for every interface has Title and Description
 export interface TitleDes {
   title: string;
@@ -6,7 +8,7 @@ export interface TitleDes {
 
 // this is global interface using for every interface has Title and Description and Image
 export interface TitleDesImg extends TitleDes {
-  img: string;
+  img: string | StaticImageData;
 }
 
 // this is global interface using for every interface has Title and Description and subTitle

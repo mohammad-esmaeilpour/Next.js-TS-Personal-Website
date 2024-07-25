@@ -26,6 +26,12 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+  h3,
+  h4 {
+    @apply text-base font-bold text-[#171717];
+    line-height: 20px;
+    letter-spacing: -0.01em;
+  }
   a {
     @apply rounded-sm transition-all text-sm;
   }

@@ -1,15 +1,13 @@
 import { TitleDesSub } from "@/app/interface/global";
-import { ICompany, IIntro, ISkills, ISlider } from "@/app/interface/home";
-import Abtinazma from "../img/project/abtin-azma.jpeg";
 
 // introduction
-export const introData: IIntro = {
+export const introData = {
   subTitle: "I am Mohammad Esmaeilpour My perspective on website development",
   title: "Experienced Frontend Developer",
 };
 
 // skills
-export const skillsData: ISkills = {
+export const skillsData = {
   title: "Skills",
   skills: [
     {
