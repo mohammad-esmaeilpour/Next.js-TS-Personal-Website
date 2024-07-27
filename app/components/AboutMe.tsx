@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import mamad from "@/public/img/ui/human-min.svg";
 import { homeHeadings } from "@/public/data/home";
+import mamad from "@/public/img/ui/mohammad.png";
 
 const AboutMe = () => {
   return (
