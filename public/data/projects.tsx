@@ -3,6 +3,20 @@ import room from "@/public/img/projects/3d-room.png";
 import roboxonWebsite from "@/public/img/projects/roboxon-website.png";
 import roboxonDashboard from "@/public/img/projects/roboxon-dashboard.png";
 
+export const projectsSeo = {
+  title: "Projects by Mohammad Esmaeilpour | React, Next.js, TypeScript",
+  metadescription:
+    "Explore the projects developed by Mohammad Esmaeilpour, showcasing expertise in React, Next.js, TypeScript, and Tailwind CSS.",
+};
+
+export const projectsHeadings = {
+  h1: "My Projects",
+  h2: {
+    first: "Project Names",
+    second: "Project Names",
+  },
+};
+
 export const projectCardData: IProjectsCard[] = [
   {
     title: "3D room",

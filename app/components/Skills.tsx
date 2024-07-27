@@ -8,7 +8,7 @@ import {
   A11y,
   Autoplay,
 } from "swiper/modules";
-import { skillsData } from "@/public/data/home";
+import { homeData } from "@/public/data/home";
 
 const Skills = () => {
   return (
@@ -21,7 +21,7 @@ const Skills = () => {
       onSlideChange={() => console.log("slide change")}
       className="max-w-xl"
     >
-      {skillsData.skills.map((item) => (
+      {homeData.skills.map((item) => (
         <SwiperSlide key={item.title}>{item.icon}</SwiperSlide>
       ))}
     </Swiper>

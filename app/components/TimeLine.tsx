@@ -1,15 +1,12 @@
-import { timelineData } from "@/public/data/home";
-import { aboutMeData } from "@/public/data/home";
-import Image from "next/image";
+import { homeData } from "@/public/data/home";
 import React from "react";
-import mamad from "@/public/img/ui/43698.jpg";
 
 const TimeLine = () => {
   return (
     <div className="mt-44 bg-gradient-to-b from-transparent via-gray-50/50 to-gray-50">
       <div className="max-w-7xl mx-auto text-center">
         <div className="flex-1 flex flex-col">
-          <h4>Specializing in Next.js, React, TypeScript, Tailwind, and MUI</h4>
+          <p>Specializing in Next.js, React, TypeScript, Tailwind, and MUI</p>
           <h2>Crafting Exceptional Frontend Experiences</h2>
         </div>
         <div className="flex justify-center gap-4 mt-10">
@@ -37,7 +34,7 @@ const TimeLine = () => {
         </div>
       </div>
       <ul className="timeline timeline-vertical px-32 mt-20">
-        {timelineData.map((item) => (
+        {homeData.timeline.map((item) => (
           <li key={item.title} className="my-4">
             <div
               className={`timeline-${item.timelineDir} timeline-box flex flex-col gap-5 py-5 text-xl font-semibold leading-8 text-[#000] tracking-[-0.04em] relative`}
@@ -49,7 +46,7 @@ const TimeLine = () => {
               {item.timelineDir === "end" && (
                 <div className="absolute right-full top-1/2 bg-transparent border-l border-t rounded-tl-xl w-56 h-full"></div>
               )}
-              {item.title}
+              <h3>{item.title}</h3>
               <p className="leading-[1.5] text-base tracking-[-0.01em]">
                 {item.description}
               </p>

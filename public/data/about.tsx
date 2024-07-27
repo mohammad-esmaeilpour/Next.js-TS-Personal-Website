@@ -1,8 +1,19 @@
-// import { IAboutIntro } from "../../src/interface/about";
+export const aboutSeo = {
+  title: "About Mohammad Esmaeilpour | Frontend Developer",
+  metadescription:
+    "Learn more about Mohammad Esmaeilpour, a frontend developer specializing in React, Next.js, TypeScript, and Tailwind CSS with 3 years of experience.",
+};
+
+export const aboutHeadings = {
+  h1: "About Me",
+  h2: {
+    first: "My Background",
+    second: "Skills and Technologies",
+    third: "Freelancing on Upwork",
+  },
+};
 
 export const aboutIntroData = {
-  subTitle: "About Me",
-  title: "I am Mohammad Esmaeilpour",
   des: `Hello there! My name is Mohammad Esmaeilpour, and I am a passionate front-end developer specializing in React. With 24 years of experience, I have honed my skills in creating captivating and user-friendly websites. I am dedicated to delivering high-quality work and take pride in my attention to detail.
 
 Throughout my career, I have been fortunate to work in collaborative programming teams, where I have gained valuable experience and fostered a strong team spirit. I thrive in group settings and believe that teamwork enhances creativity and problem-solving.

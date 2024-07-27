@@ -1,12 +1,12 @@
-import { faqData } from "@/public/data/home";
 import React from "react";
 import Collapse from "./Collapse";
+import { homeData } from "@/public/data/home";
 
 const Faq = () => {
   return (
-    <div className="mx-10 mt-64 mb-20">
+    <div className="mx-20 mt-20 mb-20">
       <div>
-        {faqData.map((item, index) => (
+        {homeData.faq.map((item, index) => (
           <Collapse key={index} title={item.title} des={item.des} />
         ))}
       </div>

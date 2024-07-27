@@ -4,13 +4,18 @@ import Faq from "./components/Faq";
 import Aos from "./components/Aos";
 import TimeLine from "./components/TimeLine";
 import { Fragment } from "react";
-import Footer from "./components/Footer";
 import AboutMe from "./components/AboutMe";
 import Portfolio from "./components/Portfolio";
+import Head from "next/head";
+import { homeSeo } from "@/public/data/home";
 
 export default function Home() {
   return (
     <Fragment>
+      <Head>
+        <title>{homeSeo.title}</title>
+        <meta name="description" content={homeSeo.metadescription} />
+      </Head>
       <Aos />
 
       <Hero />
@@ -24,8 +29,6 @@ export default function Home() {
       <Portfolio />
 
       <Faq />
-
-      <Footer />
     </Fragment>
   );
 }

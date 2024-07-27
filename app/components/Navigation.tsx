@@ -26,7 +26,7 @@ const Navigation = () => {
         ))}
       </ul>
 
-      <ToggleTheme />
+      {/* <ToggleTheme /> */}
     </nav>
   );
 };

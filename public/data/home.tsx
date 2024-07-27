@@ -1,14 +1,24 @@
-import { TitleDesSub } from "@/app/interface/global";
-
-// introduction
-export const introData = {
-  subTitle: "I am Mohammad Esmaeilpour My perspective on website development",
-  title: "Experienced Frontend Developer",
+export const homeSeo = {
+  title:
+    "Mohammad Esmaeilpour | Frontend Developer - React, Next.js, TypeScript",
+  metadescription:
+    "Hi, I'm Mohammad Esmaeilpour, a specialist in React, Next.js, TypeScript, and Tailwind CSS with 3 years of experience. Available for freelance projects on Upwork",
 };
 
-// skills
-export const skillsData = {
-  title: "Skills",
+export const homeHeadings = {
+  h1: "Mohammad Esmaeilpour Frontend Developer",
+  h2: {
+    first: "Specializing in React, Next.js, TypeScript",
+    second: "Available for Hire on Upwork",
+    third: "Work Highlights",
+  },
+};
+
+export const homeData = {
+  heroDescription:
+    "Crafting Exceptional Frontend Experiences with modern technologies",
+  aboutMeDescription:
+    "Hello👋 Im Mohammad Esmaeilpour, a passionate and dedicated frontend developer with 25 years of life experience. I specialize in creating dynamic, user-friendly web applications using the latest technologies.",
   skills: [
     {
       icon: (
@@ -185,69 +195,58 @@ export const skillsData = {
       title: "Git",
     },
   ],
+  timeline: [
+    {
+      dataAos: "fade-up",
+      timelineDir: "start",
+      title: "Type Safety",
+      description: `Utilizing TypeScript to enhance code reliability and maintainability.`,
+    },
+    {
+      dataAos: "fade-left",
+      timelineDir: "end",
+      title: "Performance Optimization",
+      description:
+        "Leveraging Next.js for server-side rendering and static site generation.",
+    },
+    {
+      dataAos: "fade-right",
+      timelineDir: "start",
+      title: "Modern Styling",
+      description:
+        "Applying Tailwind CSS and MUI for consistent and accessible designs.",
+    },
+    {
+      dataAos: "fade-left",
+      timelineDir: "end",
+      title: "Responsive Design",
+      description:
+        "Creating layouts that adapt seamlessly to various screen sizes.",
+    },
+    {
+      dataAos: "fade-down",
+      timelineDir: "start",
+      title: "Best Practices",
+      description:
+        "Adhering to industry standards and continuously learning cutting-edge techniques.",
+    },
+  ],
+  faq: [
+    {
+      title: "When did my activity in this field start?",
+      des: "My activity in the field of frontend development started in September 2020 and I started working as a web developer and I was doing this work as a self-study and after 3 months, I got an internship position at the virtual user company. I worked in this company for 2 years, 4 months as an intern and the rest as a frontend developer.",
+    },
+    {
+      title: "When did my activity in this field start?",
+      des: "My activity in the field of frontend development started in September 2020 and I started working as a web developer and I was doing this work as a self-study and after 3 months, I got an internship position at the virtual user company. I worked in this company for 2 years, 4 months as an intern and the rest as a frontend developer.",
+    },
+    {
+      title: "When did my activity in this field start?",
+      des: "My activity in the field of frontend development started in September 2020 and I started working as a web developer and I was doing this work as a self-study and after 3 months, I got an internship position at the virtual user company. I worked in this company for 2 years, 4 months as an intern and the rest as a frontend developer.",
+    },
+    {
+      title: "When did my activity in this field start?",
+      des: "My activity in the field of frontend development started in September 2020 and I started working as a web developer and I was doing this work as a self-study and after 3 months, I got an internship position at the virtual user company. I worked in this company for 2 years, 4 months as an intern and the rest as a frontend developer.",
+    },
+  ],
 };
-
-// about me
-export const aboutMeData: TitleDesSub = {
-  subTitle: "About Me",
-  title: "I am Mohammad Esmaeilpour",
-  des: "Hi 👋, I am Mohammad Esmaeilpour , 23 years old. I am a website developer who works as a front-end developer (React). I am responsible for the tasks entrusted to me and eager to learn in this field. I have experience working in a programming team where I have had good experiences and I have a spirit for team work and I am interested in group work.",
-};
-
-// timeline
-export const timelineData = [
-  {
-    dataAos: "fade-up",
-    timelineDir: "start",
-    title: "Type Safety",
-    description: `Utilizing TypeScript to enhance code reliability and maintainability.`,
-  },
-  {
-    dataAos: "fade-left",
-    timelineDir: "end",
-    title: "Performance Optimization",
-    description:
-      "Leveraging Next.js for server-side rendering and static site generation.",
-  },
-  {
-    dataAos: "fade-right",
-    timelineDir: "start",
-    title: "Modern Styling",
-    description:
-      "Applying Tailwind CSS and MUI for consistent and accessible designs.",
-  },
-  {
-    dataAos: "fade-left",
-    timelineDir: "end",
-    title: "Responsive Design",
-    description:
-      "Creating layouts that adapt seamlessly to various screen sizes.",
-  },
-  {
-    dataAos: "fade-down",
-    timelineDir: "start",
-    title: "Best Practices",
-    description:
-      "Adhering to industry standards and continuously learning cutting-edge techniques.",
-  },
-];
-
-// faq
-export const faqData = [
-  {
-    title: "When did my activity in this field start?",
-    des: "My activity in the field of frontend development started in September 2020 and I started working as a web developer and I was doing this work as a self-study and after 3 months, I got an internship position at the virtual user company. I worked in this company for 2 years, 4 months as an intern and the rest as a frontend developer.",
-  },
-  {
-    title: "When did my activity in this field start?",
-    des: "My activity in the field of frontend development started in September 2020 and I started working as a web developer and I was doing this work as a self-study and after 3 months, I got an internship position at the virtual user company. I worked in this company for 2 years, 4 months as an intern and the rest as a frontend developer.",
-  },
-  {
-    title: "When did my activity in this field start?",
-    des: "My activity in the field of frontend development started in September 2020 and I started working as a web developer and I was doing this work as a self-study and after 3 months, I got an internship position at the virtual user company. I worked in this company for 2 years, 4 months as an intern and the rest as a frontend developer.",
-  },
-  {
-    title: "When did my activity in this field start?",
-    des: "My activity in the field of frontend development started in September 2020 and I started working as a web developer and I was doing this work as a self-study and after 3 months, I got an internship position at the virtual user company. I worked in this company for 2 years, 4 months as an intern and the rest as a frontend developer.",
-  },
-];
