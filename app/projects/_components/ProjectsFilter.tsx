@@ -48,7 +48,7 @@ const ProjectsFilter: React.FC<ProjectsFilterProps> = ({
         )}
       </div>
       <div className="form-control mt-10">
-        {projectsData.filterData.map((item) => (
+        {projectsData.projectsFilter.map((item) => (
           <label
             key={item.title}
             className="label cursor-pointer items-center justify-start gap-x-3 mb-2"
@@ -59,9 +59,9 @@ const ProjectsFilter: React.FC<ProjectsFilterProps> = ({
               checked={selectedFilters.includes(item.tag)}
               onChange={() => handleCheckboxChange(item.tag)}
             />
-            <span className="label-text flex gap-x-2 items-center">
+            <span className="label-text flex ms-2 gap-x-2 items-center">
               {item.icon}
-              <div>{item.title}</div>
+              {item.title}
             </span>
           </label>
         ))}

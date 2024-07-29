@@ -1,9 +1,11 @@
 import Image from "next/image";
 import React from "react";
 import GithubIcon from "../icons/GithubIcon";
+import ExternalLinkIcon from "../icons/ExternalLinkIcon";
+import { TProjectsInfo } from "@/app/types/projects";
 
 type Props = {
-  data: any;
+  data: TProjectsInfo;
   modalRef: any;
 };
 
@@ -11,26 +13,32 @@ const Modal = ({ data, modalRef }: Props) => {
   return (
     <dialog ref={modalRef} className="modal w-full">
       <div className="modal-box w-10/12 max-w-7xl pt-10">
-        {/* <h3 className="text-3xl">{data.title}</h3> */}
-        <div className="grid grid-cols-12 items-start gap-10 px-10">
-          <div className="col-span-5 pe-10 sticky top-0 left-0">
-            <h3 className="text-gradient">3D Room</h3>
-            <p className="text-sm font-light mt-5">{data.shortDescription}</p>
-            <div className="mt-7">
-              <div className="flex justify-between border-b pb-2 mb-3 text-sm">
-                <span>language</span>
-                <span>Next js</span>
-              </div>
-              <div className="flex justify-between border-b pb-3 mb-2 text-sm">
-                <span>CSS</span>
-                <span>Tailwind CSS</span>
+        <div className="grid grid-cols-12 gap-10">
+          <div className="col-span-5 flex flex-col justify-between pe-10 sticky top-0 custome-heigh">
+            <div>
+              <h3 className="text-5xl text-gradient">{data.title}</h3>
+              <p className="text-sm font-light mt-10">{data.description}</p>
+              <div className="mt-7">
+                {data.introductionList.map((item) => (
+                  <div
+                    key={item.key}
+                    className="flex justify-between border-b pb-2 mb-3 text-sm"
+                  >
+                    <span>{item.key}</span>
+                    <span>{item.value}</span>
+                  </div>
+                ))}
               </div>
             </div>
-            <div className="mt-10 flex gap-4">
-              <div className="btn">Live Preview</div>
-              <div className="btn btn-neutral text-white">
+
+            <div className="mt-10 flex gap-3">
+              <div className="btn btn-neutral flex-1 justify-between">
+                Live Preview
+                <ExternalLinkIcon color="white" size={18} />
+              </div>
+              <div className="btn flex-1 justify-between">
                 Github
-                <GithubIcon size={18} color="white" />
+                <GithubIcon size={18} />
               </div>
             </div>
           </div>
@@ -38,9 +46,39 @@ const Modal = ({ data, modalRef }: Props) => {
             <Image
               src={data.img}
               alt="3d room"
-              className="rounded-xl h-80 object-cover shadow-[0 8px 30px rgba(0,0,0,.12)]"
+              className="rounded-xl h-96 object-cover shadow-xl"
             />
-            <p className="py-4">{data.longDescription}</p>
+
+            <h4 className="text-gradient text-2xl mt-10 mb-3">Overview</h4>
+            <p>{data.overview}</p>
+            <div>
+              <h4 className="text-gradient text-2xl mb-3 mt-8">Features</h4>
+              <ul className="space-y-3">
+                {data.features?.map((item: string) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h4 className="text-gradient text-2xl mt-10 mb-3">
+                Technologies Used
+              </h4>
+              <ul className="space-y-3">
+                {data.technologies.map((item: string) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </div>
+            {data.packages && (
+              <div>
+                <h4 className="text-gradient text-2xl mt-10 mb-3">
+                  Package Used
+                </h4>
+                {data?.packages?.map((item: string) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </div>
+            )}
           </div>
         </div>
         <div className="modal-action">

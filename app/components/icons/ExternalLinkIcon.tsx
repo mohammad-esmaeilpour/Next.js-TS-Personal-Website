@@ -1,7 +1,7 @@
 import { IconProps } from "@/app/types/global";
 import React from "react";
 
-const ExternalLinkIcon = ({ size }: IconProps) => {
+const ExternalLinkIcon = ({ size, color }: IconProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -9,14 +9,19 @@ const ExternalLinkIcon = ({ size }: IconProps) => {
       height={size}
       viewBox="0 0 24 24"
     >
-      <path
-        fill="none"
-        stroke="currentColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="1.5"
-        d="M21 3h-6.75M21 3v6.75M21 3l-8.25 8.25M9.4 3c-2.24 0-3.36 0-4.216.436a4 4 0 0 0-1.748 1.748C3 6.04 3 7.16 3 9.4v5.2c0 2.24 0 3.36.436 4.216a4 4 0 0 0 1.748 1.748C6.04 21 7.16 21 9.4 21h5.2c2.24 0 3.36 0 4.216-.436a4 4 0 0 0 1.748-1.748C21 17.96 21 16.84 21 14.6v-1.1"
-      />
+      <g fill="none" stroke={color || "black"} stroke-width="1.5">
+        <path
+          stroke-linecap="round"
+          stroke-miterlimit="10"
+          d="m15.813 8.187l-7.626 7.626"
+        />
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M16.111 15.155V8.917a1.028 1.028 0 0 0-1.028-1.028H8.845"
+        />
+        <rect width="18.5" height="18.5" x="2.75" y="2.75" rx="6" />
+      </g>
     </svg>
   );
 };
