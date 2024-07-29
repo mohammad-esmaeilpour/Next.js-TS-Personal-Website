@@ -3,7 +3,7 @@ import React from "react";
 
 const TimeLine = () => {
   return (
-    <div className="mt-44 bg-gradient-to-b from-transparent via-gray-50/50 to-gray-50">
+    <div className="mt-44">
       <div className="max-w-7xl mx-auto text-center">
         <div className="flex-1 flex flex-col">
           <p>Specializing in Next.js, React, TypeScript, Tailwind, and MUI</p>

@@ -1,4 +1,4 @@
-import { projectCardData, projectFilterData } from "@/public/data/projects";
+import { projectsData } from "@/public/data/projects";
 import React from "react";
 
 interface ProjectsFilterProps {
@@ -48,7 +48,7 @@ const ProjectsFilter: React.FC<ProjectsFilterProps> = ({
         )}
       </div>
       <div className="form-control mt-10">
-        {projectFilterData.map((item) => (
+        {projectsData.filterData.map((item) => (
           <label
             key={item.title}
             className="label cursor-pointer items-center justify-start gap-x-3 mb-2"

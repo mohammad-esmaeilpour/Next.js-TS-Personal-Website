@@ -6,7 +6,7 @@ import mamad from "@/public/img/ui/mohammad.png";
 const AboutMe = () => {
   return (
     <div className="text-center mt-56 mb-96" data-aos="fade-up">
-      <h1 className="max-w-5xl mx-auto">{homeHeadings.h1}</h1>
+      <h2 className="max-w-5xl mx-auto">{homeHeadings.h2.first}</h2>
       <div className="flex max-w-4xl mx-auto relative min-h-[600px] bg-gradient-to-b from-transparent via-transparent to-white">
         <Image
           src={mamad}

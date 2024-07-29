@@ -1,12 +1,12 @@
 import { homeHeadings } from "@/public/data/home";
-import { projectCardData } from "@/public/data/projects";
+import { projectsData } from "@/public/data/projects";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 const Portfolio = () => {
   return (
-    <div className="py-40 text-center bg-gradient-to-b from-gray-50 via-gray-50/50 to-transparent">
+    <div className="py-40 text-center bg-gradient-to-b from-transparent via-gray-50/50 to-gray-50">
       <div className="flex items-baseline justify-center gap-5">
         <h2>{homeHeadings.h2.third}</h2>
         <p>
@@ -15,7 +15,7 @@ const Portfolio = () => {
         </p>
       </div>
       <div className="grid grid-cols-12 gap-4 max-w-6xl mx-auto mt-20">
-        {projectCardData.map((item) => (
+        {projectsData.cardData.map((item) => (
           <div key={item.title} className="col-span-4">
             <div className="card cursor-pointer rounded-md overflow-hidden bg-white border hover:shadow-2xl transition-all">
               <div className="h-44 relative">

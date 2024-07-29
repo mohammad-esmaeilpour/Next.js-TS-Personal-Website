@@ -22,21 +22,4 @@ export interface TitleDesSubImg extends TitleDes {
   img: string;
 }
 
-export interface IBottomNav {
-  title: string;
-  scrollTo: string;
-  icon?: any;
-}
 
-export interface IButtonCustome {
-  text: string;
-  link?: string;
-  icon?: Function;
-  bgcolor?: string | any;
-}
-
-export interface ILogo {
-  link: string;
-  name: string;
-  img: string;
-}

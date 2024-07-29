@@ -5,10 +5,8 @@ import Typewriter from "typewriter-effect";
 
 const Hero = () => {
   return (
-    <div className="text-center mt-48 mb-20">
-      <h1 className="max-w-8xl mx-auto text-gradient">
-        Experiences Frontend developer
-      </h1>
+    <div className="container mx-auto text-center mt-48 mb-20">
+      <h1 className="text-gradient">Experiences Frontend developer</h1>
       <div className="flex gap-3 justify-center flex-wrap">
         <div className="flex flex-1 justify-end text-gradient">
           Specializing in

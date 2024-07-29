@@ -35,7 +35,6 @@
     @apply rounded-sm transition-all text-sm;
   }
   p {
-    font-size: max(15px, min(2vw, 20px));
     line-height: 1.8;
     letter-spacing: -0.01em;
   }

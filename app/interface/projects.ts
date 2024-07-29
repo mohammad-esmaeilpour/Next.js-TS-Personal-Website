@@ -7,6 +7,7 @@ export interface IProjectsCard extends TitleDesImg {
   link: string;
   techIcons: ReactNode[];
   tags: string[];
+  repo?: string;
 }
 
 export interface IProjectsFilter {
