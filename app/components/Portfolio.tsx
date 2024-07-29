@@ -15,7 +15,7 @@ const Portfolio = () => {
         </p>
       </div>
       <div className="grid grid-cols-12 gap-4 max-w-6xl mx-auto mt-20">
-        {projectsData.cardData.map((item) => (
+        {projectsData.projectsInfo.map((item) => (
           <div key={item.title} className="col-span-4">
             <div className="card cursor-pointer rounded-md overflow-hidden bg-white border hover:shadow-2xl transition-all">
               <div className="h-44 relative">
@@ -30,7 +30,7 @@ const Portfolio = () => {
                 <h3 className="font-sans text-base flex items-center">
                   {item.title}
                 </h3>
-                <div className="text-sm font-light">{item.des}</div>
+                <div className="text-sm font-light">{item.description}</div>
                 <div className="flex items-baseline justify-between pb-1">
                   <div className="flex mt-4 items-center gap-2">
                     {item.techIcons.map((icon, index) => (

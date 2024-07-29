@@ -1,4 +1,3 @@
-import { INav } from "@/app/interface/layout";
 
 // link data
 export const navData = {
