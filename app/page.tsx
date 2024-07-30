@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import Hero from "./components/Hero";
 import Skills from "./components/Skills";
 import Faq from "./components/Faq";
@@ -6,16 +7,16 @@ import TimeLine from "./components/TimeLine";
 import { Fragment } from "react";
 import AboutMe from "./components/AboutMe";
 import Portfolio from "./components/Portfolio";
-import Head from "next/head";
 import { homeSeo } from "@/public/data/home";
+
+export const metadata: Metadata = {
+  title: homeSeo.title,
+  description: homeSeo.metadescription,
+};
 
 export default function Home() {
   return (
     <Fragment>
-      <Head>
-        <title>{homeSeo.title}</title>
-        <meta name="description" content={homeSeo.metadescription} />
-      </Head>
       <Aos />
 
       <Hero />

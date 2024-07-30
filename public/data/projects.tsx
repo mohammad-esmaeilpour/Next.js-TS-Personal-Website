@@ -1,7 +1,6 @@
-import { IProjectsCard, IProjectsFilter } from "@/app/interface/projects";
-import room from "@/public/img/projects/3d-room.png";
-import roboxonWebsite from "@/public/img/projects/roboxon-website.png";
-import roboxonDashboard from "@/public/img/projects/roboxon-dashboard.png";
+import room from "@/public/img/projects/3d-room.jpg";
+import roboxonWebsite from "@/public/img/projects/roboxon-website.jpg";
+import roboxonDashboard from "@/public/img/projects/roboxon-dashboard.jpg";
 import JSIcon from "@/app/components/icons/JSIcon";
 import HtmlIcon from "@/app/components/icons/HtmlIcon";
 import CssIcon from "@/app/components/icons/CssIcon";
@@ -13,20 +12,24 @@ import MUIIcon from "@/app/components/icons/MUIIcon";
 import { TProjectData } from "@/app/types/projects";
 
 export const projectsSeo = {
-  title: "Projects by Mohammad Esmaeilpour | React, Next.js, TypeScript",
+  title: "Projects by Mohammad Esmaeilpour - React, Next.js, TypeScript",
   metadescription:
     "Explore the projects developed by Mohammad Esmaeilpour, showcasing expertise in React, Next.js, TypeScript, and Tailwind CSS.",
 };
 
 export const projectsHeadings = {
-  h1: "My Projects",
-  h2: "",
+  h1: {
+    title: "My Projects",
+    description:
+      "Jumpstart your app development process with pre-built solutions from Vercel and our community.",
+  },
+  h2: "Filter by Technology",
 };
 
 export const projectsData: TProjectData = {
   projectsInfo: [
     {
-      title: "3D Room",
+      title: "3D Room using CSS and JavaScript",
       overview:
         "I've created a 3D room using CSS, HTML, and JavaScript, aiming to provide an immersive virtual space that showcases both design aesthetics and interactive functionality.",
       features: [
@@ -62,7 +65,7 @@ export const projectsData: TProjectData = {
       ],
     },
     {
-      title: "Roboxon website",
+      title: "Modern Next.js Responsive Website - Roboxon",
       overview:
         "I developed a modern, responsive website using Next.js, Tailwind CSS, and TypeScript, focusing on performance, scalability, and maintainability. This project showcases my ability to create dynamic, high-quality web applications with a keen eye for design and user experience.",
       features: [
@@ -98,7 +101,7 @@ export const projectsData: TProjectData = {
       tags: ["next", "typescript", "tailwind"],
     },
     {
-      title: "Roboxon Dashboard",
+      title: "High-Performance Dashboard with React and Tailwind CSS",
       overview:
         "I developed a high-performance dashboard for a company, allowing them to efficiently manage users, companies, roles, and permissions. This project spanned over 8 months and involved the use of cutting-edge technologies like React, TypeScript, Tailwind CSS, and Redux. The dashboard significantly improved the company’s operational efficiency and user management capabilities.",
       features: [

@@ -4,6 +4,7 @@ import GithubIcon from "../icons/GithubIcon";
 import ExternalLinkIcon from "../icons/ExternalLinkIcon";
 import { TProjectsInfo } from "@/app/types/projects";
 import CloseIcon from "../icons/CloseIcon";
+import Link from "next/link";
 
 type Props = {
   data: TProjectsInfo;
@@ -24,8 +25,10 @@ const Modal = ({ data, modalRef }: Props) => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 px-6 sm:px-10">
           <div className="col-span-1 lg:col-span-5 flex flex-col justify-between xl:pe-10 lg:sticky top-16 lg:custome-heigh">
             <div>
-              <h3 className="text-5xl text-gradient">{data.title}</h3>
-              <p className="text-sm font-light mt-4 xl:mt-10">{data.overview}</p>
+              <h3 className="text-4xl text-gradient">{data.title}</h3>
+              <p className="text-sm font-light mt-4 xl:mt-10">
+                {data.overview}
+              </p>
               <div className="mt-7">
                 {data.introductionList.map((item) => (
                   <div
@@ -40,15 +43,23 @@ const Modal = ({ data, modalRef }: Props) => {
             </div>
 
             <div className="mt-1 flex flex-col sm:flex-row gap-3">
-              <div className="btn bg-white flex-1 justify-between">
+              <Link
+                target="_blank"
+                href={data.link}
+                className="btn bg-white flex-1 justify-between"
+              >
                 Live Preview
                 <ExternalLinkIcon color="black" size={22} />
-              </div>
+              </Link>
               {data.repository && (
-                <div className="btn bg-white flex-1 justify-between">
+                <Link
+                  target="_blank"
+                  href={data.repository}
+                  className="btn bg-white flex-1 justify-between"
+                >
                   Github
                   <GithubIcon size={22} />
-                </div>
+                </Link>
               )}
             </div>
           </div>
@@ -56,7 +67,7 @@ const Modal = ({ data, modalRef }: Props) => {
             <Image
               src={data.img}
               alt="3d room"
-              className="rounded-xl object-cover shadow-xl"
+              className="rounded-xl object-cover w-full h-96 shadow-xl"
             />
 
             <div>

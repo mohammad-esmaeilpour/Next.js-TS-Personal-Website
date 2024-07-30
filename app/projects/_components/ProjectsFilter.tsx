@@ -1,7 +1,6 @@
-import ChevronDown from "@/app/components/icons/ChevronDown";
 import CloseIcon from "@/app/components/icons/CloseIcon";
 import FilterIcon from "@/app/components/icons/FilterIcon";
-import { projectsData } from "@/public/data/projects";
+import { projectsData, projectsHeadings } from "@/public/data/projects";
 import React from "react";
 
 interface ProjectsFilterProps {
@@ -28,7 +27,7 @@ const ProjectsFilter: React.FC<ProjectsFilterProps> = ({
           tabIndex={0}
           className="m-1 flex justify-between items-center mb-5"
         >
-          Filter By
+          {projectsHeadings.h2}
           <FilterIcon size={18} />
         </div>
         {selectedFilters.length !== 0 && (

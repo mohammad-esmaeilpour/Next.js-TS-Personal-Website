@@ -36,16 +36,15 @@ const ProjectsCards: React.FC<ProjectsCardsProps> = ({
                   src={item.img}
                   alt={item.title}
                   fill
+                  sizes="200"
                   className="object-cover"
                 />
               </div>
               <div className="card-body p-4 pb-3 text-start">
-                <h3 className="font-sans text-base flex items-center">
-                  {item.title}
-                </h3>
-                <p className="text-sm line-clamp-2">{item.overview}</p>
+                <h3 className="flex items-center">{item.title}</h3>
+                <p className="text-sm line-clamp-2 mt-2">{item.overview}</p>
                 <div className="flex items-baseline justify-between pb-1">
-                  <div className="flex mt-4 items-center gap-2">
+                  <div className="flex mt-3.5 items-center gap-2">
                     {item.techIcons.map((icon) => (
                       <span key={icon.key} className="flex items-center gap-1">
                         {icon}

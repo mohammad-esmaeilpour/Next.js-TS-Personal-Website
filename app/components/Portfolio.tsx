@@ -14,7 +14,7 @@ const Portfolio = () => {
           <b> frontend development</b> and design.
         </p>
       </div>
-      <div className="grid grid-cols-12 gap-4 max-w-6xl mx-auto mt-20">
+      <div className="grid grid-cols-12 gap-4 max-w-7xl mx-auto mt-20">
         {projectsData.projectsInfo.map((item) => (
           <div key={item.title} className="col-span-4">
             <div className="card cursor-pointer rounded-md overflow-hidden bg-white border hover:shadow-2xl transition-all">
@@ -27,10 +27,10 @@ const Portfolio = () => {
                 />
               </div>
               <div className="card-body p-4 text-start">
-                <h3 className="font-sans text-base flex items-center">
-                  {item.title}
-                </h3>
-                <div className="text-sm font-light">{item.description}</div>
+                <h3 className="line-clamp-1">{item.title}</h3>
+                <div className="text-sm font-light line-clamp-4">
+                  {item.overview}
+                </div>
                 <div className="flex items-baseline justify-between pb-1">
                   <div className="flex mt-4 items-center gap-2">
                     {item.techIcons.map((icon, index) => (
@@ -46,8 +46,8 @@ const Portfolio = () => {
                       height="20"
                       shape-rendering="geometricPrecision"
                       stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       strokeWidth="1.5"
                       viewBox="0 0 24 24"
                       width="20"

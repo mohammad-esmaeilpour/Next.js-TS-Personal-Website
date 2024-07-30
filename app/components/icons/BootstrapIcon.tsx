@@ -23,7 +23,7 @@ const BootstrapIcon = ({ size }: IconProps) => {
           />
           <path
             stroke="#fff"
-            stroke-width="2"
+            strokeWidth="2"
             d="M131.97 196.157c29.676 0 47.559-14.531 47.559-38.497c0-18.117-12.759-31.232-31.706-33.309v-.754c13.92-2.265 24.843-15.192 24.843-29.628c0-20.57-16.239-33.969-40.986-33.969H76v136.157zM97.653 77.267h28.807c15.66 0 24.553 6.983 24.553 19.627c0 13.493-10.343 21.041-29.096 21.041H97.653zm0 101.623v-44.819h28.613c20.494 0 31.127 7.548 31.127 22.268c0 14.719-10.343 22.551-29.87 22.551z"
           />
         </g>
@@ -36,8 +36,8 @@ const BootstrapIcon = ({ size }: IconProps) => {
             y2="256"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#9013fe" />
-            <stop offset="1" stop-color="#6b11f4" />
+            <stop stopColor="#9013fe" />
+            <stop offset="1" stopColor="#6b11f4" />
           </linearGradient>
           <linearGradient
             id="skillIconsBootstrap1"
@@ -47,8 +47,8 @@ const BootstrapIcon = ({ size }: IconProps) => {
             y2="175.084"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#fff" />
-            <stop offset="1" stop-color="#f1e5fc" />
+            <stop stopColor="#fff" />
+            <stop offset="1" stopColor="#f1e5fc" />
           </linearGradient>
           <filter
             id="skillIconsBootstrap2"
