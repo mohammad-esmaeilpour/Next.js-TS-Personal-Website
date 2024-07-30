@@ -6,7 +6,7 @@ import Aos from "./components/Aos";
 import TimeLine from "./components/TimeLine";
 import { Fragment } from "react";
 import AboutMe from "./components/AboutMe";
-import Portfolio from "./components/Portfolio";
+import Portfolio from "./components/WorkHighlight";
 import { homeSeo } from "@/public/data/home";
 
 export const metadata: Metadata = {

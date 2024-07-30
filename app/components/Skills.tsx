@@ -16,10 +16,16 @@ const Skills = () => {
       modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
       spaceBetween={10}
       slidesPerView={7}
+      breakpoints={{
+        320: {
+          slidesPerView: 4,
+        },
+        480: {
+          slidesPerView: 5,
+        },
+      }}
       autoplay={{ delay: 1000 }}
-      onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log("slide change")}
-      className="max-w-xl"
+      className="max-w-[300px] sm:max-w-md lg:max-w-xl mx-auto"
     >
       {homeData.skills.map((item) => (
         <SwiperSlide key={item.title}>{item.icon}</SwiperSlide>

@@ -3,13 +3,13 @@ import React from "react";
 
 const TimeLine = () => {
   return (
-    <div className="mt-44">
+    <div className="mt-44 overflow-hidden px-3">
       <div className="max-w-7xl mx-auto text-center">
         <div className="flex-1 flex flex-col">
           <p>Specializing in Next.js, React, TypeScript, Tailwind, and MUI</p>
           <h2>Crafting Exceptional Frontend Experiences</h2>
         </div>
-        <div className="flex justify-center gap-4 mt-10">
+        <div className="flex justify-center flex-wrap gap-4 mt-10">
           <span className="inline-flex items-center rounded-md bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">
             Typescript
           </span>
@@ -33,11 +33,11 @@ const TimeLine = () => {
           </span>
         </div>
       </div>
-      <ul className="timeline timeline-vertical px-32 mt-20">
+      <ul className="md:timeline timeline-vertical lg:px-32 mt-20">
         {homeData.timeline.map((item) => (
           <li key={item.title} className="my-4">
             <div
-              className={`timeline-${item.timelineDir} timeline-box flex flex-col gap-5 py-5 text-xl font-semibold leading-8 text-[#000] tracking-[-0.04em] relative`}
+              className={`timeline-${item.timelineDir}  timeline-box flex flex-col gap-5 py-5 text-xl font-semibold leading-8 text-[#000] tracking-[-0.04em] relative`}
               data-aos={item.dataAos}
             >
               {item.timelineDir === "start" && item.dataAos !== "fade-down" && (

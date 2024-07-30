@@ -56,10 +56,10 @@ const BootstrapIcon = ({ size }: IconProps) => {
             height="170.157"
             x="59"
             y="47"
-            color-interpolation-filters="sRGB"
+            colorInterpolationFilters="sRGB"
             filterUnits="userSpaceOnUse"
           >
-            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feFlood floodOpacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               result="hardAlpha"

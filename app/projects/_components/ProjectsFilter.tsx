@@ -25,7 +25,7 @@ const ProjectsFilter: React.FC<ProjectsFilterProps> = ({
       <div className="dropdown w-full sm:dropdown-open">
         <div
           tabIndex={0}
-          className="m-1 flex justify-between items-center mb-5"
+          className="m-1 flex justify-between items-center md:mb-5"
         >
           {projectsHeadings.h2}
           <FilterIcon size={18} />
