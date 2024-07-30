@@ -15,7 +15,7 @@ const Skills = () => {
     <Swiper
       modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
       spaceBetween={10}
-      slidesPerView={6}
+      slidesPerView={7}
       autoplay={{ delay: 1000 }}
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log("slide change")}

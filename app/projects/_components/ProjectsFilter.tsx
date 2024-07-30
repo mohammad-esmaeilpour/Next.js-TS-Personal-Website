@@ -1,3 +1,6 @@
+import ChevronDown from "@/app/components/icons/ChevronDown";
+import CloseIcon from "@/app/components/icons/CloseIcon";
+import FilterIcon from "@/app/components/icons/FilterIcon";
 import { projectsData } from "@/public/data/projects";
 import React from "react";
 
@@ -19,52 +22,46 @@ const ProjectsFilter: React.FC<ProjectsFilterProps> = ({
   };
 
   return (
-    <div className="sticky top-16">
-      <div className="flex gap-5 items-center">
-        <h4>Filter projects</h4>
+    <div className="sm:sticky sm:top-16 sm:pe-5">
+      <div className="dropdown w-full sm:dropdown-open">
+        <div
+          tabIndex={0}
+          className="m-1 flex justify-between items-center mb-5"
+        >
+          Filter By
+          <FilterIcon size={18} />
+        </div>
         {selectedFilters.length !== 0 && (
           <div
-            className="btn btn-outline btn-sm transition-all m-0 px-2"
+            className="btn w-full bg-white justify-between transition-all px-5 py-1 my-1"
             onClick={() => setSelectedFilters([])}
           >
-            <svg
-              data-testid="geist-icon"
-              fill="none"
-              height="18"
-              shape-rendering="geometricPrecision"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="1.5"
-              viewBox="0 0 24 24"
-              width="18"
-            >
-              <circle cx="12" cy="12" r="10" fill="var(--geist-fill)"></circle>
-              <path d="M15 9l-6 6" stroke="var(--geist-stroke)"></path>
-              <path d="M9 9l6 6" stroke="var(--geist-stroke)"></path>
-            </svg>
             clear
+            <CloseIcon size={18} />
           </div>
         )}
-      </div>
-      <div className="form-control mt-10">
-        {projectsData.projectsFilter.map((item) => (
-          <label
-            key={item.title}
-            className="label cursor-pointer items-center justify-start gap-x-3 mb-2"
-          >
-            <input
-              type="checkbox"
-              className="checkbox checkbox-sm"
-              checked={selectedFilters.includes(item.tag)}
-              onChange={() => handleCheckboxChange(item.tag)}
-            />
-            <span className="label-text flex ms-2 gap-x-2 items-center">
-              {item.icon}
-              {item.title}
-            </span>
-          </label>
-        ))}
+        <ul
+          tabIndex={0}
+          className="dropdown-content menu bg-base-100 rounded-box z-[1] p-2 w-full shadow-lg border sm:shadow-none sm:border-none"
+        >
+          {projectsData.projectsFilter.map((item) => (
+            <label
+              key={item.title}
+              className="label cursor-pointer items-center justify-start gap-x-3 mb-2"
+            >
+              <input
+                type="checkbox"
+                className="checkbox checkbox-sm"
+                checked={selectedFilters.includes(item.tag)}
+                onChange={() => handleCheckboxChange(item.tag)}
+              />
+              <span className="label-text flex ms-2 gap-x-2 items-center">
+                {item.icon}
+                {item.title}
+              </span>
+            </label>
+          ))}
+        </ul>
       </div>
     </div>
   );

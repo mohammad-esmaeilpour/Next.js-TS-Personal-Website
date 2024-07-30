@@ -23,12 +23,12 @@ const ProjectsCards: React.FC<ProjectsCardsProps> = ({
 
   return (
     <div>
-      <div className="grid grid-cols-12 gap-4">
+      <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4">
         {filteredProjects.map((item, index) => (
           <div
             onClick={() => handleModal(index)}
             key={item.title}
-            className="col-span-12 lg:col-span-4"
+            className="col-span-1"
           >
             <div className="card cursor-pointer rounded-lg overflow-hidden bg-white shadow-xl hover:shadow-2xl transition-all">
               <div className="h-44 relative">
@@ -43,7 +43,7 @@ const ProjectsCards: React.FC<ProjectsCardsProps> = ({
                 <h3 className="font-sans text-base flex items-center">
                   {item.title}
                 </h3>
-                <p className="text-sm line-clamp-2">{item.description}</p>
+                <p className="text-sm line-clamp-2">{item.overview}</p>
                 <div className="flex items-baseline justify-between pb-1">
                   <div className="flex mt-4 items-center gap-2">
                     {item.techIcons.map((icon) => (

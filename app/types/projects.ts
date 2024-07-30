@@ -8,7 +8,6 @@ export type TProjectData = {
 
 export type TProjectsInfo = {
   title: string;
-  description: string;
   overview: string;
   introductionList: {
     key: string;

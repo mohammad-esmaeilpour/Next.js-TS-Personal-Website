@@ -29,18 +29,18 @@ const Projects: React.FC = () => {
 
       <div className="max-w-7xl mt-16 mx-auto">
         <h1 className="text-center">{projectsHeadings.h1}</h1>
-        <p className="text-center mt-4">
+        <p className="text-center px-3 lg:px-0 mt-4">
           Jumpstart your app development process with pre-built solutions from
           Vercel and our community.
         </p>
         <div className="grid grid-cols-12 gap-5 px-5 mt-16">
-          <div className="col-span-12 lg:col-span-3">
+          <div className="col-span-12 sm:col-span-6 lg:col-span-3">
             <ProjectsFilter
               selectedFilters={selectedFilters}
               setSelectedFilters={setSelectedFilters}
             />
           </div>
-          <div className="col-span-12 lg:col-span-9">
+          <div className="col-span-12 sm:col-span-6 lg:col-span-9">
             <ProjectsCards
               handleModal={handleModal}
               selectedFilters={selectedFilters}

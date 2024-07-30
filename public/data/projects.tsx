@@ -27,8 +27,6 @@ export const projectsData: TProjectData = {
   projectsInfo: [
     {
       title: "3D Room",
-      description:
-        "I've created a 3D room using CSS, HTML, and JavaScript, aiming to provide an immersive virtual space that showcases both design aesthetics and interactive functionality.",
       overview:
         "I've created a 3D room using CSS, HTML, and JavaScript, aiming to provide an immersive virtual space that showcases both design aesthetics and interactive functionality.",
       features: [
@@ -65,20 +63,17 @@ export const projectsData: TProjectData = {
     },
     {
       title: "Roboxon website",
-      description:
-        "Developed by Next.js and Typescript with Tailwind CSS as css library.",
       overview:
-        "This project features a sample implementation of Hume's Empathic Voice Interface using Hume's React SDK. Here, we have a simple EVI that uses the Next.js App Router",
+        "I developed a modern, responsive website using Next.js, Tailwind CSS, and TypeScript, focusing on performance, scalability, and maintainability. This project showcases my ability to create dynamic, high-quality web applications with a keen eye for design and user experience.",
       features: [
-        "Next.js App Router",
-        "Styling with Tailwind CSS",
-        "Icons from Phosphor Icons",
+        "Responsive Design: The website is fully responsive, ensuring an optimal viewing experience across a wide range of devices, from desktops to mobile phones.",
+        "Fast Performance: Leveraged the power of Next.js for server-side rendering and static site generation, resulting in fast load times and a smooth user experience.",
+        "Type Safety: Incorporated TypeScript to ensure robust type-checking and improve code maintainability and scalability.",
+        "Custom Styling: Utilized Tailwind CSS to create a unique, modern design that is both visually appealing and easy to maintain.",
+        "Modular Architecture: Designed the application with a modular architecture, making it easy to extend and maintain in the future",
+        "API Integration: Integrated with external APIs to fetch dynamic content, showcasing the ability to work with third-party services and data.",
       ],
-      technologies: [
-        "Next.js App Router",
-        "Styling with Tailwind CSS",
-        "Icons from Phosphor Icons",
-      ],
+      technologies: ["Next.js", "Typescript", "Tailwind CSS"],
       introductionList: [
         {
           key: "Language",
@@ -104,27 +99,22 @@ export const projectsData: TProjectData = {
     },
     {
       title: "Roboxon Dashboard",
-      description:
-        "Developed by React and Typescript with Tailwind CSS as css library.",
       overview:
-        "This project features a sample implementation of Hume's Empathic Voice Interface using Hume's React SDK. Here, we have a simple EVI that uses the Next.js App Router",
+        "I developed a high-performance dashboard for a company, allowing them to efficiently manage users, companies, roles, and permissions. This project spanned over 8 months and involved the use of cutting-edge technologies like React, TypeScript, Tailwind CSS, and Redux. The dashboard significantly improved the company’s operational efficiency and user management capabilities.",
       features: [
-        "Next.js App Router",
-        "Styling with Tailwind CSS",
-        "Icons from Phosphor Icons",
+        "Role-Based Access Control: Advanced role and permission management for secure access.",
+        "Efficient State Management: Utilized Redux for state management, ensuring a predictable and maintainable codebase.",
+        "Customizable UI: Used Tailwind CSS to create a highly customizable and visually appealing interface.",
+        "TypeScript Integration: Leveraged TypeScript to enhance code quality and maintainability.",
       ],
-      technologies: [
-        "Next.js App Router",
-        "Styling with Tailwind CSS",
-        "Icons from Phosphor Icons",
-      ],
+      technologies: ["React", "Typescript", "Tailwind CSS"],
       introductionList: [
         {
           key: "Language",
           value: "Typescript",
         },
         {
-          key: "Freamwork",
+          key: "Library",
           value: "React",
         },
         {
@@ -172,16 +162,6 @@ export const projectsData: TProjectData = {
       title: "Material UI",
       tag: "material",
       icon: <MUIIcon size={18} />,
-    },
-    {
-      title: "HTML",
-      tag: "html",
-      icon: <HtmlIcon size={18} />,
-    },
-    {
-      title: "CSS",
-      tag: "css",
-      icon: <CssIcon size={18} />,
     },
   ],
 };
