@@ -18,6 +18,10 @@
 # iisnode
 /iisnode
 
+# web config
+/web.config
+
+
 # misc
 .DS_Store
 *.pem
