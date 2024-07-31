@@ -26,7 +26,7 @@ const ProjectsCards: React.FC<ProjectsCardsProps> = ({
       <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4">
         {filteredProjects.map((item, index) => (
           <div
-            onClick={() => handleModal(index)}
+            onClick={() => handleModal(item.id)}
             key={item.title}
             className="col-span-1"
           >

@@ -7,6 +7,7 @@ export type TProjectData = {
 };
 
 export type TProjectsInfo = {
+  id: number;
   title: string;
   overview: string;
   introductionList: {

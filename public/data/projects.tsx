@@ -29,6 +29,7 @@ export const projectsHeadings = {
 export const projectsData: TProjectData = {
   projectsInfo: [
     {
+      id: 0,
       title: "3D Room using CSS and JavaScript",
       overview:
         "I've created a 3D room using CSS, HTML, and JavaScript, aiming to provide an immersive virtual space that showcases both design aesthetics and interactive functionality.",
@@ -65,6 +66,7 @@ export const projectsData: TProjectData = {
       ],
     },
     {
+      id: 1,
       title: "Modern Next.js Responsive Website - Roboxon",
       overview:
         "I developed a modern, responsive website using Next.js, Tailwind CSS, and TypeScript, focusing on performance, scalability, and maintainability. This project showcases my ability to create dynamic, high-quality web applications with a keen eye for design and user experience.",
@@ -101,6 +103,7 @@ export const projectsData: TProjectData = {
       tags: ["next", "typescript", "tailwind"],
     },
     {
+      id: 2,
       title: "High-Performance Dashboard with React and Tailwind CSS",
       overview:
         "I developed a high-performance dashboard for a company, allowing them to efficiently manage users, companies, roles, and permissions. This project spanned over 8 months and involved the use of cutting-edge technologies like React, TypeScript, Tailwind CSS, and Redux. The dashboard significantly improved the company’s operational efficiency and user management capabilities.",
