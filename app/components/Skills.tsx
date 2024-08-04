@@ -15,13 +15,15 @@ const Skills = () => {
     <Swiper
       modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
       spaceBetween={10}
-      slidesPerView={7}
       breakpoints={{
         320: {
           slidesPerView: 4,
         },
         480: {
           slidesPerView: 5,
+        },
+        994: {
+          slidesPerView: 7,
         },
       }}
       autoplay={{ delay: 1000 }}

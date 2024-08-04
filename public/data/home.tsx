@@ -14,25 +14,38 @@ import TSIcon from "@/app/components/icons/TSIcon";
 
 export const homeSeo = {
   title:
-    "Mohammad Esmaeilpour | Frontend Developer - React, Next.js, TypeScript",
+    "Mohammad Esmaeilpour | Frontend Developer Specialized in Next.js, React, TypeScript",
   metadescription:
-    "Hi, I'm Mohammad Esmaeilpour, a specialist in React, Next.js, TypeScript, and Tailwind CSS with 3 years of experience. Available for freelance projects on Upwork",
+    "Explore the portfolio of Mohammad Esmaeilpour, a frontend developer specializing in Next.js, React, TypeScript, Tailwind CSS, and Material UI. Discover modern web development solutions focused on responsive design and state management with Redux.",
 };
 
 export const homeHeadings = {
-  h1: "Mohammad Esmaeilpour Frontend Developer",
+  h1: {
+    title:
+      "Mohammad Esmaeilpour - Frontend Developer Specialized in Next.js & React",
+    subTitle:
+      "Crafting Exceptional Frontend Experiences with modern technologies",
+  },
   h2: {
-    first: "Specializing in React, Next.js, TypeScript",
-    second: "Available for Hire on Upwork",
-    third: "Work Highlights",
+    abouteMe: {
+      title: "About Me",
+      subTitle:
+        "Hi 👋, I'm Mohammad Esmaeilpour, a passionate frontend developer with a deep expertise in creating modern, responsive, and user-friendly web applications. With a focus on cutting-edge technologies like Next.js, React, and TypeScript, I build efficient and scalable solutions that deliver exceptional user experiences. My journey in web development has been driven by a love for coding, a dedication to continuous learning, and a commitment to delivering high-quality work.",
+    },
+    expertise: {
+      title: "My Expertise in Next.js, React, and TypeScript",
+      subTitle:
+        "My core expertise lies in Next.js and React, where I've developed a range of dynamic, high-performance web applications. Leveraging the power of TypeScript, I ensure that my code is robust, maintainable, and easy to scale. I’m well-versed in creating server-side rendered (SSR) applications with Next.js, as well as building complex, interactive UIs with React. My work emphasizes clean architecture and follows best practices to ensure seamless integration and excellent performance.",
+    },
+    workHighlights: {
+      title: "Projects Showcasing Tailwind CSS & Material UI",
+      subTitle: "Specializing in Next.js, React, TypeScript, Tailwind, and MUI",
+    },
+    fifth: "Contact Me for Frontend Development Services",
   },
 };
 
 export const homeData = {
-  heroDescription:
-    "Crafting Exceptional Frontend Experiences with modern technologies",
-  aboutMeDescription:
-    "Hello👋 Im Mohammad Esmaeilpour, a passionate and dedicated frontend developer with 25 years of life experience. I specialize in creating dynamic, user-friendly web applications using the latest technologies.",
   skills: [
     {
       icon: <JSIcon size={60} />,

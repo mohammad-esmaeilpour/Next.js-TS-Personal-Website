@@ -67,7 +67,7 @@ const Modal = ({ data, modalRef }: Props) => {
             <Image
               src={data.img}
               alt="3d room"
-              className="rounded-xl object-cover w-full h-96 shadow-xl"
+              className="rounded-xl object-contain w-full h-96 shadow-xl"
             />
 
             <div>

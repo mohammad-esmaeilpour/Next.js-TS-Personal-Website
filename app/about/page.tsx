@@ -1,97 +1,111 @@
-const Contact = () => {
+import { aboutHeadings } from "@/public/data/about";
+import { Fragment } from "react";
+import ReactIcon from "../components/icons/ReactIcon";
+import NextjsIcon from "../components/icons/NextjsIcon";
+import TSIcon from "../components/icons/TSIcon";
+import JSIcon from "../components/icons/JSIcon";
+import TailwindIcon from "../components/icons/TailwindIcon";
+
+const About = () => {
   return (
-    <main>
-      <section className="container mx-auto mt-5 pt-5">
-        <div>
-          <h1 className="text-center">ABOUT ME</h1>
-          <p className="text-center">
-            Here you will find more information about me, what I do, and my
-            current skills mostly in terms of programming and technology
+    <Fragment>
+      <div className="text-center my-20">
+        <h1>{aboutHeadings.h1.title}</h1>
+        <p>{aboutHeadings.h1.subTitle}</p>
+      </div>
+      <section className="my-20 text-center">
+        <div className="max-w-5xl mx-auto">
+          <h2>{aboutHeadings.h2.specialist.title}</h2>
+          <p className="mt-5 line-clamp-1">
+            {aboutHeadings.h2.specialist.subTitle}
           </p>
         </div>
-        <div className="flex gap-20 max-w-7xl mx-auto mt-20">
-          <div className="flex-1">
-            <h2 className="font-family-Semicondensed mb-4">Get to know me!</h2>
-            <p className="fz-18 text-justify lh-33 text-black">
-              Im a <strong>Frontend Web Developer</strong> building the
-              Front-end of Websites and Web Applications that leads to the
-              success of the overall product. Check out some of my work in the
-              <a
-                href="file:///G:/PortfolioPure/en/portfolio/index.html#react-project"
-                target="_blank"
-                className="link-theme"
-              >
-                Projects
-              </a>
-              section. I also like sharing content related to the stuff that I
-              have learned over the years in
-              <strong>Web Development</strong> so it can help other people of
-              the Dev Community. Feel free to Connect or Follow me on my
-              <a
-                href="https://www.linkedin.com/in/mohammad-esmaeilpour-4ab401217/"
-                target="_blank"
-                className="link-theme"
-              >
-                Linkedin
-              </a>
-              where I post useful content related to Web Development and
-              Programming Im open to <b>Job</b> opportunities where I can
-              contribute, learn and grow. If you have a good opportunity that
-              matches my skills and experience then dont hesitate to{" "}
-              <b>contact</b> me.
-            </p>
+        <div className="flex flex-wrap px-10 mt-32 gap-10 justify-center max-w-7xl mx-auto">
+          <div className="indicator col-span-1" data-aos="fade-up">
+            <div className="indicator-item indicator-start">
+              <button>
+                <ReactIcon size={45} />
+              </button>
+            </div>
+            <div className="card border">
+              <div className="card-body">
+                <h2 className="card-title">Job Title</h2>
+                <p>Rerum reiciendis beatae tenetur excepturi</p>
+              </div>
+            </div>
           </div>
-          <div className="flex-1">
-            <h2 className="font-family-Semicondensed mb-4">My Skills</h2>
-            <div className="flex flex-wrap gap-5">
-              <div className="bg-white border border-[1px solid #e0e3e7] px-3 py-1 rounded-lg text-blue-400">
-                HTML
+          <div className="indicator col-span-1" data-aos="fade-up">
+            <div className="indicator-item indicator-start">
+              <button>
+                <ReactIcon size={45} />
+              </button>
+            </div>
+            <div className="card border">
+              <div className="card-body">
+                <h2 className="card-title">Job Title</h2>
+                <p>Rerum reiciendis beatae tenetur excepturi</p>
               </div>
-              <div className="bg-white border border-[1px solid #e0e3e7] px-3 py-1 rounded-lg text-blue-400">
-                CSS
+            </div>
+          </div>
+          <div className="indicator col-span-1" data-aos="fade-up">
+            <div className="indicator-item indicator-start">
+              <button>
+                <ReactIcon size={45} />
+              </button>
+            </div>
+            <div className="card border">
+              <div className="card-body">
+                <h2 className="card-title">Job Title</h2>
+                <p>Rerum reiciendis beatae tenetur excepturi</p>
               </div>
-              <div className="bg-white border border-[1px solid #e0e3e7] px-3 py-1 rounded-lg text-blue-400">
-                Scss/Sass
+            </div>
+          </div>
+          <div className="indicator col-span-1" data-aos="fade-up">
+            <div className="indicator-item indicator-start">
+              <button>
+                <ReactIcon size={45} />
+              </button>
+            </div>
+            <div className="card border">
+              <div className="card-body">
+                <h2 className="card-title">Job Title</h2>
+                <p>Rerum reiciendis beatae tenetur excepturi</p>
               </div>
-              <div className="bg-white border border-[1px solid #e0e3e7] px-3 py-1 rounded-lg text-blue-400">
-                Bootstrap 4/5
-              </div>
-              <div className="bg-white border border-[1px solid #e0e3e7] px-3 py-1 rounded-lg text-blue-400">
-                Tailwind
-              </div>
-              <div className="bg-white border border-[1px solid #e0e3e7] px-3 py-1 rounded-lg text-blue-400">
-                Java Script
-              </div>
-              <div className="bg-white border border-[1px solid #e0e3e7] px-3 py-1 rounded-lg text-blue-400">
-                EcmaScript 5/6/7
-              </div>
-              <div className="bg-white border border-[1px solid #e0e3e7] px-3 py-1 rounded-lg text-blue-400">
-                React Js
-              </div>
-              <div className="bg-white border border-[1px solid #e0e3e7] px-3 py-1 rounded-lg text-blue-400">
-                Rest Api
-              </div>
-              <div className="bg-white border border-[1px solid #e0e3e7] px-3 py-1 rounded-lg text-blue-400">
-                Axios/Fetch/Ajax
-              </div>
-              <div className="bg-white border border-[1px solid #e0e3e7] px-3 py-1 rounded-lg text-blue-400">
-                Zustand
-              </div>
-              <div className="bg-white border border-[1px solid #e0e3e7] px-3 py-1 rounded-lg text-blue-400">
-                Context Api
-              </div>
-              <div className="bg-white border border-[1px solid #e0e3e7] px-3 py-1 rounded-lg text-blue-400">
-                Postman
-              </div>
-              <div className="bg-white border border-[1px solid #e0e3e7] px-3 py-1 rounded-lg text-blue-400">
-                Git/Gitlab
+            </div>
+          </div>
+          <div className="indicator col-span-1" data-aos="fade-up">
+            <div className="indicator-item indicator-start">
+              <button>
+                <ReactIcon size={45} />
+              </button>
+            </div>
+            <div className="card border">
+              <div className="card-body">
+                <h2 className="card-title">Job Title</h2>
+                <p>Rerum reiciendis beatae tenetur excepturi</p>
               </div>
             </div>
           </div>
         </div>
       </section>
-    </main>
+      <section className="my-20">
+        <h2>{aboutHeadings.h2.journey.title}</h2>
+        <p>{aboutHeadings.h2.journey.subTitle}</p>
+      </section>
+      <section className="my-20">
+        <h2>{aboutHeadings.h2.expertise.title}</h2>
+        <p>{aboutHeadings.h2.expertise.subTitle}</p>
+      </section>
+      <section className="my-20">
+        <h2>{aboutHeadings.h2.projects.title}</h2>
+        <p>{aboutHeadings.h2.projects.subTitle}</p>
+      </section>
+      <section className="my-20">
+        <h2>{aboutHeadings.h2.whyChoose.title}</h2>
+        <p>{aboutHeadings.h2.whyChoose.subTitle}</p>
+      </section>
+    </Fragment>
   );
 };
 
-export default Contact;
+export default About;

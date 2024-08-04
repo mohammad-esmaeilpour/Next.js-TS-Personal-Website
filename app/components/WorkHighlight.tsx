@@ -2,7 +2,7 @@
 import { projectsData } from "@/public/data/projects";
 import Image from "next/image";
 import Link from "next/link";
-import React, { createRef, useRef } from "react";
+import React, { createRef, useId, useRef } from "react";
 import Modal from "./global/Modal";
 import GithubIcon from "./icons/GithubIcon";
 import { homeData, homeHeadings } from "@/public/data/home";
@@ -16,10 +16,10 @@ const WorkHighlight = () => {
   };
 
   return (
-    <div className="my-44 px-3">
+    <div className="my-44 px-3" id="work-highlight">
       <div className="text-center mb-20">
-        <h2>{homeHeadings.h2.third}</h2>
-        <p>Specializing in Next.js, React, TypeScript, Tailwind, and MUI</p>
+        <h2>{homeHeadings.h2.workHighlights.title}</h2>
+        <p>{homeHeadings.h2.workHighlights.subTitle}</p>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 max-w-7xl mx-auto">
         {projectsData.projectsInfo.map((item, index) => (

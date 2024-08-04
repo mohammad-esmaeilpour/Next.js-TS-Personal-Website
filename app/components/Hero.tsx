@@ -2,8 +2,19 @@
 import Link from "next/link";
 import React from "react";
 import Typewriter from "typewriter-effect";
+import ArrowDownIcon from "./icons/ArrowDownIcon";
 
 const Hero = () => {
+  const scrollToWorkHighlight = () => {
+    const element = document.getElementById("work-highlight");
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
+
   return (
     <div className="container mx-auto text-center mt-16 lg:mt-48 mb-20 px-3">
       <h1 className="text-gradient">Experiences Frontend developer</h1>
@@ -35,12 +46,18 @@ const Hero = () => {
         Experiences with modern technologies
       </p>
       <div className="flex w-full justify-between sm:justify-center items-center mt-5 gap-2">
-        <Link href={"/"} className="btn btn-neutral flex-1 sm:flex-none">
-          View protfolio
-        </Link>
-        <Link href={"/"} className="btn relative flex-1 sm:flex-none">
+        <Link href={"/projects"} className="btn relative flex-1 sm:flex-none">
           View projects
         </Link>
+        <button
+          onClick={scrollToWorkHighlight}
+          className="btn btn-neutral flex-1 sm:flex-none"
+        >
+          Work highlights
+          <div className="animate-bounce">
+            <ArrowDownIcon size={16} color="white" />
+          </div>
+        </button>
       </div>
     </div>
   );
