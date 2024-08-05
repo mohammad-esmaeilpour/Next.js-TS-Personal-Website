@@ -16,7 +16,7 @@ export const homeSeo = {
   title:
     "Mohammad Esmaeilpour | Frontend Developer Specialized in Next.js, React, TypeScript",
   metadescription:
-    "Explore the portfolio of Mohammad Esmaeilpour, a frontend developer specializing in Next.js, React, TypeScript, Tailwind CSS, and Material UI. Discover modern web development solutions focused on responsive design and state management with Redux.",
+    "Welcome to the official website of Mohammad Esmaeilpour, a frontend developer specializing in Next.js, React, Typescript, Javascript, Tailwind, Material ui and modern web development. Explore my services, skills, and portfolio to see how I can elevate your digital presence.",
 };
 
 export const homeHeadings = {

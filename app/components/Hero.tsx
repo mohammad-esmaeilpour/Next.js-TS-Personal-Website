@@ -16,7 +16,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="container mx-auto text-center mt-16 lg:mt-48 mb-20 px-3">
+    <div className="container mx-auto text-center mt-16 lg:mt-40 mb-20 px-3">
       <h1 className="text-gradient">Experiences Frontend developer</h1>
       <div className="flex flex-col lg:flex-row items-center gap-3 justify-center flex-wrap">
         <div className="flex flex-1 justify-end text-gradient">

@@ -12,9 +12,10 @@ import MUIIcon from "@/app/components/icons/MUIIcon";
 import { TProjectData } from "@/app/types/projects";
 
 export const projectsSeo = {
-  title: "Projects by Mohammad Esmaeilpour - React, Next.js, TypeScript",
+  title:
+    "Mohammad Esmaeilpour's Portfolio | Next.js, React, TypeScript Projects",
   metadescription:
-    "Explore the projects developed by Mohammad Esmaeilpour, showcasing expertise in React, Next.js, TypeScript, and Tailwind CSS.",
+    "Browse the portfolio of Mohammad Esmaeilpour, featuring web development projects built with Next.js, React, TypeScript, and other modern technologies. Discover how I bring innovative ideas to life through my work.",
 };
 
 export const projectsHeadings = {
