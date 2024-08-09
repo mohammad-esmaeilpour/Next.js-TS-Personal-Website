@@ -10,12 +10,12 @@ export const aboutSeo = {
   metadescription:
     "Learn more about Mohammad Esmaeilpour, a skilled frontend developer with expertise in Next.js, React, TypeScript, and modern web technologies. Discover his journey, projects, and how he can help bring your web ideas to life.",
 };
-
+  
 export const aboutHeadings = {
   h1: {
     title: "About Mohammad Esmaeilpour",
     subTitle:
-      "This is your main heading and should include your full name for SEO purposes.",
+      "Frontend Developer Specializing in Next.js, React, and Modern Web Technologiesee",
   },
   h2: {
     specialist: {
@@ -34,7 +34,7 @@ export const aboutHeadings = {
         "Next.js and React are at the core of my development toolkit. I have extensive experience in leveraging these powerful frameworks to create fast, SEO-friendly, and scalable web applications. Whether it's server-side rendering with Next.js or building complex UI components with React, I am proficient in utilizing these technologies to bring innovative ideas to life.",
     },
     projects: {
-      title: "Projects and Achievements",
+      title: "Projects and Portfolio",
       subTitle:
         "Throughout my career, I have developed numerous projects that reflect my expertise in frontend development. One notable project is [mention your project like 'Roboxon, a startup company website built from scratch using Next.js, TypeScript, and Tailwind CSS']. Visit my portfolio to see more examples of my work and learn how I can bring your vision to reality.",
     },

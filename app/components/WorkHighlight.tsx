@@ -17,7 +17,7 @@ const WorkHighlight = () => {
 
   return (
     <div
-      className="py-44 px-3 bg-gradient-to-b from-transparent via-gray-50/50 to-gray-50"
+      className="pb-44 pt-10 mt-40 px-3 bg-gradient-to-b from-transparent via-gray-50/50 to-gray-50"
       id="work-highlight"
     >
       <div className="text-center mb-20">

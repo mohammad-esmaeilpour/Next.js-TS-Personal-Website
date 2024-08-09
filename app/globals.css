@@ -6,6 +6,7 @@
   * {
     @apply font-sans text-[#666] font-normal;
   }
+
   h1 {
     @apply font-extrabold;
     background: linear-gradient(180deg, #555, #000);

@@ -11,16 +11,7 @@ const TimeLine = () => {
         <div className="inline-block">
           <h2>{homeHeadings.h2.expertise.title}</h2>
           <div className="mt-4 relative">
-            <p className="line-clamp-1 max-w-3xl">
-              {homeHeadings.h2.expertise.subTitle}
-            </p>
-            <div
-              className="absolute rounded-full border -right-10 top-0 tooltip tooltip-bottom
-              tooltip-info text-start p-1"
-              data-tip={homeHeadings.h2.expertise.subTitle}
-            >
-              <ThreeDotsIcon size={20} />
-            </div>
+            <p className="max-w-3xl">{homeHeadings.h2.expertise.subTitle}</p>
           </div>
         </div>
       </div>

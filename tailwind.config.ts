@@ -17,6 +17,7 @@ const config: Config = {
   variants: {
     fill: ["hover", "focus"], // this line does the trick
   },
+  darkMode: "class",
   plugins: [require("daisyui")],
   daisyui: {
     themes: ["light"],

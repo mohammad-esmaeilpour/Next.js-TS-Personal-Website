@@ -3,6 +3,12 @@ import { Fragment } from "react";
 import { Metadata } from "next";
 import JournyTimeLine from "./_components/JournyTimeLine";
 import Specialist from "./_components/Specialist";
+import WorkHighlight from "../components/WorkHighlight";
+import ReactIcon from "../components/icons/ReactIcon";
+import JSIcon from "../components/icons/JSIcon";
+import TSIcon from "../components/icons/TSIcon";
+import TailwindIcon from "../components/icons/TailwindIcon";
+import ReduxIcon from "../components/icons/ReduxIcon";
 
 export const metadata: Metadata = {
   title: aboutSeo.title,
@@ -12,27 +18,61 @@ export const metadata: Metadata = {
 const About = () => {
   return (
     <Fragment>
-      <div className="text-center my-20">
-        <h1>{aboutHeadings.h1.title}</h1>
+      <div className="mb-20">
+        <div className="bg-white dark:bg-gray-900">
+          <div className="relative isolate px-6 pt-14 lg:px-8">
+            <div
+              className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+              aria-hidden="true"
+            >
+              <div className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff90be] to-[#c1bdff] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"></div>
+            </div>
+            <div className="mx-auto max-w-6xl py-32">
+              <div className="hidden sm:mb-8 sm:flex sm:justify-center">
+                <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 dark:text-gray-300 ring-1 ring-gray-900/10 dark:ring-gray-700/10 hover:ring-gray-900/20 dark:hover:ring-gray-700/20">
+                  everything you need to know ! {""}
+                  <a
+                    href="#"
+                    className="font-semibold text-orange-600 dark:text-orange-400"
+                  >
+                    <span
+                      className="absolute inset-0"
+                      aria-hidden="true"
+                    ></span>
+                    Home page <span aria-hidden="true">&rarr;</span>
+                  </a>
+                </div>
+              </div>
+              <div className="text-center">
+                <h1 className="tracking-tight text-gray-900 dark:text-white">
+                  {aboutHeadings.h1.title}
+                </h1>
+                <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300">
+                  {aboutHeadings.h1.subTitle}
+                </p>
+                <div className="mt-10 flex items-center justify-center gap-x-6">
+                  <a
+                    href="#"
+                    className="rounded-md bg-orange-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-orange-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600"
+                  >
+                    Get started
+                  </a>
+                  <a
+                    href="#"
+                    className="text-sm font-semibold leading-6 text-gray-900 dark:text-white"
+                  >
+                    Learn more <span aria-hidden="true">→</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <Specialist />
 
       <JournyTimeLine />
-
-      <div className="diff aspect-[16/9]">
-        <div className="diff-item-1">
-          <div className="bg-white grid place-content-center text-9xl font-black text-blue-800">
-            Typescript
-          </div>
-        </div>
-        <div className="diff-item-2">
-          <div className="bg-white grid place-content-center text-9xl font-black text-yellow-500">
-            Javascript
-          </div>
-        </div>
-        <div className="diff-resizer"></div>
-      </div>
 
       <section className="my-20 max-w-7xl mx-auto">
         <h2>{aboutHeadings.h2.expertise.title}</h2>
@@ -83,12 +123,9 @@ const About = () => {
         </div>
       </section>
 
-      <section className="my-20">
-        <h2>{aboutHeadings.h2.projects.title}</h2>
-        <p>{aboutHeadings.h2.projects.subTitle}</p>
-      </section>
-      
-      <section className="my-20 max-w-6xl mx-auto">
+      <WorkHighlight />
+
+      <section className="my-20 max-w-7xl mx-auto">
         <h2 className="flex items-end">
           <svg
             xmlns="http://www.w3.org/2000/svg"

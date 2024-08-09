@@ -5,7 +5,7 @@ const Specialist = () => {
   return (
     <section className="py-20 text-center bg-gradient-to-b from-white via-gray-50/50 to-gray-50">
       <div className="max-w-5xl mx-auto">
-        <h2>{aboutHeadings.h2.specialist.title}</h2>
+        <h2>My Skills</h2>
         <p className="mt-2 line-clamp-1">
           {aboutHeadings.h2.specialist.subTitle}
         </p>

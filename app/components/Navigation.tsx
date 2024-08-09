@@ -6,12 +6,12 @@ import { useParams, usePathname } from "next/navigation";
 import { useRouter } from "next/router";
 
 const Navigation = () => {
-  const navItem = usePathname()
+  const navItem = usePathname();
 
   return (
     <Fragment>
-      <nav className="container mx-auto flex py-4 max-w-6xl">
-        <ul className="flex items-center">
+      <nav className="container mx-auto flex py-4 max-w-6xl z-50">
+        <ul className="flex items-center z-50">
           {navData.links.map((item) => (
             <li key={item.id} className="mx-2.5">
               <Link

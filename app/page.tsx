@@ -5,8 +5,9 @@ import Faq from "./components/Faq";
 import TimeLine from "./components/TimeLine";
 import { Fragment } from "react";
 import AboutMe from "./components/AboutMe";
-import Portfolio from "./components/WorkHighlight";
-import { homeSeo } from "@/public/data/home";
+import WorkHighlight from "./components/WorkHighlight";
+import { homeHeadings, homeSeo } from "@/public/data/home";
+import Tabs from "./components/Tabs";
 
 export const metadata: Metadata = {
   title: homeSeo.title,
@@ -22,11 +23,15 @@ export default function Home() {
 
       <AboutMe />
 
-      <TimeLine />
+      
 
-      <Portfolio />
+        <Tabs />
 
-      <Faq />
+      {/* <TimeLine /> */}
+
+      <WorkHighlight />
+
+      {/* <Faq /> */}
     </Fragment>
   );
 }
