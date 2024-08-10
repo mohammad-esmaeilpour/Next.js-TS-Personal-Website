@@ -40,7 +40,7 @@ export const homeHeadings = {
     abouteMe: {
       title: "About Me",
       subTitle:
-        "Hi 👋, I'm Mohammad Esmaeilpour, a passionate frontend developer with a deep expertise in creating modern, responsive, and user-friendly web applications. With a focus on cutting-edge technologies like Next.js, React, and TypeScript, I build efficient and scalable solutions that deliver exceptional user experiences. My journey in web development has been driven by a love for coding, a dedication to continuous learning, and a commitment to delivering high-quality work.",
+        "Hi 👋, I’m Mohammad Esmaeilpour, a skilled frontend developer specializing in cutting-edge technologies like TypeScript, React, and Next.js. I’m dedicated to creating dynamic, responsive, and user-friendly web applications. My approach focuses on writing clean, maintainable code that enhances performance and user experience. With a passion for continuous learning and a commitment to delivering high-quality work, I strive to bring innovative ideas to life.",
     },
     expertise: {
       title: "My Expertise in Next.js, React, and TypeScript",
