@@ -1,22 +1,13 @@
 "use client";
+import { homeHeadings } from "@/public/data/home";
 import Link from "next/link";
 import React from "react";
 import Typewriter from "typewriter-effect";
-import ArrowDownIcon from "./icons/ArrowDownIcon";
+import { ScrollToView } from "./global/ScrollToView";
 
 const Hero = () => {
-  const scrollToWorkHighlight = () => {
-    const element = document.getElementById("work-highlight");
-    if (element) {
-      element.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    }
-  };
-
   return (
-    <div className="container mx-auto text-center mt-16 lg:mt-40 mb-20 px-3">
+    <div className="max-w-7xl mx-auto text-center mt-16 lg:mt-40 mb-20 px-3">
       <h1 className="text-gradient">Experienced Frontend Developer</h1>
       <div className="flex flex-col lg:flex-row items-center gap-3 justify-center flex-wrap">
         <div className="flex flex-1 justify-end text-gradient">
@@ -41,19 +32,21 @@ const Hero = () => {
           />
         </div>
       </div>
-      <p className="mt-16 text-base">
-        Crafting Exceptional <b className="text-gray-800">Frontend</b>{" "}
-        Experiences with modern technologies
-      </p>
+      <h2 className="text-gradient text-base font-medium mt-16">
+        {homeHeadings.h1.subTitle}
+      </h2>
       <div className="flex w-full justify-between sm:justify-center items-center mt-5 gap-2">
-        <Link href={"/projects"} className="btn btn-primary flex-1 sm:flex-none">
-          Explore My Projects
+        <Link
+          href={"/projects"}
+          className="btn btn-primary flex-1 sm:flex-none"
+        >
+          View My Projects
         </Link>
         <button
-          onClick={scrollToWorkHighlight}
+          onClick={()=> ScrollToView('about-me')}
           className="btn btn-secondary flex-1 sm:flex-none"
         >
-          Work highlights
+          Get to know me
         </button>
       </div>
     </div>

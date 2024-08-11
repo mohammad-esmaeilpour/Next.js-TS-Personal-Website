@@ -6,21 +6,21 @@ const Tabs = () => {
   const [activeTab, setActiveTab] = useState(homeData.expertise[0].label);
 
   return (
-    <section className="my-20 max-w-7xl mx-auto px-3">
+    <section className="max-w-7xl mx-auto pt-32 px-3" id="expertise">
       <h2>{homeHeadings.h2.expertise.title}</h2>
       <p className="mt-2">{homeHeadings.h2.expertise.subTitle}</p>
       <div className="mt-16">
         <div className="flex flex-wrap gap-x-3 gap-y-2">
           {homeData.expertise.map((item) => (
-            <button
+            <h3
               onClick={() => setActiveTab(item.label)}
-              className={`text-sm p-3 text-start rounded-lg transition-transform ${
+              className={`text-sm font-medium p-3 text-start rounded-lg transition-transform cursor-pointer ${
                 activeTab === item.label ? "btn btn-primary" : ""
               }`}
               key={item.label}
             >
               {item.label}
-            </button>
+            </h3>
           ))}
         </div>
 

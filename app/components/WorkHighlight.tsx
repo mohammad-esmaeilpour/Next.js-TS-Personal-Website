@@ -9,6 +9,8 @@ import { EffectCards } from "swiper/modules";
 import "swiper/css/effect-cards";
 import ExternalLinkIcon from "./icons/ExternalLinkIcon";
 import Link from "next/link";
+import ThreeDotsBorderedIcon from "./icons/ThreeDotsBorderedIcon";
+import ThreeDotsIcon from "./icons/ThreeDotsIcon";
 
 const WorkHighlight = () => {
   const modalsRef: any = useRef(
@@ -19,24 +21,23 @@ const WorkHighlight = () => {
   };
 
   return (
-    <div
-      className="pb-44 pt-10 mt-40 px-3 max-w-7xl mx-auto"
-      id="work-highlight"
-    >
+    <div className="max-w-7xl mx-auto py-32 px-3" id="work-highlight">
       <div className="flex gap-2 items-end">
         <h2>{homeHeadings.h2.workHighlights.title}</h2>
-        <p>{homeHeadings.h2.workHighlights.subTitle}</p>
+        <h3 className="text-gradient text-base font-medium">
+          {homeHeadings.h2.workHighlights.subTitle}
+        </h3>
       </div>
 
-      <div className="flex justify-between gap-20 mt-20">
+      <div className="flex justify-between gap-10 mt-28">
         <div className="flex-1">
           <p>
-            Vercel is a frontend cloud from the creators of Next.js, making it
-            easy to get started with Next.js quickly. Jumpstart your Next.js
-            development with pre-built solutions from Vercel and our community.
+            This project involved developing a fast, scalable web application using Next.js, React, and Tailwind CSS. The Apps
+            performance improved by 30%, leading to a significant increase in
+            user engagement and sales.
           </p>
           <Link className="btn btn-primary mt-10" href={"/projects"}>
-            Explore projects
+            Mohammad Esmaeilpour projects
           </Link>
         </div>
         <div className="flex-1 flex justify-end relative">
@@ -44,12 +45,11 @@ const WorkHighlight = () => {
             effect={"cards"}
             grabCursor={true}
             modules={[EffectCards]}
-            className="mySwiper w-[283px] h-[355px] !m-0"
+            className="mySwiper w-[283px] h-[355px]"
             cardsEffect={{
-              perSlideOffset: -35,
-
+              perSlideOffset: 50,
               slideShadows: false,
-              perSlideRotate: -3,
+              perSlideRotate: 5,
             }}
           >
             {homeData.portfolio.map((item, index) => (
@@ -80,7 +80,8 @@ const WorkHighlight = () => {
                       onClick={() => handleModal(index)}
                       className="btn btn-sm btn-secondary !text-xs flex-1 justify-between"
                     >
-                      View
+                      Details
+                      <ThreeDotsIcon size={14} />
                     </button>
                   </div>
                 </div>

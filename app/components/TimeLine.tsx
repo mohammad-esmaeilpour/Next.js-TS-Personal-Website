@@ -7,13 +7,9 @@ import ThreeDotsIcon from "./icons/ThreeDotsIcon";
 const TimeLine = () => {
   return (
     <div className="mt-44 overflow-hidden px-3">
-      <div className="max-w-7xl mx-auto text-center">
-        <div className="inline-block">
-          <h2>{homeHeadings.h2.expertise.title}</h2>
-          <div className="mt-4 relative">
-            <p className="max-w-3xl">{homeHeadings.h2.expertise.subTitle}</p>
-          </div>
-        </div>
+      <div className="max-w-7xl mx-auto">
+        <h2>{homeHeadings.h2.expertise.title}</h2>
+        <p className="mt-2">{homeHeadings.h2.expertise.subTitle}</p>
       </div>
       <ul className="md:timeline timeline-vertical lg:px-32 mt-20">
         {homeData.timeline.map((item) => (

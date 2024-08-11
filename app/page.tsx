@@ -21,14 +21,11 @@ export default function Home() {
       <Hero />
 
       <Skills />
-
-      <AboutMe />
-
-      <Tabs />
-
       {/* <TimeLine /> */}
 
+      <AboutMe />
       <WorkHighlight />
+      <Tabs />
 
       {/* <Faq /> */}
     </Fragment>

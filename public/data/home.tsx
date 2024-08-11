@@ -26,35 +26,40 @@ import roboxonWebsite from "@/public/img/projects/roboxon-website.jpg";
 import roboxonDashboard from "@/public/img/projects/roboxon-dashboard.jpg";
 
 export const homeSeo = {
-  title:
-    "Mohammad Esmaeilpour | Frontend Developer Specialized in Next.js, React, TypeScript",
+  title: "Front-End Developer | Mohammad Esmaeilpour - Next.js, React Expert",
   metadescription:
-    "Welcome to the official website of Mohammad Esmaeilpour, a frontend developer specializing in Next.js, React, Typescript, Javascript, Tailwind, Material ui and modern web development. Explore my services, skills, and portfolio to see how I can elevate your digital presence.",
+    "Experienced Front-End Developer specializing in Next.js, React, and TypeScript. Explore my portfolio and discover my innovative web solutions.",
 };
 
 export const homeHeadings = {
   h1: {
-    title:
-      "Mohammad Esmaeilpour - Frontend Developer Specialized in Next.js & React",
+    title: (
+      <>
+        <strong>
+          <strong>Mohammad Esmaeilpour</strong>
+        </strong>
+        Front-End Developer Specializing in Next.js and React
+      </>
+    ),
     subTitle:
-      "Crafting Exceptional Frontend Experiences with modern technologies",
+      "Building High-Performance Web Applications with Modern Technologies",
   },
   h2: {
     abouteMe: {
-      title: "About Me",
+      title:
+        "About Me – Front-End Developer with Expertise in Modern Web Technologies",
       subTitle:
-        "Hi 👋, I’m Mohammad Esmaeilpour, a skilled frontend developer specializing in cutting-edge technologies like TypeScript, React, and Next.js. I’m dedicated to creating dynamic, responsive, and user-friendly web applications. My approach focuses on writing clean, maintainable code that enhances performance and user experience. With a passion for continuous learning and a commitment to delivering high-quality work, I strive to bring innovative ideas to life.",
+        "With over +3 years of experience in front-end development, I specialize in creating dynamic, user-friendly web applications using Next.js, React, and TypeScript. My journey in web development began with a passion for technology and a commitment to continuous learning. Today, I help businesses build efficient, scalable web solutions that meet their unique needs.",
     },
     expertise: {
-      title: "My Expertise in Next.js, React, and TypeScript",
+      title: "My Expertise in Front-End Development",
       subTitle:
         "My core expertise lies in Next.js and React, where I've developed a range of dynamic, high-performance web applications.",
     },
     workHighlights: {
-      title: "Projects Showcasing Fronend development",
-      subTitle: "Specializing in Next.js, React, TypeScript, Tailwind, and MUI",
+      title: "Highlighted Projects – A Showcase of My Work",
+      subTitle: "High speed Platform Built with Next.js !",
     },
-    fifth: "Contact Me for Frontend Development Services",
   },
 };
 
