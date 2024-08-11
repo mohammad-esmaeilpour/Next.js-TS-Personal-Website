@@ -46,16 +46,16 @@ const Modal = ({ data, modalRef }: Props) => {
               <Link
                 target="_blank"
                 href={data.link}
-                className="btn bg-white flex-1 justify-between"
+                className="btn btn-primary flex-1 justify-between"
               >
                 Live Preview
-                <ExternalLinkIcon color="black" size={22} />
+                <ExternalLinkIcon color="white" size={22} />
               </Link>
               {data.repository && (
                 <Link
                   target="_blank"
                   href={data.repository}
-                  className="btn bg-white flex-1 justify-between"
+                  className="btn btn-secondary flex-1 justify-between"
                 >
                   Github
                   <GithubIcon size={22} />

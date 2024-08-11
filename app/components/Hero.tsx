@@ -41,22 +41,19 @@ const Hero = () => {
           />
         </div>
       </div>
-      <p className="mt-10 text-base">
+      <p className="mt-16 text-base">
         Crafting Exceptional <b className="text-gray-800">Frontend</b>{" "}
         Experiences with modern technologies
       </p>
       <div className="flex w-full justify-between sm:justify-center items-center mt-5 gap-2">
-        <Link href={"/projects"} className="btn relative flex-1 sm:flex-none">
+        <Link href={"/projects"} className="btn btn-primary flex-1 sm:flex-none">
           Explore My Projects
         </Link>
         <button
           onClick={scrollToWorkHighlight}
-          className="btn btn-neutral flex-1 sm:flex-none"
+          className="btn btn-secondary flex-1 sm:flex-none"
         >
           Work highlights
-          <div className="animate-bounce hidden sm:block">
-            <ArrowDownIcon size={16} color="white" />
-          </div>
         </button>
       </div>
     </div>

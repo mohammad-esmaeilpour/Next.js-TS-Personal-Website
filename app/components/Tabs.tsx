@@ -10,12 +10,12 @@ const Tabs = () => {
       <h2>{homeHeadings.h2.expertise.title}</h2>
       <p className="mt-2">{homeHeadings.h2.expertise.subTitle}</p>
       <div className="mt-16">
-        <div className="flex flex-wrap gap-x-5 gap-y-2">
+        <div className="flex flex-wrap gap-x-3 gap-y-2">
           {homeData.expertise.map((item) => (
             <button
               onClick={() => setActiveTab(item.label)}
               className={`text-sm p-3 text-start rounded-lg transition-transform ${
-                activeTab === item.label ? "bg-[#000] text-white" : ""
+                activeTab === item.label ? "btn btn-primary" : ""
               }`}
               key={item.label}
             >
@@ -28,7 +28,7 @@ const Tabs = () => {
           {homeData.expertise.map(
             (item) =>
               item.label === activeTab && (
-                <div key={item.label} data-aos="fade-up">
+                <div key={item.label} data-aos="fade">
                   {/* impact */}
                   <div className="flex flex-col md:flex-row gap-5 mb-8">
                     {item.impact.map((item) => (

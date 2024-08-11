@@ -16,7 +16,7 @@ const Skills = () => {
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
         centeredSlidesBounds={true}
-        spaceBetween={10}
+        spaceBetween={30}
         breakpoints={{
           320: {
             slidesPerView: 5,
@@ -32,7 +32,7 @@ const Skills = () => {
         className="sm:max-w-md lg:max-w-xl mx-auto"
       >
         {homeData.skills.map((item) => (
-          <SwiperSlide className="justify-center !flex" key={item.title}>{item.icon}</SwiperSlide>
+          <SwiperSlide className="justify-center !flex hover:scale-105 transition-all" key={item.title}>{item.icon}</SwiperSlide>
         ))}
       </Swiper>
     </div>

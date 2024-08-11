@@ -8,6 +8,7 @@ import AboutMe from "./components/AboutMe";
 import WorkHighlight from "./components/WorkHighlight";
 import { homeHeadings, homeSeo } from "@/public/data/home";
 import Tabs from "./components/Tabs";
+import Slider from "./components/global/Slider";
 
 export const metadata: Metadata = {
   title: homeSeo.title,
@@ -23,9 +24,7 @@ export default function Home() {
 
       <AboutMe />
 
-      
-
-        <Tabs />
+      <Tabs />
 
       {/* <TimeLine /> */}
 

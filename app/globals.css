@@ -51,4 +51,10 @@
   .custome-heigh {
     max-height: calc(100vh - 11em);
   }
+  .btn-primary {
+    @apply !bg-[hsla(0,0%,9%,1)] !text-[#fff] !font-medium !border-0;
+  }
+  .btn-secondary {
+    @apply !bg-white !text-[#171717] !font-medium !border-gray-300 hover:!bg-gray-100;
+  }
 }
