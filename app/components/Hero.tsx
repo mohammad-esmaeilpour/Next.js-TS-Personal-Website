@@ -1,13 +1,12 @@
 "use client";
-import { homeHeadings } from "@/public/data/home";
+import { homeData } from "@/public/data/home";
 import Link from "next/link";
 import React from "react";
 import Typewriter from "typewriter-effect";
-import { ScrollToView } from "./global/ScrollToView";
 
 const Hero = () => {
   return (
-    <div className="max-w-7xl mx-auto text-center mt-16 lg:mt-40 mb-20 px-3">
+    <main className="text-center hero-custom">
       <h1 className="text-gradient">Experienced Frontend Developer</h1>
       <div className="flex flex-col lg:flex-row items-center gap-3 justify-center flex-wrap">
         <div className="flex flex-1 justify-end text-gradient">
@@ -33,23 +32,20 @@ const Hero = () => {
         </div>
       </div>
       <h2 className="text-gradient text-base font-medium mt-16">
-        {homeHeadings.h1.subTitle}
+        {homeData.hero.subTitle}
       </h2>
-      <div className="flex w-full justify-between sm:justify-center items-center mt-5 gap-2">
-        <Link
-          href={"/projects"}
-          className="btn btn-primary flex-1 sm:flex-none"
-        >
-          View My Projects
-        </Link>
-        <button
-          onClick={()=> ScrollToView('about-me')}
-          className="btn btn-secondary flex-1 sm:flex-none"
-        >
-          Get to know me
-        </button>
+      <div className="flex w-full justify-center items-center mt-5 gap-2">
+        {homeData.hero.callToAction.map((item) => (
+          <Link
+            key={item.title}
+            href={item.link}
+            className={`btn btn-${item.btn}`}
+          >
+            {item.title}
+          </Link>
+        ))}
       </div>
-    </div>
+    </main>
   );
 };
 

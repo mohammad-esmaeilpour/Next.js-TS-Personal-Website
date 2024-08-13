@@ -5,6 +5,7 @@ import ExternalLinkIcon from "../icons/ExternalLinkIcon";
 import { TProjectsInfo } from "@/app/types/projects";
 import CloseIcon from "../icons/CloseIcon";
 import Link from "next/link";
+import ArrowOutwardIcon from "../icons/solid/ArrowOutwardIcon";
 
 type Props = {
   data: TProjectsInfo;
@@ -17,7 +18,10 @@ const Modal = ({ data, modalRef }: Props) => {
       <div className="modal-box w-full overflow-x-hidden sm:w-11/12 xl:w-10/12 max-w-7xl p-0">
         <div className="modal-action sticky top-0 py-2 z-10 bg-white w-full m-0 flex ps-2 justify-start">
           <form method="dialog">
-            <button className="btn btn-circle bg-white btn-sm">
+            <button
+              title="Modal closer"
+              className="btn btn-circle bg-white btn-sm"
+            >
               <CloseIcon size={20} />
             </button>
           </form>
@@ -29,36 +33,39 @@ const Modal = ({ data, modalRef }: Props) => {
               <p className="text-sm font-light mt-4 xl:mt-10">
                 {data.overview}
               </p>
-              <div className="mt-7">
-                {data.introductionList.map((item) => (
-                  <div
-                    key={item.key}
-                    className="flex justify-between border-b pb-2 mb-3 text-sm"
-                  >
-                    <span>{item.key}</span>
-                    <span>{item.value}</span>
-                  </div>
-                ))}
-              </div>
+            </div>
+            <div>
+              {data.introductionList.map((item) => (
+                <div
+                  key={item.key}
+                  className="flex justify-between border-b pb-2 mb-3 text-sm"
+                >
+                  <span>{item.key}</span>
+                  <span>{item.value}</span>
+                </div>
+              ))}
             </div>
 
             <div className="mt-1 flex flex-col sm:flex-row gap-3">
               <Link
                 target="_blank"
                 href={data.link}
-                className="btn btn-primary flex-1 justify-between"
+                className="btn btn-primary min-w-[170px] justify-between"
               >
                 Live Preview
-                <ExternalLinkIcon color="white" size={22} />
+                <ArrowOutwardIcon color="white" size={20} />
               </Link>
               {data.repository && (
                 <Link
                   target="_blank"
                   href={data.repository}
-                  className="btn btn-secondary flex-1 justify-between"
+                  className="btn btn-secondary min-w-[170px] justify-between"
                 >
-                  Github
-                  <GithubIcon size={22} />
+                  <span className="flex items-center gap-2">
+                    <GithubIcon size={20} />
+                    Github
+                  </span>
+                  <ArrowOutwardIcon size={20} />
                 </Link>
               )}
             </div>
@@ -67,7 +74,7 @@ const Modal = ({ data, modalRef }: Props) => {
             <Image
               src={data.img}
               alt="3d room"
-              className="rounded-xl object-contain w-full h-96 shadow-xl"
+              className="rounded-xl object-cover w-full h-96 shadow-xl"
             />
 
             <div>

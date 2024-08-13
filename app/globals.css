@@ -51,10 +51,22 @@
   .custome-heigh {
     max-height: calc(100vh - 11em);
   }
+  .btn {
+    @apply !outline-none;
+  }
   .btn-primary {
     @apply !bg-[hsla(0,0%,9%,1)] !text-[#fff] !font-medium !border-0;
   }
   .btn-secondary {
     @apply !bg-white !text-[#171717] !font-medium !border-gray-300 hover:!bg-gray-100;
+  }
+  .modal-box {
+    @apply !outline-none;
+  }
+  section {
+    @apply py-5 my-36 lg:my-64 lg:py-10 px-3 md:px-10 xl:px-0 max-w-7xl mx-auto;
+  }
+  .hero-custom {
+    @apply lg:mt-44 mt-16 px-3;
   }
 }

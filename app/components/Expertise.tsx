@@ -1,21 +1,23 @@
 "use client";
-import { homeData, homeHeadings } from "@/public/data/home";
-import React, { Fragment, useState } from "react";
+import { homeData } from "@/public/data/home";
+import React, { useState } from "react";
 
-const Tabs = () => {
-  const [activeTab, setActiveTab] = useState(homeData.expertise[0].label);
+const Expertise = () => {
+  const [activeTab, setActiveTab] = useState(homeData.expertise.tabs[0].label);
 
   return (
-    <section className="max-w-7xl mx-auto pt-32 px-3" id="expertise">
-      <h2>{homeHeadings.h2.expertise.title}</h2>
-      <p className="mt-2">{homeHeadings.h2.expertise.subTitle}</p>
+    <section id="expertise">
+      <h2>{homeData.expertise.title}</h2>
+      <p className="mt-2">{homeData.expertise.subTitle}</p>
       <div className="mt-16">
         <div className="flex flex-wrap gap-x-3 gap-y-2">
-          {homeData.expertise.map((item) => (
+          {homeData.expertise.tabs.map((item) => (
             <h3
               onClick={() => setActiveTab(item.label)}
-              className={`text-sm font-medium p-3 text-start rounded-lg transition-transform cursor-pointer ${
-                activeTab === item.label ? "btn btn-primary" : ""
+              className={`text-sm font-medium p-3 text-start transition-transform cursor-pointer ${
+                activeTab === item.label
+                  ? "bg-[hsla(0,0%,9%,1)] text-[#fff] rounded-lg"
+                  : ""
               }`}
               key={item.label}
             >
@@ -25,7 +27,7 @@ const Tabs = () => {
         </div>
 
         <div className="mt-12">
-          {homeData.expertise.map(
+          {homeData.expertise.tabs.map(
             (item) =>
               item.label === activeTab && (
                 <div key={item.label} data-aos="fade">
@@ -34,7 +36,7 @@ const Tabs = () => {
                     {item.impact.map((item) => (
                       <div
                         key={item.title}
-                        className="border flex flex-col justify-between gap-3 p-5 rounded-xl text-sm"
+                        className="border flex flex-col justify-between gap-3 p-3 md:p-5 rounded-xl text-sm"
                       >
                         <div className="flex justify-between gap-2">
                           <p className="text-black font-semibold">
@@ -51,9 +53,9 @@ const Tabs = () => {
                   <ul className="mb-6 space-y-5 ps-1">
                     {item.keyStrengths.map((item) => (
                       <li key={item.title}>
-                        <h5 className="font-semibold text-black">
+                        <h4 className="font-semibold text-black">
                           {item.title}
-                        </h5>
+                        </h4>
                         <p className="text-sm mt-1">{item.description}</p>
                       </li>
                     ))}
@@ -70,4 +72,4 @@ const Tabs = () => {
   );
 };
 
-export default Tabs;
+export default Expertise;

@@ -10,7 +10,7 @@ const Footer = () => {
         </p>
       </aside>
 
-      <div className="rating">
+      {/* <div className="rating">
         Rate me
         <input
           type="radio"
@@ -38,7 +38,7 @@ const Footer = () => {
           name="rating-2"
           className="mask mask-star-2 bg-orange-400"
         />
-      </div>
+      </div> */}
     </footer>
   );
 };
