@@ -35,7 +35,7 @@ const Expertise = () => {
                   <div className="flex flex-col md:flex-row gap-5 mb-8">
                     {item.impact.map((item) => (
                       <div
-                        key={item.title}
+                        key={item.description}
                         className="border flex flex-col justify-between gap-3 p-3 md:p-5 rounded-xl text-sm"
                       >
                         <div className="flex justify-between gap-2">
@@ -52,7 +52,7 @@ const Expertise = () => {
                   {/* key strengths */}
                   <ul className="mb-6 space-y-5 ps-1">
                     {item.keyStrengths.map((item) => (
-                      <li key={item.title}>
+                      <li key={item.description}>
                         <h4 className="font-semibold text-black">
                           {item.title}
                         </h4>

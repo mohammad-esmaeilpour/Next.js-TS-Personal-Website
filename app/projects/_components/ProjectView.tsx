@@ -14,7 +14,7 @@ const ProjectView = () => {
   const handleModal = (index: any) => {
     modalsRef.current[index].current.showModal();
   };
-
+  
   return (
     <div className="max-w-7xl mt-16 mx-auto">
       <h1 className="text-center">{projectsHeadings.h1.title}</h1>

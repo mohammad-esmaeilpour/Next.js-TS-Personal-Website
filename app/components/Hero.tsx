@@ -7,30 +7,35 @@ import Typewriter from "typewriter-effect";
 const Hero = () => {
   return (
     <main className="text-center hero-custom">
-      <h1 className="text-gradient">Experienced Frontend Developer</h1>
-      <div className="flex flex-col lg:flex-row items-center gap-3 justify-center flex-wrap">
-        <div className="flex flex-1 justify-end text-gradient">
-          Specializing in
+      <h1 className="text-gradient">
+        <strong>
+          <strong>Mohammad Esmaeilpour</strong> {""}
+          Front-End Developer
+        </strong>
+        <div className="flex flex-col lg:flex-row items-center gap-3 justify-center flex-wrap">
+          <div className="flex flex-1 justify-end text-gradient">
+            Specializing in
+          </div>
+          <div className="flex flex-1">
+            <Typewriter
+              options={{
+                strings: [
+                  "Typescript",
+                  "Javascript",
+                  "React",
+                  "Next.js",
+                  "Tailwind CSS",
+                  "Material UI",
+                ],
+                autoStart: true,
+                loop: true,
+                wrapperClassName: "text-gradient",
+                cursor: "",
+              }}
+            />
+          </div>
         </div>
-        <div className="flex flex-1">
-          <Typewriter
-            options={{
-              strings: [
-                "Typescript",
-                "Javascript",
-                "React",
-                "Next.js",
-                "Tailwind CSS",
-                "Material UI",
-              ],
-              autoStart: true,
-              loop: true,
-              wrapperClassName: "text-gradient",
-              cursor: "",
-            }}
-          />
-        </div>
-      </div>
+      </h1>
       <h2 className="text-gradient text-base font-medium mt-16">
         {homeData.hero.subTitle}
       </h2>

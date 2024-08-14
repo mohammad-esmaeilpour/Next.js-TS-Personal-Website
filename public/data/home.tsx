@@ -41,7 +41,7 @@ const homeHeadings = {
         <strong>
           <strong>Mohammad Esmaeilpour</strong> {""}
         </strong>
-        <strong>Front-End Developer</strong> Specializing in Next.js and React
+        <strong>Front-End Developer</strong> Specializing in
       </>
     ),
     subTitle:

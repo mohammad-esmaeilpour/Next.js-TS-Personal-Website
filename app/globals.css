@@ -3,29 +3,17 @@
 @tailwind utilities;
 
 @layer base {
+  /* tag's */
   * {
     @apply font-sans text-[#666] font-normal;
   }
 
-  h1 {
-    @apply font-extrabold;
-    background: linear-gradient(180deg, #555, #000);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: max(48px, min(5vw, 76px));
-    line-height: 1;
-    letter-spacing: -0.05em;
+  h1,
+  h2 {
+    @apply text-gradient;
   }
   h2 {
     font-size: 32px;
-    line-height: 1.25;
-    letter-spacing: -0.04em;
-    font-weight: 700;
-    color: #111;
-    --text-gradient: linear-gradient(180deg, #555, #000);
-    background: linear-gradient(180deg, #555, #000);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
   h3 {
     @apply text-base font-bold text-[#171717];
@@ -39,18 +27,11 @@
     line-height: 1.8;
     letter-spacing: -0.01em;
   }
-  .text-gradient {
-    @apply font-extrabold;
-    background: linear-gradient(180deg, #555, #000);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: max(48px, min(5vw, 76px));
-    line-height: 1;
-    letter-spacing: -0.05em;
+  section {
+    @apply py-5 my-36 lg:my-64 lg:py-10 px-3 md:px-10 xl:px-0 max-w-7xl mx-auto;
   }
-  .custome-heigh {
-    max-height: calc(100vh - 11em);
-  }
+
+  /* Tailwind classes */
   .btn {
     @apply !outline-none;
   }
@@ -63,8 +44,19 @@
   .modal-box {
     @apply !outline-none;
   }
-  section {
-    @apply py-5 my-36 lg:my-64 lg:py-10 px-3 md:px-10 xl:px-0 max-w-7xl mx-auto;
+
+  /* Custom Classes */
+  .text-gradient {
+    @apply font-extrabold;
+    background: linear-gradient(180deg, #555, #000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: max(48px, min(4vw, 76px));
+    line-height: 1;
+    letter-spacing: -0.05em;
+  }
+  .custome-heigh {
+    max-height: calc(100vh - 11em);
   }
   .hero-custom {
     @apply lg:mt-44 mt-16 px-3;

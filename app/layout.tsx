@@ -1,12 +1,12 @@
-import Header from "./components/Header";
+import Header from "./components/layout/Header";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 
 // global styles
 import "./globals.css";
 import "aos/dist/aos.css";
-import Footer from "./components/Footer";
-import Aos from "./components/Aos";
+import Footer from "./components/layout/Footer";
+import Aos from "./components/global/Aos";
 
 export default function RootLayout({
   children,
