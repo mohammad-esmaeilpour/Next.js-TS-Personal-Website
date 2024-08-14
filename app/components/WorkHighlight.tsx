@@ -96,7 +96,7 @@ const WorkHighlight = () => {
         </div>
       </div>
 
-      {homeData.workHighlights.projectsModals.map((item, index) => (
+      {homeData.workHighlights.cards.map((item, index) => (
         <Modal key={index} data={item} modalRef={modalsRef.current[index]} />
       ))}
     </section>

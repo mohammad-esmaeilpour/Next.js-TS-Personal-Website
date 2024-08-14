@@ -27,13 +27,13 @@ const AboutMe = () => {
         </p>
       </div>
 
-      <h2 className="mt-44 md:mt-20 lg:mt-12">{homeData.aboutMe.title}</h2>
-      <div className="mt-5 flex justify-center">
+      <h2 className="mt-52 sm:mt-20 lg:mt-12">{homeData.aboutMe.title}</h2>
+      <div className="mt-5 flex flex-col sm:flex-row justify-center gap-2 sm:gap-0">
         {homeData.aboutMe.intoView.description}
         {homeData.aboutMe.intoView.links.map((item) => (
           <div
             key={item.title}
-            className="cursor-pointer text-blue-500 flex ms-2 items-center gap-1"
+            className="cursor-pointer text-blue-500 flex justify-center ms-2 items-center gap-1"
             onClick={() => ScrollToView(item.target)}
           >
             {item.title}

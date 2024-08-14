@@ -5,7 +5,7 @@ import { navData } from "@/public/data/layout";
 import { useParams, usePathname } from "next/navigation";
 import { useRouter } from "next/router";
 
-const Navigation = () => {
+const Header = () => {
   const navItem = usePathname();
 
   return (
@@ -30,4 +30,4 @@ const Navigation = () => {
   );
 };
 
-export default Navigation;
+export default Header;

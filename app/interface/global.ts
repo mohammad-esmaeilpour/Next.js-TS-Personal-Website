@@ -1,25 +1,44 @@
 import { StaticImageData } from "next/image";
 
-// this is global interface using for every interface has Title and Description
-export interface TitleDes {
-  title: string;
-  des: string;
-}
+// single type's
+type Title = {
+  title: string | JSX.Element;
+};
 
-// this is global interface using for every interface has Title and Description and Image
-export interface TitleDesImg extends TitleDes {
+type SubTitle = {
+  subTitle: string | JSX.Element;
+};
+
+type Description = {
+  description: string;
+};
+
+type Image = {
   img: string | StaticImageData;
-}
+};
 
-// this is global interface using for every interface has Title and Description and subTitle
-export interface TitleDesSub extends TitleDes {
-  subTitle: string;
-}
+type Icon = {
+  icon: JSX.Element;
+};
 
-// this is global interface using for every interface has Title and Description and subTitle and Image
-export interface TitleDesSubImg extends TitleDes {
-  subTitle: string;
-  img: string;
-}
+// extended Interface's
+export interface TitleDescription extends Title, Description {}
 
+export interface TitleSubTitle extends Title, SubTitle {}
 
+export interface TitleSubTitleDescription
+  extends Title,
+    SubTitle,
+    Description {}
+
+export interface TitleDescriptionImage extends Title, Description, Image {}
+
+export interface TitleSubTitleImage extends Title, SubTitle, Image {}
+
+export interface TitleDescriptionIcon extends Title, Description, Icon {}
+
+export interface TitleSubtitleDescriptionImage
+  extends Title,
+    SubTitle,
+    Description,
+    Image {}
