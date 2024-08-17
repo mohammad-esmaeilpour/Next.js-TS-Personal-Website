@@ -16,8 +16,7 @@ const Expertise = () => {
               onClick={() => setActiveTab(item.label)}
               className={`text-sm font-medium p-3 text-start transition-transform cursor-pointer ${
                 activeTab === item.label
-                  ? "bg-[hsla(0,0%,9%,1)] text-[#fff] rounded-lg"
-                  : ""
+                  ? "bg-[hsla(0,0%,9%,1)] text-[#fff] rounded-lg" : ""
               }`}
               key={item.label}
             >
@@ -27,6 +26,7 @@ const Expertise = () => {
         </div>
 
         <div className="mt-12">
+          
           {homeData.expertise.tabs.map(
             (item) =>
               item.label === activeTab && (
