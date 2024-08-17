@@ -1,18 +1,15 @@
-import { homeData, homeHeadings } from "@/public/data/home";
+import { aboutData } from "@/public/data/about";
 import React from "react";
-import ThreeDotsBorderedIcon from "./icons/ThreeDotsBorderedIcon";
-import ThreeDotsAnimeIcon from "./icons/ThreeDotsAnimeIcon";
-import ThreeDotsIcon from "./icons/ThreeDotsIcon";
 
 const TimeLine = () => {
   return (
     <div className="mt-44 overflow-hidden px-3">
       <div className="max-w-7xl mx-auto">
-        <h2>{homeHeadings.h2.expertise.title}</h2>
-        <p className="mt-2">{homeHeadings.h2.expertise.subTitle}</p>
+        {/* <h2>{homeHeadings.h2.expertise.title}</h2> */}
+        {/* <p className="mt-2">{homeHeadings.h2.expertise.subTitle}</p> */}
       </div>
       <ul className="md:timeline timeline-vertical lg:px-32 mt-20">
-        {homeData.timeline.map((item) => (
+        {aboutData.timeline.map((item) => (
           <li key={item.title} className="my-4">
             <div
               className={`timeline-${item.timelineDir}  timeline-box flex flex-col gap-5 py-5 text-xl font-semibold leading-8 text-[#000] tracking-[-0.04em] relative`}

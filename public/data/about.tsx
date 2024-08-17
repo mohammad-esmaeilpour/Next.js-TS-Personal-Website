@@ -136,40 +136,40 @@ export const aboutData = {
       "When I'm not working, I enjoy [Hobby/Interest]. I also dedicate time to [Volunteer Work/Community Involvement], where I [Describe your involvement].",
   },
 
-  // timeline: [
-  //   {
-  //     dataAos: "fade-up",
-  //     timelineDir: "start",
-  //     title: "Type Safety",
-  //     description: `Utilizing TypeScript to enhance code reliability and maintainability.`,
-  //   },
-  //   {
-  //     dataAos: "fade-left",
-  //     timelineDir: "end",
-  //     title: "Performance Optimization",
-  //     description:
-  //       "Leveraging Next.js for server-side rendering and static site generation.",
-  //   },
-  //   {
-  //     dataAos: "fade-right",
-  //     timelineDir: "start",
-  //     title: "Modern Styling",
-  //     description:
-  //       "Applying Tailwind CSS and MUI for consistent and accessible designs.",
-  //   },
-  //   {
-  //     dataAos: "fade-left",
-  //     timelineDir: "end",
-  //     title: "Responsive Design",
-  //     description:
-  //       "Creating layouts that adapt seamlessly to various screen sizes.",
-  //   },
-  //   {
-  //     dataAos: "fade-down",
-  //     timelineDir: "start",
-  //     title: "Best Practices",
-  //     description:
-  //       "Adhering to industry standards and continuously learning cutting-edge techniques.",
-  //   },
-  // ],
+  timeline: [
+    {
+      dataAos: "fade-up",
+      timelineDir: "start",
+      title: "Type Safety",
+      description: `Utilizing TypeScript to enhance code reliability and maintainability.`,
+    },
+    {
+      dataAos: "fade-left",
+      timelineDir: "end",
+      title: "Performance Optimization",
+      description:
+        "Leveraging Next.js for server-side rendering and static site generation.",
+    },
+    {
+      dataAos: "fade-right",
+      timelineDir: "start",
+      title: "Modern Styling",
+      description:
+        "Applying Tailwind CSS and MUI for consistent and accessible designs.",
+    },
+    {
+      dataAos: "fade-left",
+      timelineDir: "end",
+      title: "Responsive Design",
+      description:
+        "Creating layouts that adapt seamlessly to various screen sizes.",
+    },
+    {
+      dataAos: "fade-down",
+      timelineDir: "start",
+      title: "Best Practices",
+      description:
+        "Adhering to industry standards and continuously learning cutting-edge techniques.",
+    },
+  ],
 };

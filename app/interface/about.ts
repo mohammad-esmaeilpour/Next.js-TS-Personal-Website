@@ -1,5 +1,5 @@
-import { TitleDes } from "./global";
+import { TitleDescription } from "./global";
 
-export interface IAboutIntro extends TitleDes {
+export interface IAboutIntro extends TitleDescription{
   subTitle: string;
 }
