@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
 import GithubIcon from "../icons/GithubIcon";
-import ExternalLinkIcon from "../icons/ExternalLinkIcon";
 import { TProjectsInfo } from "@/app/types/projects";
 import CloseIcon from "../icons/CloseIcon";
 import Link from "next/link";
@@ -89,7 +88,7 @@ const Modal = ({ data, modalRef }: Props) => {
               <h4 className="text-gradient text-2xl mt-10 mb-3">
                 Technologies Used
               </h4>
-              <ul className="list-disc list-inside space-y-3">
+              <ul className="space-y-3">
                 {data.technologies.map((item: string) => (
                   <li key={item}>{item}</li>
                 ))}

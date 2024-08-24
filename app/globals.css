@@ -30,6 +30,9 @@
   section {
     @apply py-5 my-36 lg:my-64 lg:py-10 px-3 md:px-10 xl:px-0 max-w-7xl mx-auto;
   }
+  strong,b {
+    @apply  text-black font-medium
+  }
 
   /* Tailwind classes */
   .btn {
@@ -44,7 +47,6 @@
   .modal-box {
     @apply !outline-none;
   }
-
   /* Custom Classes */
   .text-gradient {
     @apply font-extrabold;
@@ -61,4 +63,8 @@
   .hero-custom {
     @apply lg:mt-44 mt-16 px-3;
   }
+}
+
+.swiper-wrapper {
+  transition-timing-function: linear !important;
 }

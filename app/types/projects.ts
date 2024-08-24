@@ -8,14 +8,14 @@ export type TProjectData = {
 
 export type TProjectsInfo = {
   id: number;
-  title: string;
-  overview: string;
+  title: string | ReactElement;
+  overview: string | ReactElement;
   introductionList: {
-    key: string;
-    value: string;
+    key: string; 
+    value: string| ReactElement;
   }[];
-  features: string[];
-  technologies: string[];
+  features: string[]|ReactElement[]
+  technologies: string[]|ReactElement[];
   tags: string[];
   img: StaticImageData;
   link: string;
@@ -25,7 +25,7 @@ export type TProjectsInfo = {
 };
 
 type TProjectsFilter = {
-  title: string;
+  title: string | ReactElement;
   tag: string;
   icon: ReactElement;
 };

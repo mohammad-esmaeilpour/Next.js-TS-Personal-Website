@@ -1,12 +1,20 @@
+import BootstrapIcon from "@/app/components/icons/BootstrapIcon";
+import CssIcon from "@/app/components/icons/CssIcon";
+import GithubIcon from "@/app/components/icons/GithubIcon";
+import GitIcon from "@/app/components/icons/GitIcon";
+import HtmlIcon from "@/app/components/icons/HtmlIcon";
 import JSIcon from "@/app/components/icons/JSIcon";
+import MUIIcon from "@/app/components/icons/MUIIcon";
 import NextjsIcon from "@/app/components/icons/NextjsIcon";
 import ReactIcon from "@/app/components/icons/ReactIcon";
+import ReduxIcon from "@/app/components/icons/ReduxIcon";
+import SassIcon from "@/app/components/icons/SassIcon";
 import TailwindIcon from "@/app/components/icons/TailwindIcon";
 import TSIcon from "@/app/components/icons/TSIcon";
 
 export const aboutSeo = {
   title:
-    "Mohammad Esmaeilpour | Frontend Developer Specializing in Next.js, React, TypeScript",
+    "About Mohammad Esmaeilpour | Frontend Developer Specializing in Next.js, React, TypeScript",
   metadescription:
     "Learn more about Mohammad Esmaeilpour, a skilled frontend developer with expertise in Next.js, React, TypeScript, and modern web technologies. Discover his journey, projects, and how he can help bring your web ideas to life.",
 };
@@ -14,19 +22,29 @@ export const aboutSeo = {
 export const aboutHeadings = {
   h1: {
     title: "About Mohammad Esmaeilpour",
-    subTitle:
-      "Frontend Developer Specializing in Next.js, React, and Modern Web Technologiesee",
+    subTitle: (
+      <>
+        Hi 👋 I'm <strong>Mohammad Esmaeilpour</strong>, a{" "}
+        <strong>frontend developer</strong> with +3 years of experience. I
+        specialize in crafting responsive, user-centric applications using{" "}
+        <b>React</b>, <b>Next.js</b> and <b>TypeScript</b> with UI libraries
+        like <b>Tailwind CSS</b> and <b>Material-UI</b>.
+      </>
+    ),
   },
   h2: {
-    specialist: {
-      title: "Frontend Developer Specializing in Modern Web Technologiesd",
-      subTitle:
-        "I am Mohammad Esmaeilpour, a seasoned frontend developer with a passion for creating dynamic and responsive web applications. With a deep understanding of modern web technologies like Next.js, React, TypeScript, JavaScript, Tailwind CSS, and Material-UI, I specialize in building user-friendly interfaces that deliver exceptional user experiences.",
+    Skills: {
+      title: "My Expertise and Technical Skills",
     },
     journey: {
-      title: "My Journey as a Web Developer",
-      subTitle:
-        "My journey in web development began [insert how you started, e.g., 'in 2016 when I developed my first website']. Over the years, I have honed my skills by working on diverse projects, ranging from small business websites to complex applications for startups. I am particularly drawn to the challenge of building scalable and maintainable code, ensuring that the solutions I create are both efficient and effective.",
+      title: "Companies I worked for as a Frontend developer",
+      subTitle: (
+        <>
+          As I began my journey as a <b>front-end developer</b>, I worked with multiple
+          companies to enhance my skills and gain experience. In this section,
+          you can view my employment history and contributions as a team member.
+        </>
+      ),
     },
     expertise: {
       title: "Expertise in Next.js and React",
@@ -34,12 +52,12 @@ export const aboutHeadings = {
         "Next.js and React are at the core of my development toolkit. I have extensive experience in leveraging these powerful frameworks to create fast, SEO-friendly, and scalable web applications. Whether it's server-side rendering with Next.js or building complex UI components with React, I am proficient in utilizing these technologies to bring innovative ideas to life.",
     },
     projects: {
-      title: "Projects and Portfolio",
+      title: "Projects and Achievements",
       subTitle:
         "Throughout my career, I have developed numerous projects that reflect my expertise in frontend development. One notable project is [mention your project like 'Roboxon, a startup company website built from scratch using Next.js, TypeScript, and Tailwind CSS']. Visit my portfolio to see more examples of my work and learn how I can bring your vision to reality.",
     },
     whyChoose: {
-      title: "Why Choose Me",
+      title: "My Approach to Development",
       subTitle:
         "As a frontend developer with a strong foundation in modern web technologies, I am committed to delivering high-quality code that meets your business needs. I am constantly learning and adapting to the latest trends in web development to ensure that my clients receive the best possible service. My goal is to not only meet but exceed your expectations, turning your ideas into a functional and visually appealing digital presence.",
     },
@@ -47,82 +65,254 @@ export const aboutHeadings = {
 };
 
 export const aboutData = {
-  specialistCards: [
+  skills: [
+    {
+      title: "Typescript",
+      icon: <TSIcon size={20} />,
+    },
     {
       title: "Javascript",
-      description: "Javascript",
-      icon: <JSIcon size={50} />,
+      icon: <JSIcon size={20} />,
     },
     {
       title: "React",
-      description: "React developer",
-      icon: <ReactIcon size={50} />,
+      icon: <ReactIcon size={20} />,
     },
     {
       title: "Next.js",
-      description: "Next js",
-      icon: <NextjsIcon size={50} />,
-    },
-    {
-      title: "Typescript",
-      description: "Typescript",
-      icon: <TSIcon size={50} />,
+      icon: <NextjsIcon size={20} />,
     },
     {
       title: "Tailwind",
-      description: "Tailwind",
-      icon: <TailwindIcon size={50} />,
+      icon: <TailwindIcon size={20} />,
+    },
+    {
+      title: "MUI",
+      icon: <MUIIcon size={20} />,
+    },
+    {
+      title: "Bootstrap",
+      icon: <BootstrapIcon size={20} />,
+    },
+    {
+      title: "Sass/Scss",
+      icon: <SassIcon size={20} />,
+    },
+    {
+      title: "Redux",
+      icon: <ReduxIcon size={20} />,
+    },
+    {
+      title: "Github",
+      icon: <GithubIcon size={20} />,
+    },
+    {
+      title: "Git",
+      icon: <GitIcon size={20} />,
     },
   ],
 
   journeyTimeLine: [
     {
-      title: "React Developer in Roboxon",
-      symbol: "R",
+      title: "React Developer at Roboxon",
+      symbol: <ReactIcon size={60} />,
       year: "2022 - 2023",
-      description:
-        "Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages. Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.",
+      status: "Remote",
+      time: "Full-time",
+      description: (
+        <>
+          <h5 className="text-black font-medium flex">Overview</h5>
+          <p>
+            I was hired on the first day the company opened as a{" "}
+            <b>frontend developer</b>. I began developing the Roboxon website
+            using <b>Next.js</b>,<b>TypeScript</b>, and <b>Tailwind CSS</b>. In
+            a few weeks, Roboxon expanded as a<b> web development service</b>,
+            and I completed multiple frontend development projects using my top
+            skills as mentioned.
+          </p>
+          <h5 className="text-black font-medium flex mt-4">Company about</h5>
+          <p>
+            Roboxon was a startup company that provided <b>web development</b>{" "}
+            services, specializing in <b>backend</b>, <b>frontend</b>, and{" "}
+            <b>Figma</b>. Regrettably, due to budget constraints, the company
+            ceased its operations a year later.
+          </p>
+          <h5 className="text-black font-medium flex mt-4">
+            Role and Responsibilities
+          </h5>
+          <p>
+            I joined Roboxon as a <b>midd-level front-end developer</b>{" "}
+            specialist at <b>Typescript</b> and <b>React</b>. My
+            responsibilities are to create a good structure for routers with
+            role and permission and global configuration for{" "}
+            <b>authentication</b> and <b>authorization</b>. I developed a core
+            for my all <b>react</b> and <b>next.js</b> projects for the start of
+            each project and this has increased my development speed and my{" "}
+            <b>frontend team</b>. well handled for API usually I use (Axios) for
+            dynamic services and this is the best part of my core because, with
+            little changes in my code, I can use it in most of the projects.
+            Following that,Me and my team made a deliberate shift towards{" "}
+            <b>user interface</b> design and the development of sophisticated
+            and intricate UIs, complete with captivating animations, dynamic
+            element movements, and other enhancements.
+          </p>
+        </>
+      ),
+      skills: [
+        {
+          title: "Typescript",
+          icon: <TSIcon size={20} />,
+        },
+        {
+          title: "React",
+          icon: <ReactIcon size={20} />,
+        },
+        {
+          title: "Next.js",
+          icon: <NextjsIcon size={20} />,
+        },
+        {
+          title: "Tailwind CSS",
+          icon: <TailwindIcon size={20} />,
+        },
+        {
+          title: "Redux",
+          icon: <ReduxIcon size={20} />,
+        },
+      ],
     },
     {
-      title: "Next js developer at CloudHost",
-      symbol: "N",
+      title: "Next.js developer at CloudHost",
+      symbol: <NextjsIcon size={60} />,
       year: "2021 - 2022",
-      description:
-        "Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages. Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.",
+      status: "on-site",
+      time: "Full-time",
+      description: (
+        <>
+          <h5 className="text-black font-medium flex">Overview</h5>
+          <p>
+            After successfully completing two <b>soft skill interviews</b> and
+            one
+            <b> technical skill</b> interview, I am excited to announce that I
+            have been hired at <b>Cloudhost</b> company. With a team of over{" "}
+            <b>100 members</b> at Cloudhost, this new opportunity marks a
+            significant milestone in my career as it will be the first time for
+            me to work within such a sizable team.
+          </p>
+          <h5 className="text-black font-medium flex mt-4">Company about</h5>
+          <p>
+            <b>Cloudhost</b> is a hosting and domain provider with a strong
+            reputation in <b>cloud services</b>. The previous website was built
+            with <b>WordPress</b>, and the company is looking to create a new
+            website with a fresh design using <b>Next.js</b> to improve
+            performance, especially as their customer base continues to grow.
+          </p>
+          <h5 className="text-black font-medium flex mt-4">
+            Role and Responsibilities
+          </h5>
+          <p>
+            They hired me as a <b>junior TypeScript and Next.js</b> developer.
+            When I joined the company, the senior front-end developer had
+            already started the <b>Next.js</b> app a month prior. I joined the
+            project mid-process and <b>quickly synced</b> up with the other
+            developer. I began with a one-week demo, and after developing
+            multiple <b>complex UI</b>
+            components, they hired me. I started developing UI from <b>Figma</b>
+            , using
+            <b>TypeScript</b> and <b>Next.js</b>, with the{" "}
+            <b>Material UI CSS</b> library. My primary responsibility on
+            Cloudhost was to develop complex UI and fix any
+            <b>UI-related issues</b> introduced by other developers.
+          </p>
+        </>
+      ),
+      skills: [
+        {
+          title: "Typescript",
+          icon: <TSIcon size={20} />,
+        },
+        {
+          title: "Next.js",
+          icon: <NextjsIcon size={20} />,
+        },
+        {
+          title: "Material UI",
+          icon: <MUIIcon size={20} />,
+        },
+        {
+          title: "Redux",
+          icon: <ReduxIcon size={20} />,
+        },
+      ],
     },
     {
       title: "Frontend developer at Virtual User",
-      symbol: "F",
+      symbol: <JSIcon size={60} />,
       year: "2019 - 2020",
-      description:
-        "Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages. Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.",
+      status: "on-site",
+      time: "Full-time",
+      description: (
+        <>
+          <h5 className="text-black font-medium flex">Overview</h5>
+          <p>
+            Virtual Users is a small yet mighty team that provides virtual bot
+            services on social media platforms such as Telegram and Instagram.
+            They offer member increase and channel and post overview through bot
+            automation. Their core program facilitates the creation of various
+            bots.
+          </p>
+          <h5 className="text-black font-medium flex mt-4">Company about</h5>
+          <p>
+            <b>Virtual Users</b> is a small yet mighty team that provides{" "}
+            <b>virtual bot services</b> on social media platforms such as{" "}
+            <b>Telegram</b> and <b>Instagram</b>. They offer member increase and
+            channel and post overview through bot automation. Their core program
+            facilitates the creation of various bots.
+          </p>
+          <h5 className="text-black font-medium flex mt-4">
+            Role and Responsibilities
+          </h5>
+          <p>
+            I joined Roboxon as a <b>midd-level front-end developer</b>{" "}
+            specialist at <b>Typescript</b> and <b>React</b>. My
+            responsibilities are to create a good structure for routers with
+            role and permission and global configuration for{" "}
+            <b>authentication</b> and <b>authorization</b>. I developed a core
+            for my all <b>react</b> and <b>next.js</b> projects for the start of
+            each project and this has increased my development speed and my{" "}
+            <b>frontend team</b>. well handled for API usually I use (Axios) for
+            dynamic services and this is the best part of my core because, with
+            little changes in my code, I can use it in most of the projects.
+            Following that,Me and my team made a deliberate shift towards{" "}
+            <b>user interface</b> design and the development of sophisticated
+            and intricate UIs, complete with captivating animations, dynamic
+            element movements, and other enhancements.
+          </p>
+        </>
+      ),
+      link: "https://v-user.com",
+      skills: [
+        {
+          title: "Javascript",
+          icon: <JSIcon size={20} />,
+        },
+
+        {
+          title: "HTML 5",
+          icon: <HtmlIcon size={20} />,
+        },
+        {
+          title: "CSS 3",
+          icon: <CssIcon size={20} />,
+        },
+        {
+          title: "Bootstrap",
+          icon: <BootstrapIcon size={20} />,
+        },
+        ,
+      ],
     },
   ],
-
-  skills: {
-    title: "### Skills and Expertise",
-    description:
-      "I'm skilled in various aspects of [Your Field/Industry], including:",
-    skillCard: [
-      {
-        title: "- [Skill 1]",
-      },
-      {
-        title: "- [Skill 2]",
-      },
-      {
-        title: "- [Skill 3]",
-      },
-    ],
-    expertiseSkills: [
-      {
-        title: "- [Technical Skill/Tool]",
-      },
-      {
-        title: "- [Technical Skill/Tool]",
-      },
-    ],
-  },
 
   achievements: {
     title: "Projects and Achievements",

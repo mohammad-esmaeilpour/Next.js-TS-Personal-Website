@@ -53,7 +53,7 @@ const homeHeadings = {
         "About Me – Front-End Developer with Expertise in Modern Web Technologies",
       subTitle: (
         <>
-          Hi👋 my name is <strong>Mohammad Esmaeilpour</strong> With over +3
+          Hi👋 <br/> my name is <strong>Mohammad Esmaeilpour</strong> With over +3
           years of experience in <b>front-end development</b>, I specialize in
           creating dynamic, user-friendly web applications using{" "}
           <b>Next.js, React, and TypeScript</b>. My journey in web development
@@ -365,7 +365,9 @@ export const homeData: THomeData = {
       "This project involved developing a fast, scalable web application using Next.js, React, and Tailwind CSS. The Apps performance improved by 30%, leading to a significant increase in user engagement and sales.",
     callToAction: {
       title: (
-        <strong className="text-white">Mohammad Esmaeilpour Projects</strong>
+        <strong className="btn btn-primary mt-10">
+          Mohammad Esmaeilpour Projects
+        </strong>
       ),
       link: "/projects",
     },

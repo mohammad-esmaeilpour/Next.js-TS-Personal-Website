@@ -1,13 +1,9 @@
-import { aboutData } from "@/public/data/about";
+import { aboutData, aboutHeadings } from "@/public/data/about";
 import React from "react";
 
 const TimeLine = () => {
   return (
     <div className="mt-44 overflow-hidden px-3">
-      <div className="max-w-7xl mx-auto">
-        {/* <h2>{homeHeadings.h2.expertise.title}</h2> */}
-        {/* <p className="mt-2">{homeHeadings.h2.expertise.subTitle}</p> */}
-      </div>
       <ul className="md:timeline timeline-vertical lg:px-32 mt-20">
         {aboutData.timeline.map((item) => (
           <li key={item.title} className="my-4">

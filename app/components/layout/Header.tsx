@@ -10,14 +10,14 @@ const Header = () => {
 
   return (
     <header>
-      <nav className="container mx-auto flex py-4 max-w-6xl z-50">
+      <nav className="max-w-7xl ps-10 mx-auto flex py-4 z-50">
         <ul className="flex items-center z-50">
           {navData.links.map((item) => (
             <li key={item.id} className="mx-2.5">
               <Link
                 href={item.link}
                 className={`relative ${
-                  navItem === item.link && "font-bold text-black"
+                  navItem === item.link && "text-black"
                 }`}
               >
                 {item.title}

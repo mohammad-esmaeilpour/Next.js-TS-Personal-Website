@@ -1,6 +1,8 @@
 import { projectsSeo } from "@/public/data/projects";
 import { Metadata } from "next";
 import ProjectView from "./_components/ProjectView";
+import { Fragment } from "react";
+import Hero from "./_components/Hero";
 
 export const metadata: Metadata = {
   title: projectsSeo.title,
@@ -8,7 +10,12 @@ export const metadata: Metadata = {
 };
 
 const Projects = () => {
-  return <ProjectView />;
+  return (
+    <Fragment>
+      <Hero/>
+      <ProjectView />;
+    </Fragment>
+    )
 };
 
 export default Projects;

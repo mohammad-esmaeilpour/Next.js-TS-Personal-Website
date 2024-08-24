@@ -35,7 +35,6 @@ const WorkHighlight = () => {
         <div className="flex-1 order-2 lg:order-1 mt-10">
           <p>{homeData.workHighlights.description}</p>
           <Link
-            className="btn btn-primary mt-10"
             href={homeData.workHighlights.callToAction.link}
           >
             {homeData.workHighlights.callToAction.title}
