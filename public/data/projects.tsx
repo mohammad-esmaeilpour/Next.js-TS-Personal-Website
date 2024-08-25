@@ -12,126 +12,192 @@ import MUIIcon from "@/app/components/icons/MUIIcon";
 import { TProjectData } from "@/app/types/projects";
 
 export const projectsSeo = {
-  title: "Projects by Mohammad Esmaeilpour - React, Next.js, TypeScript",
+  title: "Project's - Mohammad Esmaeilpour | Front-end developer",
   metadescription:
-    "Explore the projects developed by Mohammad Esmaeilpour, showcasing expertise in React, Next.js, TypeScript, and Tailwind CSS.",
+    "Develop high-performance applications with Next.js and React, using TypeScript to improve type safety.",
 };
 
 export const projectsHeadings = {
   h1: {
-    title: "My Projects",
-    description:
-      "Jumpstart your app development process with pre-built solutions from Vercel and our community.",
+    title: "Mohammad Esmaeilpour Project's",
+    subTitle: (
+      <>
+        Develop high-performance applications with Next.js and React, using
+        TypeScript to improve type safety.
+      </>
+    ),
   },
-  h2: "Filter by Technology",
 };
 
 export const projectsData: TProjectData = {
   projectsInfo: [
     {
+      id: 0,
       title: "3D Room using CSS and JavaScript",
-      overview:
-        "I've created a 3D room using CSS, HTML, and JavaScript, aiming to provide an immersive virtual space that showcases both design aesthetics and interactive functionality.",
+      overview: (
+        <>
+          I've created a 3D room using CSS, HTML, and JavaScript, aiming to
+          provide an immersive virtual space that showcases both design
+          aesthetics and interactive functionality.
+        </>
+      ),
       features: [
-        "3D Rendering: Utilizes CSS transforms and animations to create a lifelike room environment.",
-        "Interactive Elements: Users can interact with objects within the room, such as clicking on furniture to change its color or position.",
-        "Responsive Design: Ensures the room adapts seamlessly to different screen sizes, maintaining visual integrity and usability.",
-        "Realistic Lighting: Implemented through CSS effects to simulate natural lighting conditions, enhancing the room's realism.",
-        "Dynamic Content: Updates dynamically based on user inputs or events, allowing for a personalized user experience.",
-      ],
-      technologies: [
-        "CSS: Leveraging transforms, animations, and custom styling to create the 3D environment and simulate lighting effects.",
-        "HTML: Structuring the room layout and integrating interactive elements.",
-        "JavaScript: Adding interactivity, handling user inputs, and managing dynamic content updates.",
-      ],
-      introductionList: [
         {
-          key: "Language",
-          value: "Javascript",
+          title: "3D Rendering",
+          description:
+            "Utilizes CSS transforms and animations to create a lifelike room environment.",
         },
         {
-          key: "Style",
-          value: "CSS",
+          title: "Interactive Elements",
+          description:
+            "Users can interact with objects within the room, such as clicking on furniture to change its color or position.",
+        },
+        {
+          title: "Responsive Design",
+          description:
+            "Ensures the room adapts seamlessly to different screen sizes, maintaining visual integrity and usability.",
+        },
+        {
+          title: "Realistic Lighting",
+          description:
+            "Implemented through CSS effects to simulate natural lighting conditions, enhancing the room's realism.",
+        },
+        {
+          title: "Dynamic Content",
+          description:
+            "Updates dynamically based on user inputs or events, allowing for a personalized user experience.",
+        },
+      ],
+      techStack: [
+        {
+          title: "HTML",
+          icon: <HtmlIcon key={2} size={18} />,
+        },
+        {
+          title: "CSS",
+          icon: <CssIcon key={3} size={18} />,
+        },
+        {
+          title: "Javascript",
+          icon: <JSIcon key={1} size={18} />,
         },
       ],
       img: room,
       tags: ["html", "css", "js"],
-      link: "https://projects.esmaeilpour.site/3d-room",
+      previewLink: "https://projects.esmaeilpour.site/3d-room",
       repository: "https://github.com/mohamadesmaeilpour/3D-Room.git",
-      techIcons: [
-        <JSIcon key={1} size={18} />,
-        <HtmlIcon key={2} size={18} />,
-        <CssIcon key={3} size={18} />,
-      ],
     },
     {
+      id: 1,
       title: "Modern Next.js Responsive Website - Roboxon",
-      overview:
-        "I developed a modern, responsive website using Next.js, Tailwind CSS, and TypeScript, focusing on performance, scalability, and maintainability. This project showcases my ability to create dynamic, high-quality web applications with a keen eye for design and user experience.",
+      overview: (
+        <>
+          I developed a modern, responsive website using Next.js, Tailwind CSS,
+          and TypeScript, focusing on performance, scalability, and
+          maintainability. This project showcases my ability to create dynamic,
+          high-quality web applications with a keen eye for design and user
+          experience.
+        </>
+      ),
       features: [
-        "Responsive Design: The website is fully responsive, ensuring an optimal viewing experience across a wide range of devices, from desktops to mobile phones.",
-        "Fast Performance: Leveraged the power of Next.js for server-side rendering and static site generation, resulting in fast load times and a smooth user experience.",
-        "Type Safety: Incorporated TypeScript to ensure robust type-checking and improve code maintainability and scalability.",
-        "Custom Styling: Utilized Tailwind CSS to create a unique, modern design that is both visually appealing and easy to maintain.",
-        "Modular Architecture: Designed the application with a modular architecture, making it easy to extend and maintain in the future",
-        "API Integration: Integrated with external APIs to fetch dynamic content, showcasing the ability to work with third-party services and data.",
+        {
+          title: "Responsive Design",
+          description:
+            "The website is fully responsive, ensuring an optimal viewing experience across a wide range of devices, from desktops to mobile phones.",
+        },
+        {
+          title: "Fast Performance",
+          description:
+            "Leveraged the power of Next.js for server-side rendering and static site generation, resulting in fast load times and a smooth user experience.",
+        },
+        {
+          title: "Type Safety",
+          description:
+            "Incorporated TypeScript to ensure robust type-checking and improve code maintainability and scalability.",
+        },
+        {
+          title: "Custom Styling",
+          description:
+            "Utilized Tailwind CSS to create a unique, modern design that is both visually appealing and easy to maintain.",
+        },
+        {
+          title: "Modular Architecture",
+          description:
+            "Designed the application with a modular architecture, making it easy to extend and maintain in the future.",
+        },
+        {
+          title: "API Integration",
+          description:
+            "Integrated with external APIs to fetch dynamic content, showcasing the ability to work with third-party services and data.",
+        },
       ],
-      technologies: ["Next.js", "Typescript", "Tailwind CSS"],
-      introductionList: [
+      techStack: [
         {
-          key: "Language",
-          value: "Typescript",
+          title: "Typescript",
+          icon: <TSIcon key={1} size={18} />,
         },
         {
-          key: "Freamwork",
-          value: "Next.js",
+          title: "Next.js",
+          icon: <NextjsIcon key={3} size={18} />,
         },
         {
-          key: "Styling",
-          value: "Tailwind CSS",
+          title: "Tailwind CSS",
+          icon: <TailwindIcon key={1} size={18} />,
         },
       ],
       img: roboxonWebsite,
-      link: "/",
-      techIcons: [
-        <TSIcon key={1} size={18} />,
-        <NextjsIcon key={2} size={18} />,
-        <TailwindIcon key={3} size={18} />,
-      ],
       tags: ["next", "typescript", "tailwind"],
     },
     {
+      id: 2,
       title: "High-Performance Dashboard with React and Tailwind CSS",
-      overview:
-        "I developed a high-performance dashboard for a company, allowing them to efficiently manage users, companies, roles, and permissions. This project spanned over 8 months and involved the use of cutting-edge technologies like React, TypeScript, Tailwind CSS, and Redux. The dashboard significantly improved the company’s operational efficiency and user management capabilities.",
+      overview: (
+        <>
+          I developed a high-performance dashboard for a company, allowing them
+          to efficiently manage users, companies, roles, and permissions. This
+          project spanned over 8 months and involved the use of cutting-edge
+          technologies like React, TypeScript, Tailwind CSS, and Redux. The
+          dashboard significantly improved the company’s operational efficiency
+          and user management capabilities.
+        </>
+      ),
       features: [
-        "Role-Based Access Control: Advanced role and permission management for secure access.",
-        "Efficient State Management: Utilized Redux for state management, ensuring a predictable and maintainable codebase.",
-        "Customizable UI: Used Tailwind CSS to create a highly customizable and visually appealing interface.",
-        "TypeScript Integration: Leveraged TypeScript to enhance code quality and maintainability.",
+        {
+          title: "Role-Based Access Control",
+          description:
+            "Advanced role and permission management for secure access.",
+        },
+        {
+          title: "Efficient State Management",
+          description:
+            "Utilized Redux for state management, ensuring a predictable and maintainable codebase.",
+        },
+        {
+          title: "Customizable UI",
+          description:
+            "Used Tailwind CSS to create a highly customizable and visually appealing interface.",
+        },
+        {
+          title: "TypeScript Integration",
+          description:
+            "Leveraged TypeScript to enhance code quality and maintainability.",
+        },
       ],
-      technologies: ["React", "Typescript", "Tailwind CSS"],
-      introductionList: [
+      techStack: [
         {
-          key: "Language",
-          value: "Typescript",
+          title: "Typescript",
+          icon: <TSIcon key={1} size={18} />,
         },
         {
-          key: "Library",
-          value: "React",
+          title: "React",
+          icon: <ReactIcon key={3} size={18} />,
         },
         {
-          key: "Styling",
-          value: "Tailwind CSS",
+          title: "Tailwind CSS",
+          icon: <TailwindIcon key={1} size={18} />,
         },
       ],
       img: roboxonDashboard,
-      link: "/",
-      techIcons: [
-        <TSIcon key={1} size={18} />,
-        <ReactIcon key={2} size={18} />,
-        <TailwindIcon key={3} size={18} />,
-      ],
       tags: ["react", "typescript", "tailwind"],
     },
   ],

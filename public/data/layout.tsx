@@ -1,4 +1,3 @@
-
 // link data
 export const navData = {
   links: [

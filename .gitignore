@@ -15,9 +15,6 @@
 # production
 /build
 
-# iisnode
-/iisnode
-
 # misc
 .DS_Store
 *.pem

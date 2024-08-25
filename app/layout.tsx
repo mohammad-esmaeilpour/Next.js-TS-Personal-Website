@@ -1,11 +1,12 @@
-import Navigation from "./components/Navigation";
+import Header from "./components/layout/Header";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 
 // global styles
 import "./globals.css";
 import "aos/dist/aos.css";
-import Footer from "./components/Footer";
+import Footer from "./components/layout/Footer";
+import Aos from "./components/global/Aos";
 
 export default function RootLayout({
   children,
@@ -14,8 +15,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`}>
+      <Aos />
       <body className="overflow-x-hidden">
-        <Navigation />
+        <Header />
         <main>{children}</main>
         <Footer />
       </body>

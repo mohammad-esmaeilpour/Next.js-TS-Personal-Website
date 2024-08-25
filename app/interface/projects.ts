@@ -1,9 +1,9 @@
 // all components types for projects page is here
 
 import { ReactNode } from "react";
-import { TitleDesImg } from "./global";
+import { TitleDescriptionImage } from "./global";
 
-export interface IProjectsCard extends TitleDesImg {
+export interface IProjectsCard extends TitleDescriptionImage{
   link: string;
   techIcons: ReactNode[];
   tags: string[];

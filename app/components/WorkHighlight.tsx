@@ -1,11 +1,16 @@
 "use client";
 import { projectsData } from "@/public/data/projects";
 import Image from "next/image";
-import Link from "next/link";
-import React, { createRef, useRef } from "react";
+import React, { createRef, useId, useRef } from "react";
 import Modal from "./global/Modal";
-import GithubIcon from "./icons/GithubIcon";
-import { homeData, homeHeadings } from "@/public/data/home";
+import { homeData } from "@/public/data/home";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCards } from "swiper/modules";
+import "swiper/css/effect-cards";
+import Link from "next/link";
+import ThreeDotsIcon from "./icons/ThreeDotsIcon";
+import ArrowOutwardIcon from "./icons/solid/ArrowOutwardIcon";
+import EyeIcon from "./icons/EyeIcon";
 
 const WorkHighlight = () => {
   const modalsRef: any = useRef(
@@ -16,67 +21,82 @@ const WorkHighlight = () => {
   };
 
   return (
-    <div className="my-44 px-3">
-      <div className="text-center mb-20">
-        <h2>{homeHeadings.h2.third}</h2>
-        <p>Specializing in Next.js, React, TypeScript, Tailwind, and MUI</p>
+    <section
+      className="overflow-hidden xl:overflow-visible"
+      id="work-highlight"
+    >
+      <div className="flex flex-col xl:flex-row xl:items-end gap-2 mb-16 lg:mb-28">
+        <h2>{homeData.workHighlights.title}</h2>
+        <h3 className="text-gradient text-base font-medium">
+          {homeData.workHighlights.subTitle}
+        </h3>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 max-w-7xl mx-auto">
-        {projectsData.projectsInfo.map((item, index) => (
-          <div
-            onClick={() => handleModal(index)}
-            key={item.title}
-            className="col-span-1"
+
+      <div className="flex flex-col lg:flex-row justify-between gap-10">
+        <div className="flex-1 order-2 lg:order-1 mt-10">
+          <p>{homeData.workHighlights.description}</p>
+          <Link href={homeData.workHighlights.callToAction.link}>
+            <strong className="btn btn-primary mt-4">
+              {homeData.workHighlights.callToAction.title}
+            </strong>
+          </Link>
+        </div>
+        <div className="flex-1 order-1 lg:order-2 flex justify-end relative">
+          <Swiper
+            effect={"cards"}
+            grabCursor={true}
+            modules={[EffectCards]}
+            className="mySwiper w-[300px] h-[355px]"
+            cardsEffect={{
+              perSlideOffset: 50,
+              slideShadows: false,
+              perSlideRotate: 5,
+            }}
           >
-            <div className="card cursor-pointer rounded-lg overflow-hidden bg-white shadow-xl hover:shadow-2xl transition-all">
-              <div className="h-56 relative">
-                <Image
-                  src={item.img}
-                  alt={item.title}
-                  fill
-                  sizes="300"
-                  className="object-cover object-top"
-                />
-              </div>
-              <div className="card-body p-4 pb-3 text-start">
-                <h3 className="line-clamp-1">{item.title}</h3>
-                <p className="text-sm line-clamp-2 mt-2">{item.overview}</p>
-                <div className="flex items-baseline justify-between pb-1">
-                  <div className="flex mt-3.5 items-center gap-2">
-                    {item.techIcons.map((icon) => (
-                      <span key={icon.key} className="flex items-center gap-1">
-                        {icon}
-                      </span>
-                    ))}
-                  </div>
-
-                  {item.repository && (
-                    <Link
-                      href={item.repository}
-                      className="tooltip tooltip-left"
-                      data-tip="Github"
-                      target="_blank"
-                    >
-                      <GithubIcon size={20} />
-                    </Link>
-                  )}
+            {projectsData.projectsInfo.map((item) => (
+              <SwiperSlide
+                key={item.id}
+                className="flex items-center justify-center rounded-lg border bg-white drop-shadow-lg"
+              >
+                <div className="h-48 relative overflow-hidden">
+                  <Image
+                    src={item.img}
+                    alt={item.title}
+                    fill
+                    sizes="300"
+                    className="object-cover object-top"
+                  />
                 </div>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
-
-      <div className="flex w-full justify-center mt-10">
-        <Link href={"/projects"} className="btn btn-neutral">
-          See all project
-        </Link>
+                <div className="card-body p-4 pb-3 text-start">
+                  <h4 className="line-clamp-1 text-base font-semibold">
+                    {item.title}
+                  </h4>
+                  <p className="text-sm font-normal line-clamp-2 mb-1">
+                    {item.overview}
+                  </p>
+                  <div className="flex items-center justify-between w-full mt-3 gap-2">
+                    <div className="flex gap-2 flex-1 justify-start">
+                      {item.techStack.map((item) => item.icon)}
+                    </div>
+                    <button
+                      onClick={() => handleModal(item.id)}
+                      className="btn btn-sm btn-secondary flex-1 justify-between ms-10"
+                    >
+                      Details
+                      <ThreeDotsIcon size={14} />
+                    </button>
+                  </div>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
       </div>
 
       {projectsData.projectsInfo.map((item, index) => (
         <Modal key={index} data={item} modalRef={modalsRef.current[index]} />
       ))}
-    </div>
+    </section>
   );
 };
 

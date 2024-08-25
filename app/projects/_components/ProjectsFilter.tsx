@@ -27,15 +27,15 @@ const ProjectsFilter: React.FC<ProjectsFilterProps> = ({
           tabIndex={0}
           className="m-1 flex justify-between items-center md:mb-5"
         >
-          {projectsHeadings.h2}
+          Filter projects
           <FilterIcon size={18} />
         </div>
         {selectedFilters.length !== 0 && (
           <div
-            className="btn w-full bg-white justify-between transition-all px-5 py-1 my-1"
+            className="btn btn-secondary w-full justify-between"
             onClick={() => setSelectedFilters([])}
           >
-            clear
+            clear 
             <CloseIcon size={18} />
           </div>
         )}
@@ -45,19 +45,19 @@ const ProjectsFilter: React.FC<ProjectsFilterProps> = ({
         >
           {projectsData.projectsFilter.map((item) => (
             <label
-              key={item.title}
-              className="label cursor-pointer items-center justify-start gap-x-3 mb-2"
+              key={item.tag}
+              className="label cursor-pointer items-center justify-between gap-x-3 mb-2"
             >
               <input
                 type="checkbox"
-                className="checkbox checkbox-sm"
+                className="checkbox checkbox-sm order-2"
                 checked={selectedFilters.includes(item.tag)}
                 onChange={() => handleCheckboxChange(item.tag)}
               />
-              <span className="label-text flex ms-2 gap-x-2 items-center">
+              <div className="label-text flex gap-x-2 items-center">
                 {item.icon}
                 {item.title}
-              </span>
+              </div>
             </label>
           ))}
         </ul>
