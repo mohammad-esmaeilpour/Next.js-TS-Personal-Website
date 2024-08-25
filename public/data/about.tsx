@@ -13,10 +13,9 @@ import TailwindIcon from "@/app/components/icons/TailwindIcon";
 import TSIcon from "@/app/components/icons/TSIcon";
 
 export const aboutSeo = {
-  title:
-    "About Mohammad Esmaeilpour | Frontend Developer Specializing in Next.js, React, TypeScript",
+  title: "About Mohammad Esmaeilpour",
   metadescription:
-    "Learn more about Mohammad Esmaeilpour, a skilled frontend developer with expertise in Next.js, React, TypeScript, and modern web technologies. Discover his journey, projects, and how he can help bring your web ideas to life.",
+    "Hi I'm Mohammad Esmaeilpour a frontend developer with +3 years of experience. specialize in crafting responsive, user-centric applications using React, Next.js and TypeScript with UI libraries like Tailwind CSS and Material-UI.",
 };
 
 export const aboutHeadings = {
@@ -25,7 +24,7 @@ export const aboutHeadings = {
     subTitle: (
       <>
         Hi 👋 I'm <strong>Mohammad Esmaeilpour</strong>, a{" "}
-        <strong>frontend developer</strong> with +3 years of experience. I
+        <strong>frontend developer</strong> with <b>+3 years</b> of experience. I
         specialize in crafting responsive, user-centric applications using{" "}
         <b>React</b>, <b>Next.js</b> and <b>TypeScript</b> with UI libraries
         like <b>Tailwind CSS</b> and <b>Material-UI</b>.
@@ -216,13 +215,12 @@ export const aboutData = {
             already started the <b>Next.js</b> app a month prior. I joined the
             project mid-process and <b>quickly synced</b> up with the other
             developer. I began with a one-week demo, and after developing
-            multiple <b>complex UI</b>
+            multiple <b>complex UI </b>
             components, they hired me. I started developing UI from <b>Figma</b>
-            , using
-            <b>TypeScript</b> and <b>Next.js</b>, with the{" "}
+            , using <b>TypeScript</b> and <b>Next.js</b>, with the{" "}
             <b>Material UI CSS</b> library. My primary responsibility on
             Cloudhost was to develop complex UI and fix any
-            <b>UI-related issues</b> introduced by other developers.
+            <b> UI-related issues</b> introduced by other developers.
           </p>
         </>
       ),
@@ -255,11 +253,11 @@ export const aboutData = {
         <>
           <h5 className="text-black font-medium flex">Overview</h5>
           <p>
-            Virtual Users is a small yet mighty team that provides virtual bot
-            services on social media platforms such as Telegram and Instagram.
-            They offer member increase and channel and post overview through bot
-            automation. Their core program facilitates the creation of various
-            bots.
+            Being a virtual user is <b>my first job</b> in this field. After
+            completing a <b>three-month internship</b>, I was hired at this company. I have successfully developed
+            UI, added content to the website, and significantly enhanced my
+            skills in <b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b>. I am looking forward to
+            continuing my career growth with these essential technologies.
           </p>
           <h5 className="text-black font-medium flex mt-4">Company about</h5>
           <p>
@@ -273,20 +271,12 @@ export const aboutData = {
             Role and Responsibilities
           </h5>
           <p>
-            I joined Roboxon as a <b>midd-level front-end developer</b>{" "}
-            specialist at <b>Typescript</b> and <b>React</b>. My
-            responsibilities are to create a good structure for routers with
-            role and permission and global configuration for{" "}
-            <b>authentication</b> and <b>authorization</b>. I developed a core
-            for my all <b>react</b> and <b>next.js</b> projects for the start of
-            each project and this has increased my development speed and my{" "}
-            <b>frontend team</b>. well handled for API usually I use (Axios) for
-            dynamic services and this is the best part of my core because, with
-            little changes in my code, I can use it in most of the projects.
-            Following that,Me and my team made a deliberate shift towards{" "}
-            <b>user interface</b> design and the development of sophisticated
-            and intricate UIs, complete with captivating animations, dynamic
-            element movements, and other enhancements.
+            After completing my internship, I was offered a position as a <b>junior
+            frontend developer</b>. My primary responsibilities in this role include
+            <b>adding new pages</b> to websites, developing <b>user interfaces</b>, <b>creating
+            various components</b>, and <b>integrating new pages</b> with content for the
+            blog section and other areas of the website. I'm also involved in
+            additional tasks related to <b>frontend development</b>.
           </p>
         </>
       ),

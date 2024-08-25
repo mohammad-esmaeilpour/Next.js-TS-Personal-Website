@@ -29,7 +29,7 @@ const Modal = ({ data, modalRef }: Props) => {
           <div className="col-span-1 lg:col-span-5 flex flex-col justify-between xl:pe-10 lg:sticky top-16 lg:custome-heigh">
             <div>
               <h3 className="text-4xl text-gradient">{data.title}</h3>
-              <p className="text-sm font-light mt-4 xl:mt-10">
+              <p className="text-base font-light mt-4 xl:mt-10">
                 {data.overview}
               </p>
             </div>
@@ -79,8 +79,8 @@ const Modal = ({ data, modalRef }: Props) => {
             <div>
               <h4 className="text-gradient text-2xl mb-3 mt-8">Features</h4>
               <ul className="space-y-3">
-                {data.features?.map((item: string) => (
-                  <li key={item}>{item}</li>
+                {data.features?.map((item, index) => (
+                  <li key={index}>{item}</li>
                 ))}
               </ul>
             </div>
@@ -89,8 +89,8 @@ const Modal = ({ data, modalRef }: Props) => {
                 Technologies Used
               </h4>
               <ul className="space-y-3">
-                {data.technologies.map((item: string) => (
-                  <li key={item}>{item}</li>
+                {data.technologies.map((item, index) => (
+                  <li key={index}>{item}</li>
                 ))}
               </ul>
             </div>

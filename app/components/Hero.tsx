@@ -7,38 +7,42 @@ import Typewriter from "typewriter-effect";
 const Hero = () => {
   return (
     <main className="text-center hero-custom">
-      <h1 className="overflow-hidden"> 
-        <strong className="text-gradient" >
-          <strong className="text-gradient">Mohammad Esmaeilpour</strong> {""}
-          Front-End Developer
-        </strong>
-        <div className="flex flex-col lg:flex-row items-start lg:items-center gap-3 justify-center flex-wrap">
-          <div className="flex flex-1 justify-end text-gradient">
-            Specializing in
-          </div>
-          <div className="flex flex-1 text-center max-sm:justify-center">
-            <Typewriter
-              options={{
-                strings: [
-                  "Typescript",
-                  "Javascript",
-                  "React",
-                  "Next.js",
-                  "Tailwind CSS",
-                  "Material UI",
-                ],
-                autoStart: true,
-                loop: true,
-                wrapperClassName: "text-gradient",
-                cursor: undefined,
-                deleteSpeed:"natural",
-                delay:70,
-              }}
-            />
-          </div>
+      <div className="flex justify-center gap-x-4 flex-wrap">
+        <h1>
+          <strong>
+            <strong className="text-gradient">
+              {homeData.hero.title}
+            </strong>
+          </strong>
+        </h1>
+        <span className="text-gradient">Front-End Developer</span>
+      </div>
+      <div className="flex flex-col md:flex-row gap-3">
+        <div className="flex md:flex-1 md:justify-end justify-center text-gradient">
+          Specializing in
         </div>
-      </h1>
-      <h2 className="text-gradient text-base font-medium mt-16">
+        <div className="flex justify-center md:justify-start md:flex-1">
+          <Typewriter
+            options={{
+              strings: [
+                "Typescript",
+                "Javascript",
+                "React",
+                "Next.js",
+                "Tailwind CSS",
+                "Material UI",
+              ],
+              autoStart: true,
+              loop: true,
+              wrapperClassName: "text-gradient",
+              cursor: "",
+              deleteSpeed: "natural",
+              delay: 70,
+            }}
+          />
+        </div>
+      </div>
+      <h2 className="text-gradient text-xl font-medium mt-16">
         {homeData.hero.subTitle}
       </h2>
       <div className="flex w-full justify-center items-center mt-5 gap-2">

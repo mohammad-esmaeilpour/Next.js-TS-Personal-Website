@@ -24,47 +24,24 @@ import TSIcon from "@/app/components/icons/TSIcon";
 import room from "@/public/img/projects/3d-room.jpg";
 import roboxonWebsite from "@/public/img/projects/roboxon-website.jpg";
 import roboxonDashboard from "@/public/img/projects/roboxon-dashboard.jpg";
-import mamad from "@/public/img/ui/mohammad.png";
 import { TSeoProps } from "@/app/types/global";
 import { THomeData } from "@/app/types/home";
 
 export const homeSeo: TSeoProps = {
-  title: "Front-End Developer | Mohammad Esmaeilpour - Next.js, React Expert",
+  title: "Mohammad Esmaeilpour - Front-end developer",
   metadescription:
-    "Experienced Front-End Developer specializing in Next.js, React, and TypeScript. Explore my portfolio and discover my innovative web solutions.",
+    "Mohammad Esmaeilpour - Experienced Front-end developer specializing in Next.js, React, and TypeScript. Work with multiple CSS library like as Bootstrap, Tailwind CSS and Material UI.",
 };
 
 const homeHeadings = {
   h1: {
-    title: (
-      <>
-        <strong>
-          <strong>Mohammad Esmaeilpour</strong> {""}
-        </strong>
-        <strong>Front-End Developer</strong> Specializing in
-      </>
-    ),
+    title: "Mohammad Esmaeilpour",
     subTitle:
       "Building High-Performance Web Applications with Modern Technologies",
   },
   h2: {
-    abouteMe: {
-      title:
-        "About Me – Front-End Developer with Expertise in Modern Web Technologies",
-      subTitle: (
-        <>
-          Hi👋 <br/> my name is <strong>Mohammad Esmaeilpour</strong> With over +3
-          years of experience in <b>front-end development</b>, I specialize in
-          creating dynamic, user-friendly web applications using{" "}
-          <b>Next.js, React, and TypeScript</b>. My journey in web development
-          began with a passion for technology and a commitment to continuous
-          learning. Today, I help businesses build efficient, scalable web
-          solutions that meet their unique needs.
-        </>
-      ),
-    },
     expertise: {
-      title: "My Expertise in Front-End Development",
+      title: "My Expertise in Front-end Development",
       subTitle:
         "My core expertise lies in Next.js and React, where I've developed a range of dynamic, high-performance web applications.",
     },
@@ -146,24 +123,6 @@ export const homeData: THomeData = {
       id: 13,
     },
   ],
-  aboutMe: {
-    title: homeHeadings.h2.abouteMe.title,
-    subTitle: homeHeadings.h2.abouteMe.subTitle,
-    img: mamad,
-    intoView: {
-      description: "Learn more about my ",
-      links: [
-        {
-          title: "expertise",
-          target: "expertise",
-        },
-        {
-          title: "highlighted projects",
-          target: "work-highlight",
-        },
-      ],
-    },
-  },
   expertise: {
     title: homeHeadings.h2.expertise.title,
     subTitle: homeHeadings.h2.expertise.subTitle,

@@ -12,19 +12,22 @@ import MUIIcon from "@/app/components/icons/MUIIcon";
 import { TProjectData } from "@/app/types/projects";
 
 export const projectsSeo = {
-  title:
-    "Mohammad Esmaeilpour | Frontend Developer Specialized in Next.js, React, TypeScript",
+  title: "Project's - Mohammad Esmaeilpour | Front-end developer",
   metadescription:
-    "Explore the portfolio of Mohammad Esmaeilpour, a frontend developer specializing in Next.js, React, TypeScript, Tailwind CSS, and Material UI. Discover modern web development solutions focused on responsive design and state management with Redux.",
+    "Develop high-performance applications with Next.js and React, using TypeScript to improve type safety.",
 };
 
 export const projectsHeadings = {
   h1: {
-    title:(
-      <strong className="text-gradient">Mohammad Esmaeilpour - Frontend Developer Specialized in Next.js & React</strong>
+    title: (
+      <strong className="text-gradient">Mohammad Esmaeilpour Project's</strong>
     ),
-    subTitle:
-     <>Building <strong>High-Performance Web Applications</strong> with Modern Technologies</> 
+    subTitle: (
+      <>
+        Develop high-performance applications with Next.js and React, using
+        TypeScript to improve <strong>type safety</strong>.
+      </>
+    ),
   },
 };
 
@@ -32,23 +35,50 @@ export const projectsData: TProjectData = {
   projectsInfo: [
     {
       id: 0,
-      title:(
-         <strong>3D Room using CSS and JavaScript</strong>
+      title: <strong>3D Room using CSS and JavaScript</strong>,
+      overview: (
+        <>
+          I've created a <strong>3D room</strong> using <strong>CSS</strong>,{" "}
+          <strong>HTML</strong>, and <strong>JavaScript</strong>, aiming to
+          provide an immersive virtual space that showcases both design
+          aesthetics and interactive functionality.
+        </>
       ),
-      overview:(
-        <>I've created a <strong>3D room</strong> using <strong>CSS</strong>, <strong>HTML</strong>, and <strong>JavaScript</strong>, aiming to provide an immersive virtual space that showcases both design aesthetics and interactive functionality.</>
-      ), 
       features: [
-        <><strong>3D Rendering:</strong> Utilizes <strong>CSS transforms</strong> and animations to create a lifelike room environment.</>,
-        <><strong>Interactive Elements:</strong> Users can interact with objects within the room, such as clicking on furniture to change its color or position.</>,
-        <><strong>Responsive Design:</strong> Ensures the room adapts seamlessly to different screen sizes, maintaining visual integrity and usability.</>,
-        <><strong>Realistic Lighting:</strong> Implemented through <strong>CSS effects</strong> to simulate natural lighting conditions, enhancing the room's realism.</>,
-        <><strong>Dynamic Content:</strong> Updates dynamically based on user inputs or events, allowing for a personalized user experience.</>,
+        <>
+          3D Rendering: Utilizes CSS transforms and animations to create a
+          lifelike room environment.
+        </>,
+        <>
+          Interactive Elements: Users can interact with objects within the room,
+          such as clicking on furniture to change its color or position.
+        </>,
+        <>
+          Responsive Design: Ensures the room adapts seamlessly to different
+          screen sizes, maintaining visual integrity and usability.
+        </>,
+        <>
+          Realistic Lighting: Implemented through CSS effects to simulate
+          natural lighting conditions, enhancing the room's realism.
+        </>,
+        <>
+          Dynamic Content: Updates dynamically based on user inputs or events,
+          allowing for a personalized user experience.
+        </>,
       ],
       technologies: [
-        <><strong>CSS:</strong> Leveraging transforms, animations, and custom styling to create the 3D environment and simulate lighting effects."</>,
-        <><strong>HTML:</strong> Structuring the room layout and integrating interactive elements.</>,
-        <><strong>JavaScript:</strong> Adding interactivity, handling user inputs, and managing dynamic content updates.</>,
+        <>
+          <strong>CSS:</strong> Leveraging transforms, animations, and custom
+          styling to create the 3D environment and simulate lighting effects."
+        </>,
+        <>
+          <strong>HTML:</strong> Structuring the room layout and integrating
+          interactive elements.
+        </>,
+        <>
+          <strong>JavaScript:</strong> Adding interactivity, handling user
+          inputs, and managing dynamic content updates.
+        </>,
       ],
       introductionList: [
         {
@@ -73,15 +103,47 @@ export const projectsData: TProjectData = {
     {
       id: 1,
       title: <strong>Modern Next.js Responsive Website - Roboxon</strong>,
-      overview:
-        <>I developed a modern, <strong>responsive website</strong> using <strong>Next.js</strong>, <strong>Tailwind CSS</strong>, and <strong>TypeScript</strong>, focusing on performance, scalability, and maintainability. This project showcases my ability to create dynamic, high-quality web applications with a keen eye for design and user experience.</>,
+      overview: (
+        <>
+          I developed a modern, <strong>responsive website</strong> using{" "}
+          <strong>Next.js</strong>, <strong>Tailwind CSS</strong>, and{" "}
+          <strong>TypeScript</strong>, focusing on performance, scalability, and
+          maintainability. This project showcases my ability to create dynamic,
+          high-quality web applications with a keen eye for design and user
+          experience.
+        </>
+      ),
       features: [
-        <><strong>Responsive Design:</strong> The website is fully responsive, ensuring an optimal viewing experience across a wide range of devices, from desktops to mobile phones.</>,
-        <><strong>Fast Performance:</strong> Leveraged the power of <strong>Next.js</strong> for server-side rendering and static site generation, resulting in fast load times and a smooth user experience.</>,
-        <><strong>Type Safety:</strong> Incorporated <strong>TypeScript</strong> to ensure robust type-checking and improve code maintainability and scalability.</>,
-        <><strong>Custom Styling:</strong> Utilized <strong>Tailwind CSS</strong> to create a unique, modern design that is both visually appealing and easy to maintain.</>,
-        <><strong>Modular Architecture:</strong> Designed the application with a modular architecture, making it easy to extend and maintain in the future.</>,
-        <><strong>API Integration:</strong> Integrated with external APIs to fetch dynamic content, showcasing the ability to work with third-party services and data.</>,
+        <>
+          <strong>Responsive Design:</strong> The website is fully responsive,
+          ensuring an optimal viewing experience across a wide range of devices,
+          from desktops to mobile phones.
+        </>,
+        <>
+          <strong>Fast Performance:</strong> Leveraged the power of{" "}
+          <strong>Next.js</strong> for server-side rendering and static site
+          generation, resulting in fast load times and a smooth user experience.
+        </>,
+        <>
+          <strong>Type Safety:</strong> Incorporated <strong>TypeScript</strong>{" "}
+          to ensure robust type-checking and improve code maintainability and
+          scalability.
+        </>,
+        <>
+          <strong>Custom Styling:</strong> Utilized{" "}
+          <strong>Tailwind CSS</strong> to create a unique, modern design that
+          is both visually appealing and easy to maintain.
+        </>,
+        <>
+          <strong>Modular Architecture:</strong> Designed the application with a
+          modular architecture, making it easy to extend and maintain in the
+          future.
+        </>,
+        <>
+          <strong>API Integration:</strong> Integrated with external APIs to
+          fetch dynamic content, showcasing the ability to work with third-party
+          services and data.
+        </>,
       ],
       technologies: [
         <strong>Next.js:</strong>,
@@ -113,14 +175,39 @@ export const projectsData: TProjectData = {
     },
     {
       id: 2,
-      title: <strong>High-Performance Dashboard with React and Tailwind CSS</strong>,
-      overview:
-        <>I developed a high-performance <strong>dashboard</strong> for a company, allowing them to efficiently manage users, companies, roles, and permissions. This project spanned over 8 months and involved the use of cutting-edge technologies like <strong>React</strong>, <strong>TypeScript</strong>, <strong>Tailwind CSS</strong>, and Redux. The dashboard significantly improved the company’s operational efficiency and user management capabilities.</>,
+      title: (
+        <strong>High-Performance Dashboard with React and Tailwind CSS</strong>
+      ),
+      overview: (
+        <>
+          I developed a high-performance <strong>dashboard</strong> for a
+          company, allowing them to efficiently manage users, companies, roles,
+          and permissions. This project spanned over 8 months and involved the
+          use of cutting-edge technologies like <strong>React</strong>,{" "}
+          <strong>TypeScript</strong>, <strong>Tailwind CSS</strong>, and Redux.
+          The dashboard significantly improved the company’s operational
+          efficiency and user management capabilities.
+        </>
+      ),
       features: [
-        <><strong>Role-Based Access Control:</strong> Advanced role and permission management for secure access.</>,
-        <><strong>Efficient State Management:</strong> Utilized <strong>Redux</strong> for state management, ensuring a predictable and maintainable codebase.</>,
-        <><strong>Customizable UI:</strong> Used <strong>Tailwind CSS</strong> to create a highly customizable and visually appealing interface.</>,
-        <><strong>TypeScript Integration:</strong> Leveraged <strong>TypeScript</strong> to enhance code quality and maintainability.</>,
+        <>
+          <strong>Role-Based Access Control:</strong> Advanced role and
+          permission management for secure access.
+        </>,
+        <>
+          <strong>Efficient State Management:</strong> Utilized{" "}
+          <strong>Redux</strong> for state management, ensuring a predictable
+          and maintainable codebase.
+        </>,
+        <>
+          <strong>Customizable UI:</strong> Used <strong>Tailwind CSS</strong>{" "}
+          to create a highly customizable and visually appealing interface.
+        </>,
+        <>
+          <strong>TypeScript Integration:</strong> Leveraged{" "}
+          <strong>TypeScript</strong> to enhance code quality and
+          maintainability.
+        </>,
       ],
       technologies: [
         <strong>React:</strong>,

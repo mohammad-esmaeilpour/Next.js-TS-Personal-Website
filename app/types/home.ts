@@ -69,7 +69,6 @@ interface IWorkhighlights extends TitleSubTitleDescription {
 export type THomeData = {
   hero: IHero;
   skills: TSkills;
-  aboutMe: IAboutMe;
   expertise: IExpertise;
   workHighlights: IWorkhighlights;
 };
