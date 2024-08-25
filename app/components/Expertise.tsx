@@ -1,7 +1,6 @@
 "use client";
 import { homeData } from "@/public/data/home";
 import React, { useState } from "react";
-import GearEmoji from "./icons/fluentEmoji/GearEmoji";
 
 const Expertise = () => {
   const [activeTab, setActiveTab] = useState(homeData.expertise.tabs[0].label);
@@ -11,17 +10,18 @@ const Expertise = () => {
       <h2>{homeData.expertise.title}</h2>
       <p className="mt-2">{homeData.expertise.subTitle}</p>
       <div className="mt-16">
-        <div className="flex flex-wrap gap-x-3 gap-y-2">
+        <div className="flex flex-col sm:flex-row flex-wrap gap-y-2 sm:gap-x-7">
           {homeData.expertise.tabs.map((item) => (
             <h3
               onClick={() => setActiveTab(item.label)}
-              className={`text-sm font-medium p-3 text-start transition-transform cursor-pointer ${
+              className={`text-sm flex items-center gap-3 font-medium py-3 text-start cursor-pointer ${
                 activeTab === item.label
-                  ? "bg-[hsla(0,0%,9%,1)] text-[#fff] rounded-lg"
+                  ? "bg-[hsla(0,0%,9%,1)] text-[#fff] rounded-lg px-3"
                   : ""
               }`}
               key={item.label}
             >
+              {activeTab !== item.label && item.icon}
               {item.label}
             </h3>
           ))}

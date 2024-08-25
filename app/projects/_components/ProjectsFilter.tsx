@@ -32,10 +32,10 @@ const ProjectsFilter: React.FC<ProjectsFilterProps> = ({
         </div>
         {selectedFilters.length !== 0 && (
           <div
-            className="btn w-full bg-white justify-between transition-all px-5 py-1 my-1"
+            className="btn btn-secondary w-full justify-between"
             onClick={() => setSelectedFilters([])}
           >
-            clear
+            Clear
             <CloseIcon size={18} />
           </div>
         )}

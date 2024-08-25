@@ -8,17 +8,13 @@
     @apply font-sans text-[#666] font-normal;
   }
 
-  h1,
-  h2 {
+    h1,
+    h2
+   {
     @apply text-gradient;
   }
   h2 {
-    font-size: 32px;
-  }
-  h3 {
-    @apply text-base font-bold text-[#171717];
-    line-height: 20px;
-    letter-spacing: -0.01em;
+    @apply text-3xl font-bold;
   }
   a {
     @apply rounded-sm transition-all text-sm;
@@ -31,7 +27,7 @@
     @apply py-5 my-36 lg:my-64 lg:py-10 px-3 md:px-10 xl:px-0 max-w-7xl mx-auto;
   }
   strong,b {
-    @apply  text-black font-medium
+    @apply  text-[#111] font-medium
   }
 
   /* Tailwind classes */
@@ -42,10 +38,13 @@
     @apply !bg-[hsla(0,0%,9%,1)] !text-[#fff] !font-medium !border-0;
   }
   .btn-secondary {
-    @apply !bg-white !text-[#171717] !font-medium !border-gray-300 hover:!bg-gray-100;
+    @apply !bg-white !text-[#171717] !font-medium !border-gray-400 hover:!bg-gray-100;
   }
   .modal-box {
     @apply !outline-none;
+  }
+  .font-semibold {
+    @apply text-[#171717]
   }
   /* Custom Classes */
   .text-gradient {

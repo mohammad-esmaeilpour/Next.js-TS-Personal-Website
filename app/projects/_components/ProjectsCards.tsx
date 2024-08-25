@@ -33,7 +33,7 @@ const ProjectsCards: React.FC<ProjectsCardsProps> = ({
             <div className="h-44 relative">
               <Image
                 src={item.img}
-                alt={item.link}
+                alt={item.title}
                 fill
                 sizes="200"
                 className="object-cover"
@@ -44,9 +44,9 @@ const ProjectsCards: React.FC<ProjectsCardsProps> = ({
               <p className="text-sm line-clamp-3 mt-2">{item.overview}</p>
               <div className="flex items-baseline justify-between pb-1">
                 <div className="flex mt-3.5 items-center gap-2">
-                  {item.techIcons.map((icon) => (
-                    <span key={icon.key} className="flex items-center gap-1">
-                      {icon}
+                  {item.techStack.map((item) => (
+                    <span key={item.title} className="flex items-center gap-1">
+                      {item.icon}
                     </span>
                   ))}
                 </div>

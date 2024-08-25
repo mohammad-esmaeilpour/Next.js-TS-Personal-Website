@@ -6,6 +6,7 @@ import {
   TitleSubTitleDescription,
   TitleSubTitleImage,
 } from "../interface/global";
+import { ReactElement } from "react";
 
 interface IHero extends TitleSubTitle {
   callToAction: {
@@ -35,35 +36,18 @@ interface IAboutMe extends TitleSubTitleImage {
 interface IExpertise extends TitleSubTitle {
   tabs: {
     label: string;
+    icon:ReactElement,
     description: string | JSX.Element;
     keyStrengths: TitleDescription[];
     impact: TitleDescriptionIcon[];
   }[];
 }
 
-type TCard = {
-  id: number;
-  title: string;
-  overview: string;
-  features: string[];
-  technologies: string[];
-  introductionList: {
-    key: string;
-    value: string;
-  }[];
-  img: StaticImageData;
-  tags: string[];
-  link: string;
-  repository?: string;
-  techIcons: JSX.Element[];
-};
-
 interface IWorkhighlights extends TitleSubTitleDescription {
   callToAction: {
-    title: JSX.Element;
+    title:string 
     link: string;
   };
-  cards: TCard[];
 }
 
 export type THomeData = {

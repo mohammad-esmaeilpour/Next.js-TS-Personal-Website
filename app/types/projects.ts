@@ -1,5 +1,6 @@
 import { StaticImageData } from "next/image";
 import { ReactElement } from "react";
+import { TitleDescription } from "../interface/global";
 
 export type TProjectData = {
   projectsInfo: TProjectsInfo[];
@@ -8,19 +9,16 @@ export type TProjectData = {
 
 export type TProjectsInfo = {
   id: number;
-  title: string | ReactElement;
+  title: string;  
   overview: string | ReactElement;
-  introductionList: {
-    key: string; 
-    value: string| ReactElement;
-  }[];
-  features: string[]|ReactElement[]
-  technologies: string[]|ReactElement[];
+  features: TitleDescription[]
+  techStack:{
+    title: string
+    icon:ReactElement
+  }[]
   tags: string[];
   img: StaticImageData;
-  link: string;
-  techIcons: ReactElement[];
-  packages?: string[];
+  previewLink?: string;
   repository?: string;
 };
 
