@@ -40,7 +40,7 @@ const ProjectsCards: React.FC<ProjectsCardsProps> = ({
               />
             </div>
             <div className="card-body p-4 pb-3 text-start">
-              <h3 className="line-clamp-1 font-normal">{item.title}</h3>
+              <h3 className="line-clamp-1 font-semibold">{item.title}</h3>
               <p className="text-sm line-clamp-3 mt-2">{item.overview}</p>
               <div className="flex items-baseline justify-between pb-1">
                 <div className="flex mt-3.5 items-center gap-2">

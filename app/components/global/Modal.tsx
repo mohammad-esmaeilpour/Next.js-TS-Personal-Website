@@ -30,15 +30,17 @@ const Modal = ({ data, modalRef }: Props) => {
           <div className="col-span-1 lg:col-span-5 flex flex-col justify-between xl:pe-10 lg:sticky top-16 lg:custome-heigh">
             <div>
               <h3 className="text-gradient text-3xl">{data.title}</h3>
-              <p className="text-base mb-8 mt-4 font-light ">{data.overview}</p>
+              <p className="text-base mb-8 mt-4 md:mt-12 font-light">{data.overview}</p>
               <div className="flex flex-col gap-4">
-                <div className="flex flex-wrap gap-5">
-                  {data.techStack.map((item) => (
-                    <div className="flex items-center gap-2">
-                      {item.icon}
-                      <p className="text-sm">{item.title}</p>
-                    </div>
-                  ))}
+                <div className="flex flex-col flex-wrap gap-3">
+                  <div>Skills</div>
+                  <div className="flex gap-2">
+                    {data.techStack.map((item) => (
+                      <div key={item.title} className="text-sm bg-gray-200 rounded-full px-3 py-1">
+                        {item.title}
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>

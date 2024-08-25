@@ -6,12 +6,14 @@ import 'swiper/css';
 const Skills = () => {
   return (
     <div className="flex flex-col gap-5">
-      <h3 className="lg:text-center font-medium">Tech Stack</h3>
-      <div className="flex flex-wrap lg:justify-center gap-3">
+      <h2 className="text-center">
+        Skills & Expertise
+      </h2>
+      <div className="flex flex-wrap justify-center gap-x-3">
         {aboutData.skills.map((item) => (
-          <div className="flex items-center gap-2 border bg-white px-2 py-1 rounded-lg">
+          <div key={item.title} className="flex flex-col py-5 items-center gap-2 bg-white px-2 rounded-lg min-w-[90px]">
             {item.icon}
-            <span className="text-sm">{item.title}</span>
+            {item.title}
           </div>
         ))}
       </div>

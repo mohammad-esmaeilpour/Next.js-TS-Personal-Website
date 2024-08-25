@@ -27,7 +27,7 @@ const ProjectsFilter: React.FC<ProjectsFilterProps> = ({
           tabIndex={0}
           className="m-1 flex justify-between items-center md:mb-5"
         >
-          Filter project's
+          Filter projects
           <FilterIcon size={18} />
         </div>
         {selectedFilters.length !== 0 && (
@@ -35,7 +35,7 @@ const ProjectsFilter: React.FC<ProjectsFilterProps> = ({
             className="btn btn-secondary w-full justify-between"
             onClick={() => setSelectedFilters([])}
           >
-            Clear
+            clear 
             <CloseIcon size={18} />
           </div>
         )}

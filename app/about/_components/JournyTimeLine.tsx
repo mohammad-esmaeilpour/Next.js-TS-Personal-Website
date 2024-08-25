@@ -8,7 +8,7 @@ import React from "react";
 const JournyTimeLine = () => {
   return (
     <section>
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto px-3">
         <div className="mx-auto mb-32">
           <h2>{aboutHeadings.h2.journey.title}</h2>
           <p className="mt-4">{aboutHeadings.h2.journey.subTitle}</p>
@@ -21,28 +21,36 @@ const JournyTimeLine = () => {
               data-aos="fade-up"
             >
               <div className="lg:col-span-3 mb-5">
-                <h4 className="text-gradient text-xl">{item.title}</h4>
-                <div className="flex gap-3 item-end mb-0.5 mt-3">
-                  <p className="text-sm">{item.time}</p>
-                  <p className="text-sm font-medium">( {item.status} )</p>
+                <h4 className="text-gradient text-3xl font-bold mb-3">
+                  {item.title}
+                </h4>
+                <div className="flex gap-3 item-end mb-1.5 mt-3">
+                  <div>{item.time}</div>
+                  <div>({item.status})</div>
                 </div>
-                <p className="text-sm">{item.year}</p>
+                <div>{item.year}</div>
               </div>
               <div className="lg:col-span-9">
-                {item.description}
+                <div className="text-xl mb-1 font-semibold">Overview</div>
+                <div className="font-normal mb-5">{item.overview}</div>
+                <div className="text-xl mb-1 font-semibold">About</div>
+                <div className="font-normal mb-5">{item.about}</div>
+                <div className="text-xl mb-1 font-semibold">
+                  Role and Responsibilities
+                </div>
+                <div className="font-normal mb-5">{item.role}</div>
                 <div className="flex flex-wrap items-end justify-between">
                   <div className="mt-10 flex flex-col">
-                    <h6 className="text-black font-medium mb-2">
-                      My skills used
-                    </h6>
-                    <div className="flex flex-wrap gap-y-2 gap-x-5">
+                    <div className="text-black font-medium mb-2">
+                      Skills & Tools
+                    </div>
+                    <div className="flex flex-wrap gap-2 mt-2">
                       {item.skills?.map((item) => (
                         <div
                           key={item?.title}
-                          className="flex items-center gap-2"
+                          className="text-sm bg-gray-200 rounded-full px-3 py-1"
                         >
-                          {item?.icon}
-                          <p> {item?.title}</p>
+                          {item?.title}
                         </div>
                       ))}
                     </div>

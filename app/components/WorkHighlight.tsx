@@ -68,15 +68,15 @@ const WorkHighlight = () => {
                   />
                 </div>
                 <div className="card-body p-4 pb-3 text-start">
-                  <h4 className="line-clamp-1 text-base font-semibold">{item.title}</h4>
+                  <h4 className="line-clamp-1 text-base font-semibold">
+                    {item.title}
+                  </h4>
                   <p className="text-sm font-normal line-clamp-2 mb-1">
                     {item.overview}
                   </p>
                   <div className="flex items-center justify-between w-full mt-3 gap-2">
                     <div className="flex gap-2 flex-1 justify-start">
-                      {item.techStack.map((item) => (
-                        <span>{item.icon}</span>
-                      ))}
+                      {item.techStack.map((item) => item.icon)}
                     </div>
                     <button
                       onClick={() => handleModal(item.id)}

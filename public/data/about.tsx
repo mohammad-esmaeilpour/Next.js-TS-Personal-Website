@@ -67,47 +67,47 @@ export const aboutData = {
   skills: [
     {
       title: "Typescript",
-      icon: <TSIcon size={20} />,
+      icon: <TSIcon size={48} />,
     },
     {
       title: "Javascript",
-      icon: <JSIcon size={20} />,
+      icon: <JSIcon size={48} />,
     },
     {
       title: "React",
-      icon: <ReactIcon size={20} />,
+      icon: <ReactIcon size={48} />,
     },
     {
       title: "Next.js",
-      icon: <NextjsIcon size={20} />,
+      icon: <NextjsIcon size={48} />,
     },
     {
       title: "Tailwind",
-      icon: <TailwindIcon size={20} />,
+      icon: <TailwindIcon size={48} />,
     },
     {
       title: "MUI",
-      icon: <MUIIcon size={20} />,
+      icon: <MUIIcon size={48} />,
     },
     {
       title: "Bootstrap",
-      icon: <BootstrapIcon size={20} />,
+      icon: <BootstrapIcon size={48} />,
     },
     {
       title: "Sass/Scss",
-      icon: <SassIcon size={20} />,
+      icon: <SassIcon size={48} />,
     },
     {
       title: "Redux",
-      icon: <ReduxIcon size={20} />,
+      icon: <ReduxIcon size={48} />,
     },
     {
       title: "Github",
-      icon: <GithubIcon size={20} />,
+      icon: <GithubIcon size={48} />,
     },
     {
       title: "Git",
-      icon: <GitIcon size={20} />,
+      icon: <GitIcon size={48} />,
     },
   ],
 
@@ -118,44 +118,41 @@ export const aboutData = {
       year: "2022 - 2023",
       status: "Remote",
       time: "Full-time",
-      description: (
-        <>
-          <h5 className="text-black font-medium flex">Overview</h5>
-          <p>
-            I was hired on the first day the company opened as a{" "}
-            <b>frontend developer</b>. I began developing the Roboxon website
-            using <b>Next.js</b>,<b>TypeScript</b>, and <b>Tailwind CSS</b>. In
-            a few weeks, Roboxon expanded as a<b> web development service</b>,
-            and I completed multiple frontend development projects using my top
-            skills as mentioned.
-          </p>
-          <h5 className="text-black font-medium flex mt-4">Company about</h5>
-          <p>
-            Roboxon was a startup company that provided <b>web development</b>{" "}
-            services, specializing in <b>backend</b>, <b>frontend</b>, and{" "}
-            <b>Figma</b>. Regrettably, due to budget constraints, the company
-            ceased its operations a year later.
-          </p>
-          <h5 className="text-black font-medium flex mt-4">
-            Role and Responsibilities
-          </h5>
-          <p>
-            I joined Roboxon as a <b>midd-level front-end developer</b>{" "}
-            specialist at <b>Typescript</b> and <b>React</b>. My
-            responsibilities are to create a good structure for routers with
-            role and permission and global configuration for{" "}
-            <b>authentication</b> and <b>authorization</b>. I developed a core
-            for my all <b>react</b> and <b>next.js</b> projects for the start of
-            each project and this has increased my development speed and my{" "}
-            <b>frontend team</b>. well handled for API usually I use (Axios) for
-            dynamic services and this is the best part of my core because, with
-            little changes in my code, I can use it in most of the projects.
-            Following that,Me and my team made a deliberate shift towards{" "}
-            <b>user interface</b> design and the development of sophisticated
-            and intricate UIs, complete with captivating animations, dynamic
-            element movements, and other enhancements.
-          </p>
-        </>
+      overview: (
+        <p>
+          I was hired on the first day the company opened as a{" "}
+          <b>frontend developer</b>. I began developing the Roboxon website
+          using <b>Next.js</b>,<b>TypeScript</b>, and <b>Tailwind CSS</b>. In a
+          few weeks, Roboxon expanded as a<b> web development service</b>, and I
+          completed multiple frontend development projects using my top skills
+          as mentioned.
+        </p>
+      ),
+      about: (
+        <p>
+          Roboxon was a startup company that provided <b>web development</b>{" "}
+          services, specializing in <b>backend</b>, <b>frontend</b>, and{" "}
+          <b>Figma</b>. Regrettably, due to budget constraints, the company
+          ceased its operations a year later.
+        </p>
+      ),
+      role: (
+        <p>
+          I joined Roboxon as a <b>midd-level front-end developer</b> specialist
+          at <b>Typescript</b> and <b>React</b>. My responsibilities are to
+          create a good structure for routers with role and permission and
+          global configuration for <b>authentication</b> and{" "}
+          <b>authorization</b>. I developed a core for my all <b>react</b> and{" "}
+          <b>next.js</b> projects for the start of each project and this has
+          increased my development speed and my <b>frontend team</b>. well
+          handled for API usually I use (Axios) for dynamic services and this is
+          the best part of my core because, with little changes in my code, I
+          can use it in most of the projects. Following that,Me and my team made
+          a deliberate shift towards <b>user interface</b> design and the
+          development of sophisticated and intricate UIs, complete with
+          captivating animations, dynamic element movements, and other
+          enhancements.
+        </p>
       ),
       skills: [
         {
@@ -186,43 +183,39 @@ export const aboutData = {
       year: "2021 - 2022",
       status: "on-site",
       time: "Full-time",
-      description: (
-        <>
-          <h5 className="text-black font-medium flex">Overview</h5>
-          <p>
-            After successfully completing two <b>soft skill interviews</b> and
-            one
-            <b> technical skill</b> interview, I am excited to announce that I
-            have been hired at <b>Cloudhost</b> company. With a team of over{" "}
-            <b>100 members</b> at Cloudhost, this new opportunity marks a
-            significant milestone in my career as it will be the first time for
-            me to work within such a sizable team.
-          </p>
-          <h5 className="text-black font-medium flex mt-4">Company about</h5>
-          <p>
-            <b>Cloudhost</b> is a hosting and domain provider with a strong
-            reputation in <b>cloud services</b>. The previous website was built
-            with <b>WordPress</b>, and the company is looking to create a new
-            website with a fresh design using <b>Next.js</b> to improve
-            performance, especially as their customer base continues to grow.
-          </p>
-          <h5 className="text-black font-medium flex mt-4">
-            Role and Responsibilities
-          </h5>
-          <p>
-            They hired me as a <b>junior TypeScript and Next.js</b> developer.
-            When I joined the company, the senior front-end developer had
-            already started the <b>Next.js</b> app a month prior. I joined the
-            project mid-process and <b>quickly synced</b> up with the other
-            developer. I began with a one-week demo, and after developing
-            multiple <b>complex UI </b>
-            components, they hired me. I started developing UI from <b>Figma</b>
-            , using <b>TypeScript</b> and <b>Next.js</b>, with the{" "}
-            <b>Material UI CSS</b> library. My primary responsibility on
-            Cloudhost was to develop complex UI and fix any
-            <b> UI-related issues</b> introduced by other developers.
-          </p>
-        </>
+      overview: (
+        <p>
+          After successfully completing two <b>soft skill interviews</b> and one
+          <b> technical skill</b> interview, I am excited to announce that I
+          have been hired at <b>Cloudhost</b> company. With a team of over{" "}
+          <b>100 members</b> at Cloudhost, this new opportunity marks a
+          significant milestone in my career as it will be the first time for me
+          to work within such a sizable team.
+        </p>
+      ),
+      about: (
+        <p>
+          <b>Cloudhost</b> is a hosting and domain provider with a strong
+          reputation in <b>cloud services</b>. The previous website was built
+          with <b>WordPress</b>, and the company is looking to create a new
+          website with a fresh design using <b>Next.js</b> to improve
+          performance, especially as their customer base continues to grow.
+        </p>
+      ),
+      role: (
+        <p>
+          They hired me as a <b>junior TypeScript and Next.js</b> developer.
+          When I joined the company, the senior front-end developer had already
+          started the <b>Next.js</b> app a month prior. I joined the project
+          mid-process and <b>quickly synced</b> up with the other developer. I
+          began with a one-week demo, and after developing multiple{" "}
+          <b>complex UI </b>
+          components, they hired me. I started developing UI from <b>Figma</b>,
+          using <b>TypeScript</b> and <b>Next.js</b>, with the{" "}
+          <b>Material UI CSS</b> library. My primary responsibility on Cloudhost
+          was to develop complex UI and fix any
+          <b> UI-related issues</b> introduced by other developers.
+        </p>
       ),
       skills: [
         {
@@ -249,36 +242,36 @@ export const aboutData = {
       year: "2019 - 2020",
       status: "on-site",
       time: "Full-time",
-      description: (
-        <>
-          <h5 className="text-black font-medium flex">Overview</h5>
-          <p>
-            Being a virtual user is <b>my first job</b> in this field. After
-            completing a <b>three-month internship</b>, I was hired at this company. I have successfully developed
-            UI, added content to the website, and significantly enhanced my
-            skills in <b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b>. I am looking forward to
-            continuing my career growth with these essential technologies.
-          </p>
-          <h5 className="text-black font-medium flex mt-4">Company about</h5>
-          <p>
-            <b>Virtual Users</b> is a small yet mighty team that provides{" "}
-            <b>virtual bot services</b> on social media platforms such as{" "}
-            <b>Telegram</b> and <b>Instagram</b>. They offer member increase and
-            channel and post overview through bot automation. Their core program
-            facilitates the creation of various bots.
-          </p>
-          <h5 className="text-black font-medium flex mt-4">
-            Role and Responsibilities
-          </h5>
-          <p>
-            After completing my internship, I was offered a position as a <b>junior
-            frontend developer</b>. My primary responsibilities in this role include
-            <b>adding new pages</b> to websites, developing <b>user interfaces</b>, <b>creating
-            various components</b>, and <b>integrating new pages</b> with content for the
-            blog section and other areas of the website. I'm also involved in
-            additional tasks related to <b>frontend development</b>.
-          </p>
-        </>
+      overview: (
+        <p>
+          Being a virtual user is <b>my first job</b> in this field. After
+          completing a <b>three-month internship</b>, I was hired at this
+          company. I have successfully developed UI, added content to the
+          website, and significantly enhanced my skills in <b>HTML</b>,{" "}
+          <b>CSS</b>, and <b>JavaScript</b>. I am looking forward to continuing
+          my career growth with these essential technologies.
+        </p>
+      ),
+      about: (
+        <p>
+          <b>Virtual Users</b> is a small yet mighty team that provides{" "}
+          <b>virtual bot services</b> on social media platforms such as{" "}
+          <b>Telegram</b> and <b>Instagram</b>. They offer member increase and
+          channel and post overview through bot automation. Their core program
+          facilitates the creation of various bots.
+        </p>
+      ),
+      role: (
+        <p>
+          After completing my internship, I was offered a position as a{" "}
+          <b>junior frontend developer</b>. My primary responsibilities in this
+          role include
+          <b>adding new pages</b> to websites, developing <b>user interfaces</b>
+          , <b>creating various components</b>, and <b>integrating new pages</b>{" "}
+          with content for the blog section and other areas of the website. I'm
+          also involved in additional tasks related to{" "}
+          <b>frontend development</b>.
+        </p>
       ),
       link: "https://v-user.com",
       skills: [
