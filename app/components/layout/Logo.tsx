@@ -1,9 +1,21 @@
 import Image from "next/image";
 import React from "react";
-import logo from "@/public/img/ui/1.png";
+import logo from "@/public/img/ui/logo.png";
+import Link from "next/link";
 
 const Logo = () => {
-  return <Image alt="logo" src={logo} width={100} height={120} />;
+  return (
+    <Link href={'/'} className="w-36 h-20 overflow-hidden relative -rotate-90 xl:-translate-x-10">
+      <Image
+        alt="logo"
+        src={logo}
+        className="object-cover object-left"
+        fill 
+        sizes="200"
+      />
+      ;
+    </Link>
+  );
 };
 
 export default Logo;
