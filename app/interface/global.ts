@@ -1,4 +1,5 @@
 import { StaticImageData } from "next/image";
+import { ReactElement } from "react";
 
 // single type's
 type Title = {
@@ -10,7 +11,7 @@ type SubTitle = {
 };
 
 type Description = {
-  description: string;
+  description: string | ReactElement
 };
 
 type Image = {

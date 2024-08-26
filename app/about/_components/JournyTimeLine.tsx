@@ -7,7 +7,7 @@ import React from "react";
 
 const JournyTimeLine = () => {
   return (
-    <section>
+    <section className="mt-20">
       <div className="max-w-7xl mx-auto px-3">
         <div className="mx-auto mb-32">
           <h2>{aboutHeadings.h2.journey.title}</h2>
@@ -55,7 +55,7 @@ const JournyTimeLine = () => {
                       ))}
                     </div>
                   </div>
-                  <div className="mt-5 flex items-baseline gap-5">
+                  {/* <div className="mt-5 flex items-baseline gap-5">
                     {item.link ? (
                       <Link
                         href={item.link}
@@ -65,13 +65,13 @@ const JournyTimeLine = () => {
                         Live preview
                         <ArrowOutwardIcon size={15} color="black" />
                       </Link>
-                    ) : (
+                    ) : ( */}
                       <span className="text-green-600 text-sm flex gap-2">
                         <LockIcon size={18} />
                         For internal use
                       </span>
-                    )}
-                  </div>
+                    {/* )}
+                  </div> */}
                 </div>
               </div>
               <div className="absolute lg:left-0 left-6 -translate-x-1/2 -top-28 lg:-top-3 flex items-center justify-center rounded-xl w-20 h-20">

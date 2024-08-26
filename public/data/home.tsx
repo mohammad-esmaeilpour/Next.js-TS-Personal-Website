@@ -21,9 +21,6 @@ import SassIcon from "@/app/components/icons/SassIcon";
 import SearchLabtopScreenIcon from "@/app/components/icons/SearchLabtopScreenIcon";
 import TailwindIcon from "@/app/components/icons/TailwindIcon";
 import TSIcon from "@/app/components/icons/TSIcon";
-import room from "@/public/img/projects/3d-room.jpg";
-import roboxonWebsite from "@/public/img/projects/roboxon-website.jpg";
-import roboxonDashboard from "@/public/img/projects/roboxon-dashboard.jpg";
 import { TSeoProps } from "@/app/types/global";
 import { THomeData } from "@/app/types/home";
 
@@ -324,10 +321,19 @@ export const homeData: THomeData = {
   workHighlights: {
     title: homeHeadings.h2.workHighlights.title,
     subTitle: homeHeadings.h2.workHighlights.subTitle,
-    description:
-      "This project involved developing a fast, scalable web application using Next.js, React, and Tailwind CSS. The Apps performance improved by 30%, leading to a significant increase in user engagement and sales.",
+    description: (
+      <>
+        I have developed multiple applications for startups and new brands,
+        utilizing my <strong>top skills</strong> in <strong>TypeScript</strong>{" "}
+        for type safety, <strong>Next.js</strong> for websites that require good
+        page speed and performance with server-side rendering, and{" "}
+        <strong>React</strong> for most dashboard applications. I've also used
+        various CSS libraries such as <strong>Tailwind CSS</strong>,{" "}
+        <strong>Material UI</strong>, and <strong>Ant Design</strong>.
+      </>
+    ),
     callToAction: {
-      title:"Mohammad Esmaeilpour Projects",
+      title: "Mohammad Esmaeilpour Projects",
       link: "/projects",
     },
   },
