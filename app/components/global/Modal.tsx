@@ -60,6 +60,7 @@ const Modal = ({ data, modalRef }: Props) => {
                   <div className="font-semibold">{item.title}</div>
                   <div className="mt-1 text-sm">{item.description}</div>
                 </div>
+                
               ))}
             </div>
           </div>
