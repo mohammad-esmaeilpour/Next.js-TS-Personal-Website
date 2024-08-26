@@ -51,7 +51,7 @@ const ProjectsCards: React.FC<ProjectsCardsProps> = ({
                   ))}
                 </div>
 
-                {item.repository && (
+                {/* {item.repository && (
                   <Link
                     href={item.repository}
                     className="tooltip tooltip-left"
@@ -60,7 +60,7 @@ const ProjectsCards: React.FC<ProjectsCardsProps> = ({
                   >
                     <GithubIcon size={20} />
                   </Link>
-                )}
+                )} */}
               </div>
             </div>
           </div>
