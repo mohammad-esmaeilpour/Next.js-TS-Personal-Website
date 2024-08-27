@@ -8,7 +8,7 @@ import React from "react";
 const JournyTimeLine = () => {
   return (
     <section className="mt-20">
-      <div className="max-w-7xl mx-auto px-3">
+      <div className="max-w-7xl mx-auto">
         <div className="mx-auto mb-32">
           <h2>{aboutHeadings.h2.journey.title}</h2>
           <p className="mt-4">{aboutHeadings.h2.journey.subTitle}</p>
@@ -39,7 +39,7 @@ const JournyTimeLine = () => {
                   Role and Responsibilities
                 </div>
                 <div className="font-normal mb-5">{item.role}</div>
-                <div className="flex flex-wrap items-end justify-between">
+                <div className="flex flex-wrap items-end gap-5 justify-between">
                   <div className="mt-10 flex flex-col">
                     <div className="text-black font-medium mb-2">
                       Skills & Tools
@@ -74,7 +74,7 @@ const JournyTimeLine = () => {
                   </div> */}
                 </div>
               </div>
-              <div className="absolute lg:left-0 left-6 -translate-x-1/2 -top-28 lg:-top-3 flex items-center justify-center rounded-xl w-20 h-20">
+              <div className="absolute lg:left-0 left-0 max-lg:justify-start lg:-translate-x-1/2 -top-28 lg:-top-3 flex items-center justify-center rounded-xl w-20 h-20">
                 {item.symbol}
               </div>
             </li>

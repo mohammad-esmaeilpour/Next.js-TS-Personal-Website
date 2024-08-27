@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Logo = () => {
   return (
-    <Link href={'/'} className="w-36 h-20 overflow-hidden relative -rotate-90 xl:-translate-x-10">
+    <Link href={'/'} className="w-36 h-20 overflow-hidden relative -rotate-90 -translate-x-5 xl:-translate-x-10">
       <Image
         alt="logo"
         src={logo}

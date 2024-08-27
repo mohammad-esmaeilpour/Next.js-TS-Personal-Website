@@ -32,7 +32,7 @@ const Modal = ({ data, modalRef }: Props) => {
             </div>
             <div className="flex flex-col flex-wrap gap-3">
               <div>Skills</div>
-              <div className="flex gap-2">
+              <div className="flex flex-wrap gap-2">
                 {data.techStack.map((item) => (
                   <div
                     key={item.title}
