@@ -1,7 +1,7 @@
 "use client";
 import { projectsData } from "@/public/data/projects";
 import Image from "next/image";
-import React, { createRef, useId, useRef } from "react";
+import React, { createRef, useRef } from "react";
 import Modal from "./global/Modal";
 import { homeData } from "@/public/data/home";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -9,10 +9,12 @@ import { EffectCards } from "swiper/modules";
 import "swiper/css/effect-cards";
 import Link from "next/link";
 import ThreeDotsIcon from "./icons/ThreeDotsIcon";
-import ArrowOutwardIcon from "./icons/solid/ArrowOutwardIcon";
-import EyeIcon from "./icons/EyeIcon";
 
 const WorkHighlight = () => {
+  let topProjects = projectsData.projectsInfo.slice(
+    Math.max(projectsData.projectsInfo.length - 3, 0)
+  ).reverse();
+
   const modalsRef: any = useRef(
     projectsData.projectsInfo.map(() => createRef())
   );
@@ -53,9 +55,9 @@ const WorkHighlight = () => {
               perSlideRotate: 5,
             }}
           >
-            {projectsData.projectsInfo.map((item) => (
+            {topProjects.map((item) => (
               <SwiperSlide
-                key={item.id}
+                key={item.title}
                 className="flex items-center justify-center rounded-lg border bg-white drop-shadow-lg"
               >
                 <div className="h-48 relative overflow-hidden">

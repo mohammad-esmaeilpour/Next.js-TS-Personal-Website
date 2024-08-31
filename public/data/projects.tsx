@@ -1,6 +1,7 @@
 import room from "@/public/img/projects/3d-room.jpg";
 import roboxonWebsite from "@/public/img/projects/roboxon-website.jpg";
 import roboxonDashboard from "@/public/img/projects/roboxon-dashboard.jpg";
+import vUser from "@/public/img/projects/v-user.jpg";
 import JSIcon from "@/app/components/icons/JSIcon";
 import HtmlIcon from "@/app/components/icons/HtmlIcon";
 import CssIcon from "@/app/components/icons/CssIcon";
@@ -10,6 +11,7 @@ import TailwindIcon from "@/app/components/icons/TailwindIcon";
 import ReactIcon from "@/app/components/icons/ReactIcon";
 import MUIIcon from "@/app/components/icons/MUIIcon";
 import { TProjectData } from "@/app/types/projects";
+import BootstrapIcon from "@/app/components/icons/BootstrapIcon";
 
 export const projectsSeo = {
   title: "Project's - Mohammad Esmaeilpour | Front-end developer",
@@ -34,13 +36,9 @@ export const projectsData: TProjectData = {
     {
       id: 0,
       title: "3D Room using CSS and JavaScript",
-      overview: (
-        <>
-          I've created a 3D room using CSS, HTML, and JavaScript, aiming to
+      overview: `I've created a 3D room using CSS, HTML, and JavaScript, aiming to
           provide an immersive virtual space that showcases both design
-          aesthetics and interactive functionality.
-        </>
-      ),
+          aesthetics and interactive functionality.`,
       features: [
         {
           title: "3D Rendering",
@@ -70,16 +68,16 @@ export const projectsData: TProjectData = {
       ],
       techStack: [
         {
-          title: "HTML",
-          icon: <HtmlIcon key={2} size={18} />,
+          title: "Javascript",
+          icon: <JSIcon key={1} size={18} />,
         },
         {
           title: "CSS",
           icon: <CssIcon key={3} size={18} />,
         },
         {
-          title: "Javascript",
-          icon: <JSIcon key={1} size={18} />,
+          title: "HTML",
+          icon: <HtmlIcon key={2} size={18} />,
         },
       ],
       img: room,
@@ -90,15 +88,8 @@ export const projectsData: TProjectData = {
     {
       id: 1,
       title: "Modern Next.js Responsive Website - Roboxon",
-      overview: (
-        <>
-          I developed a modern, responsive website using Next.js, Tailwind CSS,
-          and TypeScript, focusing on performance, scalability, and
-          maintainability. This project showcases my ability to create dynamic,
-          high-quality web applications with a keen eye for design and user
-          experience.
-        </>
-      ),
+      overview:
+        "I developed a modern, responsive website using Next.js, Tailwind CSS, and TypeScript, focusing on performance, scalability, and maintainability. This project showcases my ability to create dynamic, high-quality web applications with a keen eye for design and user experience.",
       features: [
         {
           title: "Responsive Design",
@@ -151,16 +142,8 @@ export const projectsData: TProjectData = {
     {
       id: 2,
       title: "High-Performance Dashboard with React and Tailwind CSS",
-      overview: (
-        <>
-          I developed a high-performance dashboard for a company, allowing them
-          to efficiently manage users, companies, roles, and permissions. This
-          project spanned over 8 months and involved the use of cutting-edge
-          technologies like React, TypeScript, Tailwind CSS, and Redux. The
-          dashboard significantly improved the company’s operational efficiency
-          and user management capabilities.
-        </>
-      ),
+      overview:
+        "I developed a high-performance dashboard for a company, allowing them to efficiently manage users, companies, roles, and permissions. This project spanned over 8 months and involved the use of cutting-edge technologies like React, TypeScript, Tailwind CSS, and Redux. The dashboard significantly improved the company’s operational efficiency and user management capabilities.",
       features: [
         {
           title: "Role-Based Access Control",
@@ -199,6 +182,50 @@ export const projectsData: TProjectData = {
       ],
       img: roboxonDashboard,
       tags: ["react", "typescript", "tailwind"],
+    },
+    {
+      id: 3,
+      title: "E-commerc website with Bootstrap & Javascript",
+      overview: `This eCommerce platform is built on Joomla, leveraging a custom front-end developed using Bootstrap, CSS, HTML, and JavaScript. The site provides a seamless shopping experience with a modern, responsive design that adapts to any device. With a focus on performance and user experience, the platform is designed to handle high traffic volumes while maintaining fast load times. The site integrates with various payment gateways, ensuring secure and convenient transactions for users.`,
+      previewLink: "https://v-user.com",
+      features: [
+        {
+          title: "Responsive Design",
+          description:
+            "Fully responsive interface optimized for mobile, tablet, and desktop devices.",
+        },
+        {
+          title: "Customizable Product Catalog",
+          description:
+            "Easily manage and customize product listings with dynamic filters and categories.",
+        },
+        {
+          title: "Secure Payment Integration",
+          description:
+            "Supports multiple payment gateways with robust security measures.",
+        },
+        {
+          title: "User-Friendly Admin Panel",
+          description:
+            "Intuitive admin panel for managing orders, customers, and inventory.",
+        },
+      ],
+      techStack: [
+        {
+          title: "JavaScript",
+          icon: <JSIcon key={1} size={18} />,
+        },
+        {
+          title: "Bootstrap",
+          icon: <BootstrapIcon key={3} size={18} />,
+        },
+        {
+          title: "HTML",
+          icon: <HtmlIcon key={1} size={18} />,
+        },
+      ],
+      img: vUser,
+      tags: ["html", "css", "js"],
     },
   ],
   projectsFilter: [

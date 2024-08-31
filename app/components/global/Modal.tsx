@@ -2,6 +2,9 @@ import Image from "next/image";
 import React from "react";
 import { TProjectsInfo } from "@/app/types/projects";
 import CloseIcon from "../icons/CloseIcon";
+import Link from "next/link";
+import ExternalLinkIcon from "../icons/ExternalLinkIcon";
+import ArrowOutwardIcon from "../icons/solid/ArrowOutwardIcon";
 
 type Props = {
   data: TProjectsInfo;
@@ -29,8 +32,14 @@ const Modal = ({ data, modalRef }: Props) => {
               <p className="text-base mb-8 mt-4 md:mt-12 font-light">
                 {data.overview}
               </p>
+              {data.previewLink && (
+                <Link target="_blank" className="text-blue-500 flex justify-between max-w-fit gap-1" href={data.previewLink}>
+                  {data.previewLink}
+                  <ArrowOutwardIcon color="rgb(59 130 246)" size={16} />
+                </Link>
+              )}
             </div>
-            <div className="flex flex-col flex-wrap gap-3">
+            <div className="flex flex-col flex-wrap gap-3 mt-5">
               <div>Skills</div>
               <div className="flex flex-wrap gap-2">
                 {data.techStack.map((item) => (
@@ -60,7 +69,6 @@ const Modal = ({ data, modalRef }: Props) => {
                   <div className="font-semibold">{item.title}</div>
                   <div className="mt-1 text-sm">{item.description}</div>
                 </div>
-                
               ))}
             </div>
           </div>

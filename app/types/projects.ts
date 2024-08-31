@@ -10,7 +10,7 @@ export type TProjectData = {
 export type TProjectsInfo = {
   id: number;
   title: string;  
-  overview: string | ReactElement;
+  overview: string 
   features: TitleDescription[]
   techStack:{
     title: string
