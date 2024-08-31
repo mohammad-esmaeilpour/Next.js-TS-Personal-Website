@@ -1,8 +1,7 @@
 import Image from "next/image";
-import React, { useId, useRef } from "react";
-import Link from "next/link";
+import React from "react";
 import { projectsData } from "@/public/data/projects";
-import ExternalLinkIcon from "@/app/components/icons/ExternalLinkIcon";
+import Link from "next/link";
 import GithubIcon from "@/app/components/icons/GithubIcon";
 
 interface ProjectsCardsProps {
@@ -16,10 +15,11 @@ const ProjectsCards: React.FC<ProjectsCardsProps> = ({
 }) => {
   const filteredProjects =
     selectedFilters.length === 0
-      ? projectsData.projectsInfo
-      : projectsData.projectsInfo.filter((project) =>
+      ? [...projectsData.projectsInfo].reverse()
+      : [...projectsData.projectsInfo].reverse().filter((project) =>
           selectedFilters.some((f) => project.tags.includes(f))
         );
+        
 
   return (
     <div>
@@ -40,7 +40,7 @@ const ProjectsCards: React.FC<ProjectsCardsProps> = ({
               />
             </div>
             <div className="card-body p-4 pb-3 text-start">
-              <h3 className="line-clamp-1 font-semibold">{item.title}</h3>
+              <h3 className="line-clamp-2 h-12 font-semibold">{item.title}</h3>
               <p className="text-sm line-clamp-3 mt-2">{item.overview}</p>
               <div className="flex items-baseline justify-between pb-1">
                 <div className="flex mt-3.5 items-center gap-2">
@@ -51,7 +51,7 @@ const ProjectsCards: React.FC<ProjectsCardsProps> = ({
                   ))}
                 </div>
 
-                {/* {item.repository && (
+                {item.repository && (
                   <Link
                     href={item.repository}
                     className="tooltip tooltip-left"
@@ -60,7 +60,7 @@ const ProjectsCards: React.FC<ProjectsCardsProps> = ({
                   >
                     <GithubIcon size={20} />
                   </Link>
-                )} */}
+                )}
               </div>
             </div>
           </div>
