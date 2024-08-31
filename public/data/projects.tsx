@@ -185,7 +185,7 @@ export const projectsData: TProjectData = {
     },
     {
       id: 3,
-      title: "E-commerc website with Bootstrap & Javascript",
+      title: "E-commerce website with Bootstrap & Javascript",
       overview: `This eCommerce platform is built on Joomla, leveraging a custom front-end developed using Bootstrap, CSS, HTML, and JavaScript. The site provides a seamless shopping experience with a modern, responsive design that adapts to any device. With a focus on performance and user experience, the platform is designed to handle high traffic volumes while maintaining fast load times. The site integrates with various payment gateways, ensuring secure and convenient transactions for users.`,
       previewLink: "https://v-user.com",
       features: [
