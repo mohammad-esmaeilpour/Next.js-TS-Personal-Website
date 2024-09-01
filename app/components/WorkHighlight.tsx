@@ -48,7 +48,7 @@ const WorkHighlight = () => {
             effect={"cards"}
             grabCursor={true}
             modules={[EffectCards]}
-            className="mySwiper w-[300px] h-[355px]"
+            className="mySwiper w-[300px] h-[380px]"
             cardsEffect={{
               perSlideOffset: 50,
               slideShadows: false,
@@ -70,7 +70,7 @@ const WorkHighlight = () => {
                   />
                 </div>
                 <div className="card-body p-4 pb-3 text-start">
-                  <h4 className="line-clamp-1 text-base font-semibold">
+                  <h4 className="line-clamp-2 text-base font-semibold">
                     {item.title}
                   </h4>
                   <p className="text-sm font-normal line-clamp-2 mb-1">

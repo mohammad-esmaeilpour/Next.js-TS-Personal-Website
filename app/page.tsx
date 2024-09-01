@@ -9,6 +9,7 @@ import Expertise from "./components/Expertise";
 export const metadata: Metadata = {
   title: homeSeo.title,
   description: homeSeo.metadescription,
+
 };
 
 export default function Home() {
