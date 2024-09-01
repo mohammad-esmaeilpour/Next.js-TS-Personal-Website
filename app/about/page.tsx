@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     description: aboutSeo.metadescription,
     title: aboutSeo.title,
-    images: "https://esmaeilpour.site/public/img/ui/logo.png",
+    images: "https://esmaeilpour.site/img/ui/logo.png",
     type: "website",
     url: "https://esmaeilpour.site/about",
     siteName: "Mohammad Esmaeilpour portfolio",
