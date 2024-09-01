@@ -17,19 +17,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`}>
-      <Head>
-        <meta name="description" content={homeSeo.metadescription} />
-        <meta property="og:title" content={homeSeo.title} />
-        <meta property="og:description" content={homeSeo.metadescription} />
-        <meta property="og:image" content="../public/img/ui/logo.png" />
-        <meta property="og:url" content="https://esmaeilpour.site" />
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:site_name"
-          content="Mohammad Esmaeilpour portfolio"
-        />
-      </Head>
-      ;
       <Aos />
       <body className="overflow-x-hidden">
         <Header />

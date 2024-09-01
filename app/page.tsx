@@ -9,7 +9,14 @@ import Expertise from "./components/Expertise";
 export const metadata: Metadata = {
   title: homeSeo.title,
   description: homeSeo.metadescription,
-
+  openGraph: {
+    description: homeSeo.metadescription,
+    title: homeSeo.title,
+    images: "../public/img/ui/logo.png",
+    type: "website",
+    url: "https://esmaeilpour.site",
+    siteName: "Mohammad Esmaeilpour portfolio",
+  },
 };
 
 export default function Home() {

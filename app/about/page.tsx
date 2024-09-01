@@ -8,6 +8,14 @@ import TimeLine from "./_components/TimeLine";
 export const metadata: Metadata = {
   title: aboutSeo.title,
   description: aboutSeo.metadescription,
+  openGraph: {
+    description: aboutSeo.metadescription,
+    title: aboutSeo.title,
+    images: "../../public/img/ui/logo.png",
+    type: "website",
+    url: "https://esmaeilpour.site/about",
+    siteName: "Mohammad Esmaeilpour portfolio",
+  },
 };
 
 const About = () => {
