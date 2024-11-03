@@ -1,8 +1,8 @@
 import { aboutHeadings } from '@/public/data/about'
 import Image from "next/image";
 import React from "react";
-import Skills from './Skills';
 import personImage from "@/public/img/ui/mohammad.png";
+import Skills from '@/app/components/Skills';
 
 const Hero = () => {
   return (
@@ -23,7 +23,8 @@ const Hero = () => {
           <h1 className="mt-16 mb-5">{aboutHeadings.h1.title}</h1>
           <p>{aboutHeadings.h1.subTitle}</p>
         </div>
-        <Skills />
+        {/* <Skills /> */}
+        <Skills/>
       </div>
     </div>
   );

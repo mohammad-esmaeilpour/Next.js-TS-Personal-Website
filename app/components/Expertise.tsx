@@ -6,7 +6,7 @@ const Expertise = () => {
   const [activeTab, setActiveTab] = useState(homeData.expertise.tabs[0].label);
 
   return (
-    <section id="expertise">
+    <section className="relative" id="expertise">
       <h2>{homeData.expertise.title}</h2>
       <p className="mt-2">{homeData.expertise.subTitle}</p>
       <div className="mt-16">
@@ -14,15 +14,12 @@ const Expertise = () => {
           {homeData.expertise.tabs.map((item) => (
             <h3
               onClick={() => setActiveTab(item.label)}
-              className={`text-sm flex items-center gap-3 font-medium py-3 text-start cursor-pointer ${
-                activeTab === item.label
-                  ? "bg-[hsla(0,0%,9%,1)] text-[#fff] rounded-lg px-3"
-                  : ""
-              }`}
+              className={"text-sm flex items-center gap-3 relative font-medium py-3 text-start cursor-pointer"}
               key={item.label}
             >
-              {activeTab !== item.label && item.icon}
+              {item.icon}
               {item.label}
+              {activeTab === item.label && <div className="absolute w-5 bottom-0 left-0 h-1 bg-gray-700 rounded"></div>} 
             </h3>
           ))}
         </div>
@@ -37,7 +34,7 @@ const Expertise = () => {
                     {item.impact.map((item,index) => (
                       <div
                         key={index}
-                        className="border flex flex-col justify-between gap-3 p-3 md:p-5 rounded-xl text-sm"
+                        className="border flex flex-col bg-white/40 justify-between gap-3 p-3 md:p-5 rounded-xl text-sm"
                       >
                         <div className="flex justify-between gap-2">
                           <p className="text-black font-semibold">

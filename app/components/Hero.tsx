@@ -6,13 +6,11 @@ import Typewriter from "typewriter-effect";
 
 const Hero = () => {
   return (
-    <main className="text-center hero-custom">
+    <main className="text-center hero-custom relative">
       <div className="flex justify-center gap-x-4 flex-wrap">
         <h1>
           <strong>
-            <strong className="text-gradient">
-              {homeData.hero.title}
-            </strong>
+            <strong className="text-gradient">{homeData.hero.title}</strong>
           </strong>
         </h1>
         <span className="text-gradient">Front-End Developer</span>

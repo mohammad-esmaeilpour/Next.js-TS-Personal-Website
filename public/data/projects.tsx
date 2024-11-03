@@ -1,6 +1,7 @@
 import room from "@/public/img/projects/3d-room.jpg";
 import roboxonWebsite from "@/public/img/projects/roboxon-website.jpg";
 import roboxonDashboard from "@/public/img/projects/roboxon-dashboard.jpg";
+import accounting from "@/public/img/projects/accounting.png";
 import vUser from "@/public/img/projects/v-user.jpg";
 import JSIcon from "@/app/components/icons/JSIcon";
 import HtmlIcon from "@/app/components/icons/HtmlIcon";
@@ -12,6 +13,8 @@ import ReactIcon from "@/app/components/icons/ReactIcon";
 import MUIIcon from "@/app/components/icons/MUIIcon";
 import { TProjectData } from "@/app/types/projects";
 import BootstrapIcon from "@/app/components/icons/BootstrapIcon";
+import ReduxIcon from "@/app/components/icons/ReduxIcon";
+import { LogosReactQueryIcon } from "@/app/components/icons/ReactQueryIcon";
 
 export const projectsSeo = {
   title: "Project's - Mohammad Esmaeilpour | Front-end developer",
@@ -226,6 +229,60 @@ export const projectsData: TProjectData = {
       ],
       img: vUser,
       tags: ["html", "css", "js"],
+    },
+    {
+      id: 4,
+      title: "Advanced Accounting Dashboard | React & TypeScript Project",
+      overview: `A powerful Accounting Dashboard built with React and TypeScript. Designed for financial data management, it offers real-time analytics, customizable reports, and intuitive data visualization. The dashboard supports seamless data updates, insightful financial summaries, and enhances productivity for accounting professionals. Built for performance, security, and ease of use.`,
+      previewLink: "https://accountant.liara.run/",
+      features: [
+        {
+          title: "React Query",
+          description:
+            "Integrated React Query for optimized data fetching, caching, and synchronization with the backend. This enhances real-time data updates and minimizes unnecessary network requests, ensuring a smooth user experience.",
+        },
+        {
+          title: "Redux",
+          description:
+            "Used Redux for state management, enabling consistent and efficient data flow across the accounting dashboard. Redux centralizes the application state, allowing seamless updates and improved scalability.",
+        },
+        {
+          title: "Authorization",
+          description:
+            "Implemented secure authorization, protecting sensitive financial data with role-based access. This feature ensures that only authorized users can access specific sections of the dashboard.",
+        },
+        {
+          title: "Charts",
+          description:
+            "Added interactive charts to visualize financial data clearly and effectively. These charts offer insightful analytics and help users make data-driven decisions with ease.",
+        },
+      ],
+      techStack: [
+        {
+          title: "Typescript",
+          icon: <TSIcon key={1} size={18} />,
+        },
+        {
+          title: "React",
+          icon: <ReactIcon key={3} size={18} />,
+        },
+        {
+          title: "Tailwind",
+          icon: <TailwindIcon key={1} size={18} />,
+        },
+
+        {
+          title: "React Query",
+          icon: <LogosReactQueryIcon key={1} />,
+        },
+
+        {
+          title: "Redux",
+          icon: <ReduxIcon key={1} size={18} />,
+        },
+      ],
+      img: accounting,
+      tags: ["typescript", "react", "tailwind"],
     },
   ],
   projectsFilter: [

@@ -12,7 +12,7 @@ import { homeData } from "@/public/data/home";
 
 const Skills = () => {
   return (
-    <div className="px-3 mt-10 lg:mt-16">
+    <div className="px-3 mt-10 ">
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
         centeredSlidesBounds={true}

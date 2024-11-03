@@ -66,12 +66,22 @@ export const aboutHeadings = {
 export const aboutData = {
   skills: [
     {
-      title: "Typescript",
-      icon: <TSIcon size={48} />,
+      title: "HTML",
+      icon: <HtmlIcon size={48} />,
     },
+
+    {
+      title: "CSS",
+      icon: <CssIcon size={48} />,
+    },
+
     {
       title: "Javascript",
       icon: <JSIcon size={48} />,
+    },
+    {
+      title: "Typescript",
+      icon: <TSIcon size={48} />,
     },
     {
       title: "React",
@@ -80,6 +90,10 @@ export const aboutData = {
     {
       title: "Next.js",
       icon: <NextjsIcon size={48} />,
+    },
+    {
+      title: "Redux",
+      icon: <ReduxIcon size={48} />,
     },
     {
       title: "Tailwind",
@@ -97,10 +111,7 @@ export const aboutData = {
       title: "Sass/Scss",
       icon: <SassIcon size={48} />,
     },
-    {
-      title: "Redux",
-      icon: <ReduxIcon size={48} />,
-    },
+
     {
       title: "Github",
       icon: <GithubIcon size={48} />,
