@@ -1,7 +1,6 @@
 'use client'
 import { aboutData} from "@/public/data/about";
 import React from "react";
-import 'swiper/css';
 
 const Skills = () => {
   return (

@@ -327,7 +327,7 @@ export const homeData: THomeData = {
         utilizing my <strong>top skills</strong> in <strong>TypeScript</strong>{" "}
         for type safety, <strong>Next.js</strong> for websites that require good
         page speed and performance with server-side rendering, and{" "}
-        <strong>React</strong> for most dashboard applications. I've also used
+        <strong>React</strong> for most dashboard applications. Ive also used
         various CSS libraries such as <strong>Tailwind CSS</strong>,{" "}
         <strong>Material UI</strong>, and <strong>Ant Design</strong>.
       </>

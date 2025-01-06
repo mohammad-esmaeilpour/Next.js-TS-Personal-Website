@@ -3,18 +3,20 @@ import roboxonWebsite from "@/public/img/projects/roboxon-website.jpg";
 import roboxonDashboard from "@/public/img/projects/roboxon-dashboard.jpg";
 import accounting from "@/public/img/projects/accounting.png";
 import vUser from "@/public/img/projects/v-user.jpg";
-import JSIcon from "@/app/components/icons/JSIcon";
-import HtmlIcon from "@/app/components/icons/HtmlIcon";
-import CssIcon from "@/app/components/icons/CssIcon";
-import TSIcon from "@/app/components/icons/TSIcon";
-import NextjsIcon from "@/app/components/icons/NextjsIcon";
-import TailwindIcon from "@/app/components/icons/TailwindIcon";
-import ReactIcon from "@/app/components/icons/ReactIcon";
-import MUIIcon from "@/app/components/icons/MUIIcon";
-import { TProjectData } from "@/app/types/projects";
 import BootstrapIcon from "@/app/components/icons/BootstrapIcon";
-import ReduxIcon from "@/app/components/icons/ReduxIcon";
+import CssIcon from "@/app/components/icons/CssIcon";
+import HtmlIcon from "@/app/components/icons/HtmlIcon";
+import JSIcon from "@/app/components/icons/JSIcon";
+import MUIIcon from "@/app/components/icons/MUIIcon";
+import NextjsIcon from "@/app/components/icons/NextjsIcon";
+import ReactIcon from "@/app/components/icons/ReactIcon";
 import { LogosReactQueryIcon } from "@/app/components/icons/ReactQueryIcon";
+import ReduxIcon from "@/app/components/icons/ReduxIcon";
+import TailwindIcon from "@/app/components/icons/TailwindIcon";
+import TSIcon from "@/app/components/icons/TSIcon";
+import { TProjectData } from "@/app/types/projects";
+
+
 
 export const projectsSeo = {
   title: "Project's - Mohammad Esmaeilpour | Front-end developer",

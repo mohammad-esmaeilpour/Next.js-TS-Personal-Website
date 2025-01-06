@@ -15,10 +15,12 @@ const Hero = () => {
         </h1>
         <span className="text-gradient">Front-End Developer</span>
       </div>
+
       <div className="flex flex-col md:flex-row gap-3">
         <div className="flex md:flex-1 md:justify-end justify-center text-gradient">
           Specializing in
         </div>
+
         <div className="flex justify-center md:justify-start md:flex-1">
           <Typewriter
             options={{
@@ -39,10 +41,13 @@ const Hero = () => {
             }}
           />
         </div>
+
       </div>
+
       <h2 className="text-gradient text-xl font-medium mt-16">
         {homeData.hero.subTitle}
       </h2>
+
       <div className="flex w-full justify-center items-center mt-5 gap-2">
         {homeData.hero.callToAction.map((item) => (
           <Link

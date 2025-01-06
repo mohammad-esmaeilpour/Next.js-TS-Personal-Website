@@ -1,7 +1,5 @@
-import ExternalLinkIcon from "@/app/components/icons/ExternalLinkIcon";
-import LockIcon from "@/app/components/icons/LockIcon";
-import ArrowOutwardIcon from "@/app/components/icons/solid/ArrowOutwardIcon";
 import { aboutData, aboutHeadings } from "@/public/data/about";
+import LockIcon from "@/src/components/icons/LockIcon";
 import Link from "next/link";
 import React from "react";
 

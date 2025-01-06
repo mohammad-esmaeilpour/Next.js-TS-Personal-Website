@@ -12,6 +12,8 @@ import SassIcon from "@/app/components/icons/SassIcon";
 import TailwindIcon from "@/app/components/icons/TailwindIcon";
 import TSIcon from "@/app/components/icons/TSIcon";
 
+
+
 export const aboutSeo = {
   title: "About Mohammad Esmaeilpour",
   metadescription:
@@ -23,7 +25,7 @@ export const aboutHeadings = {
     title: "About Mohammad Esmaeilpour",
     subTitle: (
       <>
-        Hi 👋 I'm <strong>Mohammad Esmaeilpour</strong>, a{" "}
+        Hi 👋 Im <strong>Mohammad Esmaeilpour</strong>, a{" "}
         <strong>frontend developer</strong> with <b>+3 years</b> of experience. I
         specialize in crafting responsive, user-centric applications using{" "}
         <b>React</b>, <b>Next.js</b> and <b>TypeScript</b> with UI libraries
@@ -279,7 +281,7 @@ export const aboutData = {
           role include
           <b>adding new pages</b> to websites, developing <b>user interfaces</b>
           , <b>creating various components</b>, and <b>integrating new pages</b>{" "}
-          with content for the blog section and other areas of the website. I'm
+          with content for the blog section and other areas of the website. Im
           also involved in additional tasks related to{" "}
           <b>frontend development</b>.
         </p>
