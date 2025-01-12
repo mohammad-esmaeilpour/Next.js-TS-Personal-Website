@@ -1,16 +1,17 @@
-import BootstrapIcon from "@/app/components/icons/BootstrapIcon";
-import CssIcon from "@/app/components/icons/CssIcon";
-import GithubIcon from "@/app/components/icons/GithubIcon";
-import GitIcon from "@/app/components/icons/GitIcon";
-import HtmlIcon from "@/app/components/icons/HtmlIcon";
-import JSIcon from "@/app/components/icons/JSIcon";
-import MUIIcon from "@/app/components/icons/MUIIcon";
-import NextjsIcon from "@/app/components/icons/NextjsIcon";
-import ReactIcon from "@/app/components/icons/ReactIcon";
-import ReduxIcon from "@/app/components/icons/ReduxIcon";
-import SassIcon from "@/app/components/icons/SassIcon";
-import TailwindIcon from "@/app/components/icons/TailwindIcon";
-import TSIcon from "@/app/components/icons/TSIcon";
+import BootstrapIcon from "@/src/app/components/icons/BootstrapIcon";
+import CssIcon from "@/src/app/components/icons/CssIcon";
+import GithubIcon from "@/src/app/components/icons/GithubIcon";
+import GitIcon from "@/src/app/components/icons/GitIcon";
+import HtmlIcon from "@/src/app/components/icons/HtmlIcon";
+import JSIcon from "@/src/app/components/icons/JSIcon";
+import MUIIcon from "@/src/app/components/icons/MUIIcon";
+import NextjsIcon from "@/src/app/components/icons/NextjsIcon";
+import ReactIcon from "@/src/app/components/icons/ReactIcon";
+import ReduxIcon from "@/src/app/components/icons/ReduxIcon";
+import SassIcon from "@/src/app/components/icons/SassIcon";
+import TailwindIcon from "@/src/app/components/icons/TailwindIcon";
+import TSIcon from "@/src/app/components/icons/TSIcon";
+
 
 
 
@@ -324,34 +325,29 @@ export const aboutData = {
 
   timeline: [
     {
-      dataAos: "fade-up",
       timelineDir: "start",
       title: "Type Safety",
       description: `Utilizing TypeScript to enhance code reliability and maintainability.`,
     },
     {
-      dataAos: "fade-left",
       timelineDir: "end",
       title: "Performance Optimization",
       description:
         "Leveraging Next.js for server-side rendering and static site generation.",
     },
     {
-      dataAos: "fade-right",
       timelineDir: "start",
       title: "Modern Styling",
       description:
         "Applying Tailwind CSS and MUI for consistent and accessible designs.",
     },
     {
-      dataAos: "fade-left",
       timelineDir: "end",
       title: "Responsive Design",
       description:
         "Creating layouts that adapt seamlessly to various screen sizes.",
     },
     {
-      dataAos: "fade-down",
       timelineDir: "start",
       title: "Best Practices",
       description:

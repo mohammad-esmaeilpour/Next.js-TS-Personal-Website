@@ -3,18 +3,19 @@ import roboxonWebsite from "@/public/img/projects/roboxon-website.jpg";
 import roboxonDashboard from "@/public/img/projects/roboxon-dashboard.jpg";
 import accounting from "@/public/img/projects/accounting.png";
 import vUser from "@/public/img/projects/v-user.jpg";
-import BootstrapIcon from "@/app/components/icons/BootstrapIcon";
-import CssIcon from "@/app/components/icons/CssIcon";
-import HtmlIcon from "@/app/components/icons/HtmlIcon";
-import JSIcon from "@/app/components/icons/JSIcon";
-import MUIIcon from "@/app/components/icons/MUIIcon";
-import NextjsIcon from "@/app/components/icons/NextjsIcon";
-import ReactIcon from "@/app/components/icons/ReactIcon";
-import { LogosReactQueryIcon } from "@/app/components/icons/ReactQueryIcon";
-import ReduxIcon from "@/app/components/icons/ReduxIcon";
-import TailwindIcon from "@/app/components/icons/TailwindIcon";
-import TSIcon from "@/app/components/icons/TSIcon";
-import { TProjectData } from "@/app/types/projects";
+import BootstrapIcon from "@/src/app/components/icons/BootstrapIcon";
+import CssIcon from "@/src/app/components/icons/CssIcon";
+import HtmlIcon from "@/src/app/components/icons/HtmlIcon";
+import JSIcon from "@/src/app/components/icons/JSIcon";
+import MUIIcon from "@/src/app/components/icons/MUIIcon";
+import NextjsIcon from "@/src/app/components/icons/NextjsIcon";
+import ReactIcon from "@/src/app/components/icons/ReactIcon";
+import { LogosReactQueryIcon } from "@/src/app/components/icons/ReactQueryIcon";
+import ReduxIcon from "@/src/app/components/icons/ReduxIcon";
+import TailwindIcon from "@/src/app/components/icons/TailwindIcon";
+import TSIcon from "@/src/app/components/icons/TSIcon";
+import { TProjectData } from "@/src/types/projects";
+
 
 
 

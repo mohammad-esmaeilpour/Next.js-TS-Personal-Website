@@ -9,13 +9,13 @@ export type TProjectData = {
 
 export type TProjectsInfo = {
   id: number;
-  title: string;  
-  overview: string 
-  features: TitleDescription[]
-  techStack:{
-    title: string
-    icon:ReactElement
-  }[]
+  title: string;
+  overview: string;
+  features: TitleDescription[];
+  techStack: {
+    title: string;
+    icon: ReactElement;
+  }[];
   tags: string[];
   img: StaticImageData;
   previewLink?: string;

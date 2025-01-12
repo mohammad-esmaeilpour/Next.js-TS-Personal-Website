@@ -36,7 +36,7 @@ interface IAboutMe extends TitleSubTitleImage {
 interface IExpertise extends TitleSubTitle {
   tabs: {
     label: string;
-    icon:ReactElement,
+    icon: ReactElement;
     description: string | JSX.Element;
     keyStrengths: TitleDescription[];
     impact: TitleDescriptionIcon[];
@@ -45,7 +45,7 @@ interface IExpertise extends TitleSubTitle {
 
 interface IWorkhighlights extends TitleSubTitleDescription {
   callToAction: {
-    title:string 
+    title: string;
     link: string;
   };
 }

@@ -1,28 +1,29 @@
-import BootstrapIcon from "@/app/components/icons/BootstrapIcon";
-import BugIcon from "@/app/components/icons/BugIcon";
-import ClockIcon from "@/app/components/icons/ClockIcon";
-import CollabrationIcon from "@/app/components/icons/CollabrationIcon";
-import CssIcon from "@/app/components/icons/CssIcon";
-import GithubIcon from "@/app/components/icons/GithubIcon";
-import GitIcon from "@/app/components/icons/GitIcon";
-import HandShakeIcon from "@/app/components/icons/HandShakeIcon";
-import HighVoltageIcon from "@/app/components/icons/HighVoltageIcon";
-import HourglassIcon from "@/app/components/icons/HourglassIcon";
-import HtmlIcon from "@/app/components/icons/HtmlIcon";
-import JSIcon from "@/app/components/icons/JSIcon";
-import ManRunningIcon from "@/app/components/icons/ManRunningIcon";
-import MinimizeIcon from "@/app/components/icons/MinimizeIcon";
-import MUIIcon from "@/app/components/icons/MUIIcon";
-import NextjsIcon from "@/app/components/icons/NextjsIcon";
-import ReactIcon from "@/app/components/icons/ReactIcon";
-import ReduxIcon from "@/app/components/icons/ReduxIcon";
-import ResponsiveIcon from "@/app/components/icons/ResponsiveIcon";
-import SassIcon from "@/app/components/icons/SassIcon";
-import SearchLabtopScreenIcon from "@/app/components/icons/SearchLabtopScreenIcon";
-import TailwindIcon from "@/app/components/icons/TailwindIcon";
-import TSIcon from "@/app/components/icons/TSIcon";
-import { TSeoProps } from "@/app/types/global";
-import { THomeData } from "@/app/types/home";
+import BootstrapIcon from "@/src/app/components/icons/BootstrapIcon";
+import BugIcon from "@/src/app/components/icons/BugIcon";
+import ClockIcon from "@/src/app/components/icons/ClockIcon";
+import CollabrationIcon from "@/src/app/components/icons/CollabrationIcon";
+import CssIcon from "@/src/app/components/icons/CssIcon";
+import GithubIcon from "@/src/app/components/icons/GithubIcon";
+import GitIcon from "@/src/app/components/icons/GitIcon";
+import HandShakeIcon from "@/src/app/components/icons/HandShakeIcon";
+import HighVoltageIcon from "@/src/app/components/icons/HighVoltageIcon";
+import HourglassIcon from "@/src/app/components/icons/HourglassIcon";
+import HtmlIcon from "@/src/app/components/icons/HtmlIcon";
+import JSIcon from "@/src/app/components/icons/JSIcon";
+import ManRunningIcon from "@/src/app/components/icons/ManRunningIcon";
+import MinimizeIcon from "@/src/app/components/icons/MinimizeIcon";
+import MUIIcon from "@/src/app/components/icons/MUIIcon";
+import NextjsIcon from "@/src/app/components/icons/NextjsIcon";
+import ReactIcon from "@/src/app/components/icons/ReactIcon";
+import ReduxIcon from "@/src/app/components/icons/ReduxIcon";
+import ResponsiveIcon from "@/src/app/components/icons/ResponsiveIcon";
+import SassIcon from "@/src/app/components/icons/SassIcon";
+import SearchLabtopScreenIcon from "@/src/app/components/icons/SearchLabtopScreenIcon";
+import TailwindIcon from "@/src/app/components/icons/TailwindIcon";
+import TSIcon from "@/src/app/components/icons/TSIcon";
+import { TSeoProps } from "@/src/types/global";
+import { THomeData } from "@/src/types/home";
+
 
 export const homeSeo: TSeoProps = {
   title: "Mohammad Esmaeilpour - Front-end developer",
